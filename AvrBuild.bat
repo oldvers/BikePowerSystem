@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Work\AVRStudio\AvrAssembler2\avrasm2.exe" -S "N:\Programs\InWork\04_FullWare\26_BikePowerSystem\labels.tmp" -fI -W+ie -C V2E -o "N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystem.hex" -d "N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystem.obj" -e "N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystem.eep" -m "N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystem.map" "N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystem.asm"

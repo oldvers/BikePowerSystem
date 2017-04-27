@@ -1,0 +1,29 @@
+EEPROM_Write:
+   ;Ожидание завершения предыдущей записи
+   sbic  EECR,EEWE
+   rjmp  EEPROM_Write    
+   ;Установка адреса
+   ;out   EEARH,EE_AdrH
+   out   EEARL,E_Addr
+   ;Запись данных
+   out   EEDR,E_Data
+   ;Установка EEMWE
+   sbi   EECR,EEMWE
+   ;Запуск записи (установка EEWE)
+   sbi   EECR,EEWE
+   ret
+
+
+EEPROM_Read:
+   ;Ожидание завершения предыдущей записи
+   sbic  EECR,EEWE
+   rjmp  EEPROM_Read
+   ;Установка адреса
+   ;out   EEARH,EE_AdrH
+   out   EEARL,E_Addr
+   ;Запуск чтения (установка EERE)
+   sbi   EECR,EERE
+   ;Чтение данных
+   in    E_Data,EEDR
+   ret
+
