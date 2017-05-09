@@ -53,8 +53,8 @@ LEDLIGHT_DeInit:
    breq  LDI_End
    rcall LEDLIGHT_Hold
    ;Delay 3000 ms
-   ldi   Del50ms,120
-   rcall Delay
+   ldi   Value,120
+   rcall Delay25msX
 LDI_End:
    cbi   LEDLPORT,LEDLIGHT
    rcall LEDLIGHT_Release

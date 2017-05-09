@@ -1,15 +1,14 @@
-;***********************************************************************************
-;***[ ADC ]*************************************************************************
-;***********************************************************************************
+;*****************[ Local constants ]***********************************************
 
 ;Fclk    = 8 000 000 Hz
 ;Fclkadc = 8 000 000 / 128 = 62 500 Hz (16 us)
 ;Fadc    = 62 500 / 13 = 4 807,69 Hz (208 us)
 
-;R1 = 510000
-;R2 = 100000
-;VBat = (ADC * 1.1 / 1024) * (R1 + R2) / R2 = 0.006553 * ADC
-;ADC = VBat / 0.006553
+;R1      = 510000 Ohm
+;R2      = 100000 Ohm
+;VBat    = (ADC * 1.1 / 1024) * (R1 + R2) / R2 = 0.006553 * ADC
+;VBat    = ADC * 1678 / 256 [mV]
+;ADC     = VBat / 0.006553
 
 ;------------------------------------
 ; Description |  VBat, V  | ADC
@@ -23,14 +22,28 @@
 ; Fatal       |  3.29     | 502
 ; Fatal       |  2.50     | ---
 
-.EQU ADC_VBAT_GOOD_MIN  = 612
-.EQU ADC_VBAT_NORM_MIN  = 551
-.EQU ADC_VBAT_LOW_MIN   = 503
-;EQU ADC_VBAT_FATAL_MAX = 502
+.EQU ADC_COEFFICIENT = 1678
 
-;***********************************************************************************
-;***[ ADC Init ]********************************************************************
-;***********************************************************************************
+;*****************[ Local variables ]***********************************************
+
+.DEF A_ML     = r0
+.DEF A_MH     = r1
+.DEF A_VL     = r2
+.DEF A_VH     = r3
+.DEF A_RN     = r4
+.DEF A_RL     = r5
+.DEF A_RH     = r6
+.DEF A_RO     = r7
+;DEF Temp     = r16
+;DEF Value    = r16
+;DEF Flags    = r17
+.DEF A_Mode   = r21
+;DEF ValueL   = r24
+.DEF A_CL     = r24
+;DEF ValueH   = r25
+.DEF A_CH     = r25
+
+;*****************[ ADC Init ]******************************************************
 
 ADC_Init:
    clr   Temp
@@ -56,18 +69,14 @@ ADC_Init:
    sts   ADCSRA,Temp
    ret
 
-;***********************************************************************************
-;***[ ADC DeInit ]******************************************************************
-;***********************************************************************************
+;*****************[ ADC DeInit ]****************************************************
 
 ADC_DeInit:
    clr   Temp
    sts   ADCSRA,Temp
    ret
 
-;***********************************************************************************
-;***[ ADC Conversion Complete ]*****************************************************
-;***********************************************************************************
+;*****************[ ADC Conversion Complete ]***************************************
 
 ADC_Complete:
    in    SSREG,SREG
@@ -102,37 +111,54 @@ AC_End:
    out   SREG,SSREG
    reti
 
-;***********************************************************************************
-;***[ ADC Get Indication State ]****************************************************
-;***********************************************************************************
+;*****************[ ADC Calculate Voltage in mV ]***********************************
 
-ADC_GetBatteryState:
+ADC_CalcVoltage:
+   ;Load conversion coefficient
+   ldi   A_CL,Byte1(ADC_COEFFICIENT)
+   ldi   A_CH,Byte2(ADC_COEFFICIENT)
+   ;Clear for carry operations
+   clr   Temp
+   ;Multiply MSBs
+   mul   A_VH,A_CH
+   ;Copy to MSW Result
+   mov   A_RH,A_ML
+   mov   A_RO,A_MH
+   ;Multiply LSBs
+   mul   A_VL,A_CL
+   ;Copy to LSW Result
+   mov   A_RN,A_ML
+   mov   A_RL,A_MH
+   ;Multiply 1H with 2L
+   mul   A_VH,A_CL
+   ;Add to Result
+   add   A_RL,A_ML
+   adc   A_RH,A_MH
+   ;Add carry
+   adc   A_RO,Temp
+   ;Multiply 1L with 2H
+   mul   A_VL,A_CH
+   ;Add to Result
+   add   A_RL,A_ML
+   adc   A_RH,A_MH
+   adc   A_RO,Temp
+   ;Copy to Value
+   mov   ValueL,A_RL
+   mov   ValueH,A_RH
+   ret
+
+;*****************[ ADC Get Battery Voltage in mV ]*********************************
+
+ADC_GetBatteryVoltage:
    lds   A_VL,(rBattery + 0)
    lds   A_VH,(rBattery + 1)
+   rjmp  ADC_CalcVoltage
 
-   ldi   A_ValueL,Byte1(ADC_VBAT_GOOD_MIN)
-   ldi   A_ValueH,Byte2(ADC_VBAT_GOOD_MIN)
-   cp    A_VL,A_ValueL
-   cpc   A_VH,A_ValueH
-   brsh  AGBS_Good
-   ldi   A_ValueL,Byte1(ADC_VBAT_NORM_MIN)
-   ldi   A_ValueH,Byte2(ADC_VBAT_NORM_MIN)
-   cp    A_VL,A_ValueL
-   cpc   A_VH,A_ValueH
-   brsh  AGBS_Norm
-   ldi   A_ValueL,Byte1(ADC_VBAT_LOW_MIN)
-   ldi   A_ValueH,Byte2(ADC_VBAT_LOW_MIN)
-   cp    A_VL,A_ValueL
-   cpc   A_VH,A_ValueH
-   brsh  AGBS_Low
-   ldi   Temp,STATE_VBAT_FATAL
-   ret
-AGBS_Good:
-   ldi   Temp,STATE_VBAT_GOOD
-   ret
-AGBS_Norm:
-   ldi   Temp,STATE_VBAT_NORM
-   ret
-AGBS_Low:
-   ldi   Temp,STATE_VBAT_LOW
-   ret
+;*****************[ ADC Get Luminosity Voltage in mV ]******************************
+
+ADC_GetLuminosityVoltage:
+   lds   A_VL,(rLuminosity + 0)
+   lds   A_VH,(rLuminosity + 1)
+   rjmp  ADC_CalcVoltage
+
+;***********************************************************************************

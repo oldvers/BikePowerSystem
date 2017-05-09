@@ -1,3 +1,5 @@
+;*****************[ WDT On ]********************************************************
+
 WDT_On:
    ;Turn off global interrupt
    ;cli
@@ -16,6 +18,7 @@ WDT_On:
    ;sei
    ret
 
+;*****************[ WDT Off ]*******************************************************
 
 WDT_Off:
    cli
@@ -24,7 +27,8 @@ WDT_Off:
    ;Clear WDRF in MCUSR
    clr   Temp
    out   MCUSR,Temp
-   ;Write logical one to WDCE and WDE. Keep old prescaler setting to prevent unintentional time-out
+   ;Write logical one to WDCE and WDE.
+   ;Keep old prescaler setting to prevent unintentional time-out
    lds   Temp,WDTCSR
    ori   Temp,(1<<WDCE)|(1<<WDE)
    sts   WDTCSR,Temp
@@ -32,3 +36,5 @@ WDT_Off:
    ldi   Temp,(0<<WDE)
    sts   WDTCSR,Temp
    ret
+
+;***********************************************************************************

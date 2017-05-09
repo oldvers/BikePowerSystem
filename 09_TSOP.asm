@@ -1,45 +1,6 @@
-;***********************************************************************************
-;***[ TSOP Init ]*******************************************************************
-;***********************************************************************************
+;*****************[ Local constants ]***********************************************
 
-TSOP_Init:
-   sbi   IRPORT,IR
-
-   cbr   Flags,(1 << IF)
-   clr   Temp
-   sts   rIAddr,Temp
-   sts   rInAddr,Temp
-   sts   rICmd,Temp
-   sts   rInCmd,Temp
-
-
-   ldi   Temp,(0 << COM1A0) | (0 << COM1B0) | (0 << WGM10)
-   sts   TCCR1A,Temp
-   ;Capture Falling Edge, 8 us Tick
-   ldi   Temp,(1 << ICNC1) | (0 << ICES1) | (0 << WGM12) | (3 << CS10)
-   sts   TCCR1B,Temp
-   ;ICP and OVF Interrupts
-   ldi   Temp,(1 << ICIE1) | (1 << TOIE1)
-   sts   TIMSK1,Temp
-   ret
-
-;***********************************************************************************
-;***[ TSOP DeInit ]*****************************************************************
-;***********************************************************************************
-
-TSOP_DeInit:
-   sbi   IRPORT,IR
-
-   clr   Temp
-   sts   TCCR1A,Temp
-   sts   TCCR1B,Temp
-   sts   TIMSK1,Temp
-   ret
-
-;***********************************************************************************
-;***[ TSOP Time Intervals ]*********************************************************
-;***********************************************************************************
-
+; --- NEC Protocol Time Intervals ---
 ;Name	Symbol	Norm      Min Time	Max Time	Min	    Max
 ;Clean	C	    96,75 ms  87,075    106,425	    10884	13303
 ;Pause	P	    40,5 ms	  36,45	    44,55	    4556	5568
@@ -48,8 +9,7 @@ TSOP_DeInit:
 ;One	H	    2,25 ms	  2,025	    2,475	    253		309
 ;Zero	L	    1,125 ms  1,013	    1,238	    126		154
 
-
-;for fosc = 8000000 and fosc/64
+;For Fosc = 8000000 and Fosc/64
 .EQU LMin = 126
 .EQU LMax = 154
 .EQU HMin = 253
@@ -63,29 +23,91 @@ TSOP_DeInit:
 .EQU CMin = 10884
 .EQU CMax = 13303
 
-;***********************************************************************************
-;***[ TSOP Capture Interrupt ]******************************************************
-;***********************************************************************************
+; --- IR commands ---
+.EQU IR_CMD_PLAY      = 0
+.EQU IR_CMD_CH_M      = 1
+.EQU IR_CMD_CH_P      = 2
+.EQU IR_CMD_EQ        = 4
+.EQU IR_CMD_M         = 5
+.EQU IR_CMD_P         = 6
+.EQU IR_CMD_0         = 8
+.EQU IR_CMD_PREV      = 9
+.EQU IR_CMD_NEXT      = 10
+.EQU IR_CMD_1         = 12
+.EQU IR_CMD_2         = 13
+.EQU IR_CMD_PICK_SONG = 24
+.EQU IR_CMD_CH_SET    = 26
+
+;*****************[ Local variables ]***********************************************
+
+.DEF I_nCmd    = r3
+.DEF I_Cmd     = r16
+.DEF I_DutyL   = r28
+.DEF I_DutyH   = r29
+
+;*****************[ TSOP Init ]*****************************************************
+
+TSOP_Init:
+   ;Init IR pin
+   sbi   IRPORT,IR
+   ;Clear flags
+   cbr   Flags,(1 << IF)
+   ;Init RAM variables
+   clr   Temp
+   sts   rIAddr,Temp
+   sts   rInAddr,Temp
+   sts   rICmd,Temp
+   sts   rInCmd,Temp
+
+   ;Timer 1 capture mode
+   ldi   Temp,(0 << COM1A0) | (0 << COM1B0) | (0 << WGM10)
+   sts   TCCR1A,Temp
+   ;Capture Falling Edge, 8 us Tick
+   ldi   Temp,(1 << ICNC1) | (0 << ICES1) | (0 << WGM12) | (3 << CS10)
+   sts   TCCR1B,Temp
+   ;ICP and OVF Interrupts
+   ldi   Temp,(1 << ICIE1) | (1 << TOIE1)
+   sts   TIMSK1,Temp
+   ret
+
+;*****************[ TSOP DeInit ]***************************************************
+
+TSOP_DeInit:
+   ;DeInit IR pin
+   sbi   IRPORT,IR
+   ;DeInit timer
+   clr   Temp
+   sts   TCCR1A,Temp
+   sts   TCCR1B,Temp
+   sts   TIMSK1,Temp
+   ret
+
+;*****************[ TSOP Capture Interrupt ]****************************************
 
 TSOP_Capture:
    push  Temp
    in    SSREG,SREG
-   clr   Temp                     ;Очищаем счечик таймера для измерения
+   ;Clear timer counter
+   clr   Temp
    sts   TCNT1H,Temp
    sts   TCNT1L,Temp
+   ;Check if receiving in progress
    sbrc  Flags,IF
    rjmp  T1C_Impuls
 T1C_Start:
+   ;Indicate receiving in progress (the first capture)
    sbr   Flags,(1 << IF)
+   ;Wait for the next capture
    out   SREG,SSREG
    pop   Temp
    reti
 T1C_Impuls:
    push  I_DutyL
    push  I_DutyH
-
+   ;Load impulse duration
    lds   I_DutyL,ICR1L
    lds   I_DutyH,ICR1H
+; --- Check impulse kind ---
 T1C_CMax:
    ldi   Temp,Byte2(CMax)
    cpi   I_DutyL,Byte1(CMax)
@@ -132,7 +154,8 @@ T1C_HMax:
    cpc   I_DutyH,Temp
    brsh  T1C_Error
 T1C_HMin:
-   set   ;Set T Flag in SREG = One
+   ;Set T Flag in SREG = 1 (One)
+   set
    ldi   Temp,Byte2(HMin)
    cpi   I_DutyL,Byte1(HMin)
    cpc   I_DutyH,Temp
@@ -143,39 +166,49 @@ T1C_LMax:
    cpc   I_DutyH,Temp
    brsh  T1C_Error
 T1C_LMin:
-   clt   ;Clear T Flag in SREG = Zero
+   ;Clear T Flag in SREG = 0 (Zero)
+   clt
    ldi   Temp,Byte2(LMin)
    cpi   I_DutyL,Byte1(LMin)
    cpc   I_DutyH,Temp
    brsh  T1C_HL
-
 T1C_Error:
+   ;Indicate no receiving
    cbr   Flags,(1 << IF)
    pop   I_DutyH
    pop   I_DutyL
    out   SREG,SSREG
    pop   Temp
    reti
-
+; --- Start impulse ---
 T1C_S:
+   ;Clear bit index
    clr   Temp
    sts   rIIndex,Temp
    rjmp  T1C_End
+; --- Pause impulse ---
 T1C_P:
+   ;Set bit index to specific value for future use
    ldi   Temp,77
    sts   rIIndex,Temp
    rjmp  T1C_End
+; --- Repeat impulse ---
 T1C_R:
+   ;Check if Pause impulse was received
    lds   Temp,rIIndex
    cpi   Temp,77
-   ;brne  T1C_Error
+   ;Clear bit index
    clr   Temp
    sts   rIIndex,Temp
+   ;Repeat previous command
    rjmp  T1C_CheckCmd
+; --- High/Low (One/Zero) impulse ---
 T1C_HL:
+   ;Shift right all received bits
    lds   Temp,rInCmd
    lsr   Temp
-   bld   Temp,7      ;Load T Flag To Bit 7 of Register
+   ;Load T flag and save to the highest received bit
+   bld   Temp,7
    sts   rInCmd,Temp
    lds   Temp,rICmd
    ror   Temp
@@ -190,21 +223,24 @@ T1C_CheckIndex:
    lds   Temp,rIIndex
    inc   Temp
    sts   rIIndex,Temp
+   ;Check if all the bits are received
    cpi   Temp,32
    brne  T1C_End
-
+; --- Check received command ---
 T1C_CheckCmd:
    push  I_nCmd
    lds   Temp,rICmd
    lds   I_nCmd,rInCmd
    com   I_nCmd
+   ;Compare positive and negative received commands
    cp    Temp,I_nCmd
    pop   I_nCmd
    brne  T1C_Error
 
+   ;Indicate IR receiving complete
    cbr   Flags,(1 << IF)
    sbr   Flags,(1 << CF)
-
+; --- Error ---
 T1C_End:
    pop   I_DutyH
    pop   I_DutyL
@@ -212,58 +248,58 @@ T1C_End:
    pop   Temp
    reti
 
-;***********************************************************************************
-;***[ TSOP Overflow Interrupt ]*****************************************************
-;***********************************************************************************
+;*****************[ TSOP Overflow Interrupt ]***************************************
 
 TSOP_Ovf:
    in    SSREG,SREG
+   ;Indicate no receiving
    cbr   Flags,(1 << IF)
    out   SREG,SSREG
    reti
 
-;***********************************************************************************
-;***[ TSOP Check Start Command ]****************************************************
-;***********************************************************************************
+;*****************[ TSOP Check Start Command ]**************************************
 
 TSOP_CheckStartCommand:
+   ;Clear T flag
    clt
+   ;Check if IR command was received
    sbrs  Flags,CF
    ret
+   ;Load received command
    lds   Temp,rICmd
-   cpi   Temp,0
+   ;Check if command == Play
+   cpi   Temp,IR_CMD_PLAY
    brne  TCSC_End
+   ;Set T flag - means Device can Wake Up
    set
 TCSC_End:
    ret
 
-;***********************************************************************************
-;***[ TSOP Command Processing ]*****************************************************
-;***********************************************************************************
+;*****************[ TSOP Command Processing ]***************************************
 
 TSOP_Process:
    lds   I_Cmd,rICmd
 TCP_Play:
-   cpi   I_Cmd,0
+   cpi   I_Cmd,IR_CMD_PLAY
    brne  TCP_ChM
    rjmp  TCP_End
 TCP_ChM:
-   cpi   I_Cmd,1
+   cpi   I_Cmd,IR_CMD_CH_M
    brne  TCP_ChP
    rcall SLEDR_Off
    rjmp  TCP_End
 TCP_ChP:
-   cpi   I_Cmd,2
+   cpi   I_Cmd,IR_CMD_CH_P
    brne  TCP_EQ
    rcall SLEDR_On
    rjmp  TCP_End
 TCP_EQ:
-   cpi   I_Cmd,4
+   cpi   I_Cmd,IR_CMD_EQ
    brne  TCP_M
    sbr   Flags,(1 << SF)
    rjmp  TCP_End
 TCP_M:
-   cpi   I_Cmd,5
+   cpi   I_Cmd,IR_CMD_M
    brne  TCP_P
    lds   Temp,rBrightness
    subi  Temp,1
@@ -272,7 +308,7 @@ TCP_M:
    rcall GLED2_SetBright
    rjmp  TCP_End
 TCP_P:
-   cpi   I_Cmd,6
+   cpi   I_Cmd,IR_CMD_P
    brne  TCP_0
    lds   Temp,rBrightness
    subi  Temp,-1
@@ -281,7 +317,7 @@ TCP_P:
    rcall GLED2_SetBright
    rjmp  TCP_End
 TCP_0:
-   cpi   I_Cmd,8
+   cpi   I_Cmd,IR_CMD_0
    brne  TCP_1
    ldi   Temp,0
    sts   rBrightness,Temp
@@ -289,7 +325,7 @@ TCP_0:
    rcall GLED2_SetBright
    rjmp  TCP_End
 TCP_1:
-   cpi   I_Cmd,12
+   cpi   I_Cmd,IR_CMD_1
    brne  TCP_2
 ;   rcall LEDLIGHT_Next
    ;clr   I_Cmd
@@ -297,7 +333,7 @@ TCP_1:
    ;sts   rInCmd,I_Cmd
    rjmp  TCP_NoRepeat ;TCP_End
 TCP_2:
-   cpi   I_Cmd,13
+   cpi   I_Cmd,IR_CMD_2
    brne  TCP_Prev
 ;   rcall LEDLIGHT_Next
 ;   rcall LEDLIGHT_Next
@@ -307,19 +343,19 @@ TCP_2:
    ;sts   rInCmd,I_Cmd
    rjmp  TCP_NoRepeat ;TCP_End
 TCP_Prev:
-   cpi   I_Cmd,9
+   cpi   I_Cmd,IR_CMD_PREV
    brne  TCP_Next
    rcall SLEDG_Off
    cbr   Flags,(1 << BF)
    rjmp  TCP_End
 TCP_Next:
-   cpi   I_Cmd,10
+   cpi   I_Cmd,IR_CMD_NEXT
    brne  TCP_PickSong
    sbr   Flags,(1 << BF)
    rcall SLEDG_On
    rjmp  TCP_End
 TCP_PickSong:
-   cpi   I_Cmd,24
+   cpi   I_Cmd,IR_CMD_PICK_SONG
    brne  TCP_ChSet
    ;clr   I_Cmd
    ;sts   rICmd,I_Cmd
@@ -327,9 +363,9 @@ TCP_PickSong:
 ;   rcall LEDLIGHT_Toggle
    rjmp  TCP_NoRepeat ;TCP_End
 TCP_ChSet:
-   cpi   I_Cmd,26
+   cpi   I_Cmd,IR_CMD_CH_SET
    brne  TCP_End
-   rcall ADC_GetBatteryState
+   rcall SLEDs_CheckBattery
    rcall SLEDs_SetState
 ;  rjmp  TCP_End
 TCP_NoRepeat:
@@ -340,3 +376,4 @@ TCP_End:
    cbr   Flags,(1 << CF)
    ret
 
+;***********************************************************************************

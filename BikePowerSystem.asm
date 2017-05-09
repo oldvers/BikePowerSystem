@@ -20,7 +20,7 @@ Reset:
    out   SPL,Temp
    ldi   Temp,Byte2(RAMEND)
    out   SPH,Temp
-
+   
    ;Disable Power to TWI
    ldi   Temp,(1 << PRTWI)
    sts   PRR,Temp
@@ -62,7 +62,7 @@ MC_Start:
 
    clr   Timer
    rcall SysTickGears_Init
-   ldi   Temp,STATE_POWER_ON
+   ldi   Temp,SLEDS_STATE_POWER_ON
    rcall SLEDs_SetState
 
    rcall LEDLIGHT_Init
@@ -76,16 +76,16 @@ MC_Start:
    sei
 
    ;Delay 200 ms
-   ldi   Temp,8
-   rcall Delay
+   ldi   Value,8
+   rcall Delay25msX
 
    ser   Temp
    sts   rICmd,Temp
    cbr   Flags,(1 << CF)
 
    ;Delay 1 s
-   ldi   Temp,35
-   rcall Delay
+   ldi   Value,40
+   rcall Delay25msX
 
    rcall TSOP_CheckStartCommand
    brts  MS_End
@@ -112,9 +112,9 @@ MC_Stop:
 
    rcall TSOP_DeInit
 
-   ;Delay 300 ms
-   ldi   Temp,13
-   rcall Delay
+   ;Delay 325 ms
+   ldi   Value,13
+   rcall Delay25msX
 
    ;Enable External Interrupt 0 (IR in) for Wake Up
    ldi   Temp,(0 << ISC00)
