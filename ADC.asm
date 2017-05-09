@@ -2,9 +2,9 @@
 ;***[ ADC ]*************************************************************************
 ;***********************************************************************************
 
-;Fclk = 8 000 000 Hz
+;Fclk    = 8 000 000 Hz
 ;Fclkadc = 8 000 000 / 128 = 62 500 Hz (16 us)
-;Fadc = 62 500 / 13 = 4 807,69 Hz (208 us)
+;Fadc    = 62 500 / 13 = 4 807,69 Hz (208 us)
 
 ;R1 = 510000
 ;R2 = 100000
@@ -39,16 +39,18 @@ ADC_Init:
    sts   (rBattery + 0),Temp
    sts   (rBattery + 1),Temp
 
-
+   ;Disable Digital Input Buffers on analog pins
    ldi   Temp,(1<<ADC5D)|(1<<ADC4D)|(1<<ADC3D)|(1<<ADC2D)|(1<<ADC1D)|(1<<ADC0D)
    sts   DIDR0,Temp
+   ;Internal 1.1V Reference, Result is right adjusted, Select ADC5 input
    ldi   Temp,(3 << REFS0) | (0 << ADLAR) | (5 << MUX0)
    sts   ADMUX,Temp
+   ;Enable ADC, Enable auto trigger, Enable interrupt, Prescaller = 128
    ldi   Temp,(1 << ADEN) | (1 << ADATE) | (1 << ADIE) | (7 << ADPS0)
    sts   ADCSRA,Temp
    clr   Temp
    sts   ADCSRB,Temp
-   
+   ;Start Conversion
    lds   Temp,ADCSRA
    sbr   Temp,(1<<ADSC)
    sts   ADCSRA,Temp

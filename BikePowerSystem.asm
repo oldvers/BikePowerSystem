@@ -4,9 +4,8 @@
 .INCLUDE "UART.asm"
 .INCLUDE "WDT.asm"
 .INCLUDE "StatusIndication.asm"
-.INCLUDE "GearIndication.asm"
 .INCLUDE "ADC.asm"
-.INCLUDE "SystemTick.asm"
+.INCLUDE "SysTickGears.asm"
 .INCLUDE "TSOP.asm"
 .INCLUDE "EEPROM.asm"
 .INCLUDE "LedLight.asm"
@@ -33,7 +32,7 @@ Reset:
 
    sbr   Flags,(1 << RF)
 
-WaitFor:
+MainLoop:
    sbrc  Flags,RF
    rcall MC_Start
    sbrc  Flags,UF
@@ -44,7 +43,7 @@ WaitFor:
    rcall SysTick_Process
    sbrc  Flags,SF
    rcall MC_Stop
-   rjmp  WaitFor
+   rjmp  MainLoop
 
 
 ;***********************************************************************************
@@ -57,18 +56,12 @@ MC_Start:
    rcall SLED_Init
    rcall PLED_On
 
-   rcall GLED_Init
-   ldi   Temp,15
-   sts   rBrightness,Temp
-   rcall GLED1_SetBright
-   rcall GLED2_SetBright
-
    rcall UART_Init
 
    rcall ADC_Init
 
    clr   Timer
-   rcall SysTick_Init
+   rcall SysTickGears_Init
    ldi   Temp,STATE_POWER_ON
    rcall SLEDs_SetState
 
@@ -109,13 +102,11 @@ MC_Stop:
 
    rcall SLED_DeInit
 
-   rcall GLED_DeInit
-
    rcall UART_DeInit
 
    rcall ADC_DeInit
 
-   rcall SysTick_DeInit
+   rcall SysTickGears_DeInit
 
    rcall LEDLIGHT_DeInit
 
