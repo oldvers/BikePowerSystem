@@ -75,17 +75,17 @@
 ;*****************[ Режимы работы LED Light]****************************************
 ;***********************************************************************************
 
-.EQU LL_STATE_OFF                   = 0
-.EQU LL_STATE_MAX                   = 1
-.EQU LL_STATE_MID                   = 2
-.EQU LL_STATE_MIN                   = 3
-.EQU LL_STATE_FLS                   = 4
+;EQU LL_STATE_OFF                   = 0
+;EQU LL_STATE_MAX                   = 1
+;EQU LL_STATE_MID                   = 2
+;EQU LL_STATE_MIN                   = 3
+;EQU LL_STATE_FLS                   = 4
 
-.EQU LL_IR_CMD_TOGGLE               = 1
-.EQU LL_IR_CMD_NEXT                 = 2
-.EQU LL_IR_CMD_MIN                  = 3
-.EQU LL_IR_CMD_MID                  = 4
-.EQU LL_IR_CMD_MAX                  = 5
+;EQU LL_IR_CMD_TOGGLE               = 1
+;EQU LL_IR_CMD_NEXT                 = 2
+;EQU LL_IR_CMD_MIN                  = 3
+;EQU LL_IR_CMD_MID                  = 4
+;EQU LL_IR_CMD_MAX                  = 5
 
 ;***********************************************************************************
 ;*****************[ Hardware ports and pins ]***************************************
@@ -120,6 +120,7 @@
 .EQU IRDDR     = DDRB
 .EQU IRPORT    = PORTB
 .EQU IR        = PB0
+.EQU ICMD      = GPIOR0
 ;-----------------------------------------------------------------------------------
 ;*** LED Light          - Pin 10         - PD6           - xxx ***
 .EQU LEDLDDR   = DDRD
@@ -132,6 +133,8 @@
 .EQU UARTPORT  = PORTD
 .EQU URX       = PD0
 .EQU UTX       = PD1
+;EQU UCMD      = GPIOR1
+;-----------------------------------------------------------------------------------
 
 ;***********************************************************************************
 ;*****************[ RAM variables ]*************************************************
@@ -165,8 +168,11 @@
   rSStateTimer:  .BYTE  1
   rSStateLEDs:   .BYTE  1
   ; --- LED Light ---
-  rLLightMode:   .BYTE  1
-  rLLightTimer:  .BYTE  1
+  rLFlags:       .BYTE  1
+  rLBTimer:      .BYTE  1
+  rLCTimer:      .BYTE  1
+  rLCState:      .BYTE  1
+  rLNState:      .BYTE  1
 .CSEG
 
 ;***********************************************************************************
@@ -250,17 +256,17 @@
 
 ;*****************[ LED Light ]*****************************************************
 
-.DEF L_Flags  = r6  ;  6 7 8 9 10 11 12
-.EQU  LFF     = 0   ;Button Fall Flag
-.EQU  LRF     = 1   ;Button Rise Flag
-.EQU  LNF     = 2   ;Need to switch to next state Flag
-.DEF L_BTimer = r7  ;Button Timer
-.DEF L_CTimer = r8  ;Command Timer
-.DEF L_CState = r9  ;Current State
-.DEF L_NState = r10 ;New State if needed
+;DEF L_Flags  = r6  ;  6 7 8 9 10 11 12
+;EQU  LFF     = 0   ;Button Fall Flag
+;EQU  LRF     = 1   ;Button Rise Flag
+;EQU  LNF     = 2   ;Need to switch to next state Flag
+;DEF L_BTimer = r7  ;Button Timer
+;DEF L_CTimer = r8  ;Command Timer
+;DEF L_CState = r9  ;Current State
+;DEF L_NState = r10 ;New State if needed
 ;DEF Temp     = r16
-.DEF L_ICmd   = r16
-.DEF L_Temp   = r20
+;DEF L_ICmd   = r16
+;DEF L_Temp   = r20
 
 
 ;*****************[ System Tick ]***************************************************

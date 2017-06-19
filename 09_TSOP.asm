@@ -240,6 +240,8 @@ T1C_CheckCmd:
    ;Indicate IR receiving complete
    cbr   Flags,(1 << IF)
    sbr   Flags,(1 << CF)
+   ;Store command to special register
+   out   ICMD,Temp
 ; --- Error ---
 T1C_End:
    pop   I_DutyH
@@ -266,9 +268,10 @@ TSOP_CheckStartCommand:
    sbrs  Flags,CF
    ret
    ;Load received command
-   lds   Temp,rICmd
+   ;lds   Temp,rICmd
+   in    I_Cmd,ICMD
    ;Check if command == Play
-   cpi   Temp,IR_CMD_PLAY
+   cpi   I_Cmd,IR_CMD_PLAY
    brne  TCSC_End
    ;Set T flag - means Device can Wake Up
    set
@@ -278,7 +281,8 @@ TCSC_End:
 ;*****************[ TSOP Command Processing ]***************************************
 
 TSOP_Process:
-   lds   I_Cmd,rICmd
+   ;lds   I_Cmd,rICmd
+   in    I_Cmd,ICMD
 TCP_Play:
    cpi   I_Cmd,IR_CMD_PLAY
    brne  TCP_ChM
@@ -301,6 +305,7 @@ TCP_EQ:
 TCP_M:
    cpi   I_Cmd,IR_CMD_M
    brne  TCP_P
+   rcall SLEDB_Off
    lds   Temp,rBrightness
    subi  Temp,1
    sts   rBrightness,Temp
@@ -310,6 +315,7 @@ TCP_M:
 TCP_P:
    cpi   I_Cmd,IR_CMD_P
    brne  TCP_0
+   rcall SLEDB_On
    lds   Temp,rBrightness
    subi  Temp,-1
    sts   rBrightness,Temp

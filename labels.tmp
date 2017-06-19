@@ -30,64 +30,67 @@
   <FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <rUMode><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>142</LINE></rUMode>
-  <rUSize><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>143</LINE></rUSize>
-  <rUBuffer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>144</LINE></rUBuffer>
-  <rUCnt><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>145</LINE></rUCnt>
-  <rUPtr><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>146</LINE></rUPtr>
-  <rUCS><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>147</LINE></rUCS>
-  <rIIndex><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>149</LINE></rIIndex>
-  <rIAddr><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>150</LINE></rIAddr>
-  <rInAddr><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>151</LINE></rInAddr>
-  <rICmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>152</LINE></rICmd>
-  <rInCmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>153</LINE></rInCmd>
-  <rLuminosity><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>155</LINE></rLuminosity>
-  <rBattery><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>156</LINE></rBattery>
-  <rBrightness><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>158</LINE></rBrightness>
-  <rSysTickCnt><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>160</LINE></rSysTickCnt>
-  <rSState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>162</LINE></rSState>
-  <rSStatePhase><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>163</LINE></rSStatePhase>
-  <rSStatePhases><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>164</LINE></rSStatePhases>
-  <rSStateTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>165</LINE></rSStateTimer>
-  <rSStateLEDs><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>166</LINE></rSStateLEDs>
-  <rLLightMode><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>168</LINE></rLLightMode>
-  <rLLightTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>169</LINE></rLLightTimer>
+  <rUMode><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>145</LINE></rUMode>
+  <rUSize><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>146</LINE></rUSize>
+  <rUBuffer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>147</LINE></rUBuffer>
+  <rUCnt><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>148</LINE></rUCnt>
+  <rUPtr><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>149</LINE></rUPtr>
+  <rUCS><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>150</LINE></rUCS>
+  <rIIndex><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>152</LINE></rIIndex>
+  <rIAddr><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>153</LINE></rIAddr>
+  <rInAddr><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>154</LINE></rInAddr>
+  <rICmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>155</LINE></rICmd>
+  <rInCmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>156</LINE></rInCmd>
+  <rLuminosity><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>158</LINE></rLuminosity>
+  <rBattery><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>159</LINE></rBattery>
+  <rBrightness><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>161</LINE></rBrightness>
+  <rSysTickCnt><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>163</LINE></rSysTickCnt>
+  <rSState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>165</LINE></rSState>
+  <rSStatePhase><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>166</LINE></rSStatePhase>
+  <rSStatePhases><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>167</LINE></rSStatePhases>
+  <rSStateTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>168</LINE></rSStateTimer>
+  <rSStateLEDs><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>169</LINE></rSStateLEDs>
+  <rLFlags><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>171</LINE></rLFlags>
+  <rLBTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>172</LINE></rLBTimer>
+  <rLCTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>173</LINE></rLCTimer>
+  <rLCState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>174</LINE></rLCState>
+  <rLNState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\01_Definitions.asm</FILE><LINE>175</LINE></rLNState>
   <Reset><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>18</LINE></Reset>
-  <LEDLIGHT_Btn><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>65</LINE></LEDLIGHT_Btn>
+  <LEDLIGHT_Btn><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>61</LINE></LEDLIGHT_Btn>
   <TSOP_Capture><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>87</LINE></TSOP_Capture>
-  <TSOP_Ovf><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>253</LINE></TSOP_Ovf>
-  <SysTick_Ovf><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>81</LINE></SysTick_Ovf>
-  <UART_RxC><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>126</LINE></UART_RxC>
+  <TSOP_Ovf><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>255</LINE></TSOP_Ovf>
+  <SysTick_Ovf><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>77</LINE></SysTick_Ovf>
+  <UART_RxC><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>130</LINE></UART_RxC>
   <ADC_Complete><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\07_ADC.asm</FILE><LINE>81</LINE></ADC_Complete>
   <Delay25msX><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\03_Delay.asm</FILE><LINE>8</LINE></Delay25msX>
   <D_Loop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\03_Delay.asm</FILE><LINE>11</LINE></D_Loop>
-  <UART_Init><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>58</LINE></UART_Init>
-  <UART_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>90</LINE></UART_DeInit>
-  <UART_Tx><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>103</LINE></UART_Tx>
-  <UT_Wait><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>108</LINE></UT_Wait>
-  <UART_Rx><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>116</LINE></UART_Rx>
-  <UR_Wait><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>117</LINE></UR_Wait>
-  <URC_Start><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>132</LINE></URC_Start>
-  <URC_SizeL><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>140</LINE></URC_SizeL>
-  <URC_Error><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>225</LINE></URC_Error>
-  <URC_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>230</LINE></URC_End>
-  <URC_SizeH><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>147</LINE></URC_SizeH>
-  <URC_Data><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>170</LINE></URC_Data>
-  <URC_Stop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>203</LINE></URC_Stop>
-  <URC_CSL><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>210</LINE></URC_CSL>
-  <URC_CSH><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>218</LINE></URC_CSH>
-  <UART_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>239</LINE></UART_Process>
-  <UCP_Connect><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>253</LINE></UCP_Connect>
-  <UCP_Error><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>313</LINE></UCP_Error>
-  <UCP_Enter_Boot><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>294</LINE></UCP_Enter_Boot>
-  <UCPC_Loop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>284</LINE></UCPC_Loop>
-  <UCP_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>472</LINE></UCP_End>
-  <UCP_Disconnect><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>308</LINE></UCP_Disconnect>
+  <UART_Init><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>59</LINE></UART_Init>
+  <UART_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>94</LINE></UART_DeInit>
+  <UART_Tx><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>107</LINE></UART_Tx>
+  <UT_Wait><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>112</LINE></UT_Wait>
+  <UART_Rx><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>120</LINE></UART_Rx>
+  <UR_Wait><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>121</LINE></UR_Wait>
+  <URC_Start><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>136</LINE></URC_Start>
+  <URC_SizeL><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>144</LINE></URC_SizeL>
+  <URC_Error><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>229</LINE></URC_Error>
+  <URC_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>234</LINE></URC_End>
+  <URC_SizeH><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>151</LINE></URC_SizeH>
+  <URC_Data><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>174</LINE></URC_Data>
+  <URC_Stop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>207</LINE></URC_Stop>
+  <URC_CSL><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>214</LINE></URC_CSL>
+  <URC_CSH><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>222</LINE></URC_CSH>
+  <UART_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>243</LINE></UART_Process>
+  <UCP_Connect><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>257</LINE></UCP_Connect>
+  <UCP_Error><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>317</LINE></UCP_Error>
+  <UCP_Enter_Boot><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>298</LINE></UCP_Enter_Boot>
+  <UCPC_Loop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>288</LINE></UCPC_Loop>
+  <UCP_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>476</LINE></UCP_End>
+  <UCP_Disconnect><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>312</LINE></UCP_Disconnect>
   <WDT_On><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\05_WDT.asm</FILE><LINE>3</LINE></WDT_On>
-  <UCPEB_WaitBoot><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>305</LINE></UCPEB_WaitBoot>
-  <UCP_SLED><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>322</LINE></UCP_SLED>
-  <UCP_Success><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>464</LINE></UCP_Success>
-  <UCP_GLED><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>348</LINE></UCP_GLED>
+  <UCPEB_WaitBoot><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>309</LINE></UCPEB_WaitBoot>
+  <UCP_SLED><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>326</LINE></UCP_SLED>
+  <UCP_Success><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>468</LINE></UCP_Success>
+  <UCP_GLED><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>352</LINE></UCP_GLED>
   <SLEDR_Off><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>128</LINE></SLEDR_Off>
   <SLEDR_On><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>122</LINE></SLEDR_On>
   <SLEDG_Off><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>150</LINE></SLEDG_Off>
@@ -96,15 +99,16 @@
   <SLEDB_On><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>156</LINE></SLEDB_On>
   <PLED_Off><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>184</LINE></PLED_Off>
   <PLED_On><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>178</LINE></PLED_On>
-  <UCP_State><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>358</LINE></UCP_State>
-  <GLED1_SetBright><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>107</LINE></GLED1_SetBright>
-  <GLED2_SetBright><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>111</LINE></GLED2_SetBright>
-  <UCP_Unknown><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>397</LINE></UCP_Unknown>
+  <UCP_State><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>362</LINE></UCP_State>
+  <GLED1_SetBright><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>101</LINE></GLED1_SetBright>
+  <GLED2_SetBright><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>105</LINE></GLED2_SetBright>
+  <UCP_Unknown><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>401</LINE></UCP_Unknown>
   <ADC_GetBatteryVoltage><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\07_ADC.asm</FILE><LINE>152</LINE></ADC_GetBatteryVoltage>
   <ADC_GetLuminosityVoltage><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\07_ADC.asm</FILE><LINE>159</LINE></ADC_GetLuminosityVoltage>
   <SLEDs_Capture><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>201</LINE></SLEDs_Capture>
-  <UART_Tx_Answer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>481</LINE></UART_Tx_Answer>
-  <UTA_Loop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>499</LINE></UTA_Loop>
+  <UART_Tx_Answer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>485</LINE></UART_Tx_Answer>
+  <UTA_Loop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>503</LINE></UTA_Loop>
+  <UART_Dbg><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\04_UART.asm</FILE><LINE>530</LINE></UART_Dbg>
   <WDT_Off><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\05_WDT.asm</FILE><LINE>23</LINE></WDT_Off>
   <ROM_StatePowerOn><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>41</LINE></ROM_StatePowerOn>
   <ROM_StateVBatGood><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\06_StatusIndication.asm</FILE><LINE>43</LINE></ROM_StateVBatGood>
@@ -143,8 +147,8 @@
   <AC_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\07_ADC.asm</FILE><LINE>107</LINE></AC_End>
   <ADC_CalcVoltage><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\07_ADC.asm</FILE><LINE>116</LINE></ADC_CalcVoltage>
   <SysTickGears_Init><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>8</LINE></SysTickGears_Init>
-  <SysTickGears_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>52</LINE></SysTickGears_DeInit>
-  <STO_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>95</LINE></STO_End>
+  <SysTickGears_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>50</LINE></SysTickGears_DeInit>
+  <STO_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\08_SysTickGears.asm</FILE><LINE>91</LINE></STO_End>
   <TSOP_Init><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>50</LINE></TSOP_Init>
   <TSOP_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>75</LINE></TSOP_DeInit>
   <T1C_Impuls><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>104</LINE></T1C_Impuls>
@@ -166,70 +170,70 @@
   <T1C_HL><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>206</LINE></T1C_HL>
   <T1C_LMax><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>163</LINE></T1C_LMax>
   <T1C_LMin><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>168</LINE></T1C_LMin>
-  <T1C_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>244</LINE></T1C_End>
+  <T1C_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>246</LINE></T1C_End>
   <T1C_CheckCmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>230</LINE></T1C_CheckCmd>
   <T1C_CheckIndex><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>222</LINE></T1C_CheckIndex>
-  <TSOP_CheckStartCommand><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>262</LINE></TSOP_CheckStartCommand>
-  <TCSC_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>275</LINE></TCSC_End>
-  <TSOP_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>280</LINE></TSOP_Process>
-  <TCP_Play><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>282</LINE></TCP_Play>
-  <TCP_ChM><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>286</LINE></TCP_ChM>
-  <TCP_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>375</LINE></TCP_End>
-  <TCP_ChP><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>291</LINE></TCP_ChP>
-  <TCP_EQ><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>296</LINE></TCP_EQ>
-  <TCP_M><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>301</LINE></TCP_M>
-  <TCP_P><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>310</LINE></TCP_P>
-  <TCP_0><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>319</LINE></TCP_0>
-  <TCP_1><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>327</LINE></TCP_1>
-  <TCP_2><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>335</LINE></TCP_2>
-  <TCP_NoRepeat><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>371</LINE></TCP_NoRepeat>
-  <TCP_Prev><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>345</LINE></TCP_Prev>
-  <TCP_Next><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>351</LINE></TCP_Next>
-  <TCP_PickSong><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>357</LINE></TCP_PickSong>
-  <TCP_ChSet><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>365</LINE></TCP_ChSet>
+  <TSOP_CheckStartCommand><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>264</LINE></TSOP_CheckStartCommand>
+  <TCSC_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>278</LINE></TCSC_End>
+  <TSOP_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>283</LINE></TSOP_Process>
+  <TCP_Play><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>286</LINE></TCP_Play>
+  <TCP_ChM><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>290</LINE></TCP_ChM>
+  <TCP_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>381</LINE></TCP_End>
+  <TCP_ChP><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>295</LINE></TCP_ChP>
+  <TCP_EQ><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>300</LINE></TCP_EQ>
+  <TCP_M><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>305</LINE></TCP_M>
+  <TCP_P><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>315</LINE></TCP_P>
+  <TCP_0><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>325</LINE></TCP_0>
+  <TCP_1><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>333</LINE></TCP_1>
+  <TCP_2><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>341</LINE></TCP_2>
+  <TCP_NoRepeat><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>377</LINE></TCP_NoRepeat>
+  <TCP_Prev><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>351</LINE></TCP_Prev>
+  <TCP_Next><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>357</LINE></TCP_Next>
+  <TCP_PickSong><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>363</LINE></TCP_PickSong>
+  <TCP_ChSet><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\09_TSOP.asm</FILE><LINE>371</LINE></TCP_ChSet>
   <EEPROM_Write><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\10_EEPROM.asm</FILE><LINE>1</LINE></EEPROM_Write>
   <EEPROM_Read><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\10_EEPROM.asm</FILE><LINE>17</LINE></EEPROM_Read>
-  <LEDLIGHT_Hold><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>3</LINE></LEDLIGHT_Hold>
-  <LEDLIGHT_Release><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>12</LINE></LEDLIGHT_Release>
-  <LEDLIGHT_Init><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>21</LINE></LEDLIGHT_Init>
-  <LEDLIGHT_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>46</LINE></LEDLIGHT_DeInit>
-  <LDI_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>58</LINE></LDI_End>
-  <LLB_Released><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>81</LINE></LLB_Released>
-  <LLB_Held><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>76</LINE></LLB_Held>
-  <LLB_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>85</LINE></LLB_End>
-  <LEDLIGHT_CheckButtonHeld><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>92</LINE></LEDLIGHT_CheckButtonHeld>
-  <LLCBH_Held><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>95</LINE></LLCBH_Held>
-  <LEDLIGHT_IR_Cmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>101</LINE></LEDLIGHT_IR_Cmd>
-  <LLIC_TimeoutShort><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>116</LINE></LLIC_TimeoutShort>
-  <LLIC_TimeoutLong><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>113</LINE></LLIC_TimeoutLong>
-  <LLIC_TimeoutEnd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>118</LINE></LLIC_TimeoutEnd>
-  <LLIC_IRToggle><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>128</LINE></LLIC_IRToggle>
-  <LLIC_IRNext><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>136</LINE></LLIC_IRNext>
-  <LLIC_IREnd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>184</LINE></LLIC_IREnd>
-  <LLIC_IRMin><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>145</LINE></LLIC_IRMin>
-  <LLIC_IRMid><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>157</LINE></LLIC_IRMid>
-  <LLIC_IRMax><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>169</LINE></LLIC_IRMax>
-  <LLIC_IRError><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>182</LINE></LLIC_IRError>
-  <LEDLIGHT_Toggle><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>217</LINE></LEDLIGHT_Toggle>
-  <LLT_GoToOff><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>223</LINE></LLT_GoToOff>
-  <LLT_GoToMax><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>221</LINE></LLT_GoToMax>
-  <LEDLIGHT_Next><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>237</LINE></LEDLIGHT_Next>
-  <LLN_Begin><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>242</LINE></LLN_Begin>
-  <LLN_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>249</LINE></LLN_End>
-  <LEDLIGHT_CheckState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>263</LINE></LEDLIGHT_CheckState>
-  <LLCS_NoSwitch><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>273</LINE></LLCS_NoSwitch>
-  <LEDLIGHT_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>280</LINE></LEDLIGHT_Process>
-  <LLP_CheckBtnFall><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>293</LINE></LLP_CheckBtnFall>
-  <LLP_CheckBtnRise><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>320</LINE></LLP_CheckBtnRise>
-  <LLP_CheckCmdTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>345</LINE></LLP_CheckCmdTimer>
-  <LLP_CBR_Toggle><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>333</LINE></LLP_CBR_Toggle>
-  <LLP_CBR_Next><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>330</LINE></LLP_CBR_Next>
-  <LLP_CBR_CheckState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>335</LINE></LLP_CBR_CheckState>
-  <LLP_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>358</LINE></LLP_End>
+  <LEDLIGHT_Hold><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>43</LINE></LEDLIGHT_Hold>
+  <LEDLIGHT_Release><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>52</LINE></LEDLIGHT_Release>
+  <LLB_Released><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>82</LINE></LLB_Released>
+  <LLB_Held><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>75</LINE></LLB_Held>
+  <LLB_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>88</LINE></LLB_End>
+  <LEDLIGHT_Toggle><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>111</LINE></LEDLIGHT_Toggle>
+  <LLT_GoToOff><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>121</LINE></LLT_GoToOff>
+  <LLT_GoToMax><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>117</LINE></LLT_GoToMax>
+  <LEDLIGHT_Next><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>137</LINE></LEDLIGHT_Next>
+  <LLN_Begin><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>146</LINE></LLN_Begin>
+  <LLN_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>156</LINE></LLN_End>
+  <LEDLIGHT_CheckState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>171</LINE></LEDLIGHT_CheckState>
+  <LLCS_NoSwitch><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>192</LINE></LLCS_NoSwitch>
+  <LEDLIGHT_Init><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>215</LINE></LEDLIGHT_Init>
+  <LEDLIGHT_DeInit><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>241</LINE></LEDLIGHT_DeInit>
+  <LDI_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>253</LINE></LDI_End>
+  <LEDLIGHT_CheckButtonHeld><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>260</LINE></LEDLIGHT_CheckButtonHeld>
+  <LLCBH_Held><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>264</LINE></LLCBH_Held>
+  <LEDLIGHT_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>274</LINE></LEDLIGHT_Process>
+  <LLP_CheckBtnFall><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>294</LINE></LLP_CheckBtnFall>
+  <LLP_CheckBtnRise><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>329</LINE></LLP_CheckBtnRise>
+  <LLP_CheckIrCmdTimer><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>362</LINE></LLP_CheckIrCmdTimer>
+  <LLP_CBR_Toggle><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>349</LINE></LLP_CBR_Toggle>
+  <LLP_CBR_Next><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>345</LINE></LLP_CBR_Next>
+  <LLP_CBR_CheckState><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>351</LINE></LLP_CBR_CheckState>
+  <LLP_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>381</LINE></LLP_End>
+  <LEDLIGHT_IR_Cmd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>395</LINE></LEDLIGHT_IR_Cmd>
+  <LLIC_TimeoutShort><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>412</LINE></LLIC_TimeoutShort>
+  <LLIC_TimeoutLong><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>408</LINE></LLIC_TimeoutLong>
+  <LLIC_TimeoutEnd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>415</LINE></LLIC_TimeoutEnd>
+  <LLIC_IRToggle><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>426</LINE></LLIC_IRToggle>
+  <LLIC_IRNext><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>435</LINE></LLIC_IRNext>
+  <LLIC_IREnd><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>489</LINE></LLIC_IREnd>
+  <LLIC_IRMin><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>444</LINE></LLIC_IRMin>
+  <LLIC_IRMid><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>458</LINE></LLIC_IRMid>
+  <LLIC_IRMax><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>472</LINE></LLIC_IRMax>
+  <LLIC_IRError><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>487</LINE></LLIC_IRError>
   <MainLoop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>35</LINE></MainLoop>
   <MC_Start><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>53</LINE></MC_Start>
-  <SysTick_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>160</LINE></SysTick_Process>
-  <MC_Stop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>100</LINE></MC_Stop>
-  <MS_End><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>93</LINE></MS_End>
+  <SysTick_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>191</LINE></SysTick_Process>
+  <MC_Stop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>131</LINE></MC_Stop>
+  <MC_Start_Continue><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>110</LINE></MC_Start_Continue>
  </LABELS>
 </ASSEMBLER_INFO>

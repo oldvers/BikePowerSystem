@@ -51,36 +51,46 @@ MainLoop:
 ;***********************************************************************************
 
 MC_Start:
-   cli
+   cbr   Flags,(1 << RF)
+;   cli
 
+   ;Init LEDs
    rcall SLED_Init
    rcall PLED_On
-
+   
+   ;Init System Tick and Gear LEDs
+   rcall SysTickGears_Init
+   
+   ;Init UART
    rcall UART_Init
 
-   rcall ADC_Init
-
-   clr   Timer
-   rcall SysTickGears_Init
-   ldi   Temp,SLEDS_STATE_POWER_ON
-   rcall SLEDs_SetState
-
+   ;--- Check if WakeUp was on LedLight Button ---
    rcall LEDLIGHT_Init
 
-   rcall TSOP_Init
+   sei
+
+   ;Delay 50 ms
+   ldi   Value,2
+   rcall Delay25msX
 
    rcall LEDLIGHT_CheckButtonHeld
+   
+   ;Prepare state for indication
+   ldi   Value,SLEDS_STATE_LEDLIGHT_ON
+   brts  MC_Start_Continue
 
-   cbr   Flags,(1 << RF)
+   ;--- Check if WakeUp was on IR Command ---
+   rcall TSOP_Init
 
-   sei
+;   sei
 
    ;Delay 200 ms
    ldi   Value,8
    rcall Delay25msX
 
    ser   Temp
-   sts   rICmd,Temp
+   ;sts   rICmd,Temp
+   out   ICMD,Temp
    cbr   Flags,(1 << CF)
 
    ;Delay 1 s
@@ -88,10 +98,31 @@ MC_Start:
    rcall Delay25msX
 
    rcall TSOP_CheckStartCommand
-   brts  MS_End
+   
+   ;Prepare state for indication
+   ldi   Value,SLEDS_STATE_POWER_ON
+   brts  MC_Start_Continue
+
+   ;--- Go Back to Sleep ---
    sbr   Flags,(1 << SF)
-MS_End:
    ret
+
+MC_Start_Continue:
+   sts   UDR0,Value
+   rcall SLEDs_SetState
+
+   ;Init ADC
+   rcall ADC_Init
+
+   ;Init System Tick and Gear LEDs
+   ;clr   Timer
+   ;rcall SysTickGears_Init
+   
+   ;ldi   Temp,SLEDS_STATE_POWER_ON
+   ;rcall SLEDs_SetState
+
+   ret
+
 
 ;***********************************************************************************
 ;***[ MicroController Stop ]********************************************************

@@ -39,6 +39,7 @@
 .DEF U_Data  = r21
 .DEF U_Addr  = r22
 .DEF U_Cmd   = r23
+.DEF U_Dbg   = r23
 .DEF U_Param = r24
 .DEF U_Cnt   = r26
 .DEF U_CntL  = r26
@@ -56,6 +57,8 @@
 ;*****************[ UART Init]******************************************************
 
 UART_Init:
+   ;Init TX pin
+   sbi   UARTDDR,UTX
    ;Init RAM variables
    clr   Temp
    sts   (rUCnt + 0),Temp
@@ -67,8 +70,6 @@ UART_Init:
    ;Initial state
    ldi   Mode,EAST2_WAIT_START
    sts   rUMode,Mode
-   ;Init TX pin
-   sbi   UARTDDR,UTX
    ;Init BaudRate
    ldi   Temp,Byte2(UBRR)
    sts   UBRR0H,Temp
@@ -83,6 +84,9 @@ UART_Init:
    ;Async mode, no parity, 8 bit, 1 stop
    ldi   Temp,(0<<UMSEL00)|(0<<UPM00)|(0<<USBS0)|(3<<UCSZ00)|(0<<UCPOL0)
    sts   UCSR0C,Temp
+   ;Send dummy byte
+   clr   Temp
+   sts   UDR0,Temp
    ret
 
 ;*****************[ UART DeInit ]***************************************************
@@ -519,6 +523,41 @@ UTA_Loop:
    ;Send control sum higher byte
    mov   U_Data,U_CSH
    rcall UART_Tx
+   ret
+
+;***********************************************************************************
+
+UART_Dbg:
+   push  U_Data
+   push  Temp
+   ;Start
+   ldi   U_Data,EAST2_START
+   rcall UART_Tx
+   ;Length
+   ldi   U_Data,3
+   rcall UART_Tx
+   ldi   U_Data,0
+   rcall UART_Tx
+   ;Address
+   ldi   U_Data,EAST2_DEVICE_ADDRESS
+   rcall UART_Tx
+   ;Command
+   ldi   U_Data,$13
+   rcall UART_Tx
+   ;Data
+   mov   U_Data,U_Dbg
+   rcall UART_Tx
+   ;Stop
+   ldi   U_Data,EAST2_STOP
+   rcall UART_Tx
+   ;CS
+   mov   U_Data,U_Dbg
+   subi  U_Data,-$15
+   rcall UART_Tx
+   ldi   U_Data,0
+   rcall UART_Tx
+   pop   Temp
+   pop   U_Data
    ret
 
 ;***********************************************************************************
