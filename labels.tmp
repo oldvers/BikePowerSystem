@@ -232,8 +232,8 @@
   <LLIC_IRError><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\11_LedLight.asm</FILE><LINE>487</LINE></LLIC_IRError>
   <MainLoop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>35</LINE></MainLoop>
   <MC_Start><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>53</LINE></MC_Start>
-  <SysTick_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>191</LINE></SysTick_Process>
-  <MC_Stop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>131</LINE></MC_Stop>
-  <MC_Start_Continue><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>110</LINE></MC_Start_Continue>
+  <SysTick_Process><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>192</LINE></SysTick_Process>
+  <MC_Stop><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>134</LINE></MC_Stop>
+  <MC_Start_Continue><FILE>N:\Programs\InWork\04_FullWare\26_BikePowerSystem\BikePowerSystemFW\BikePowerSystem.asm</FILE><LINE>113</LINE></MC_Start_Continue>
  </LABELS>
 </ASSEMBLER_INFO>

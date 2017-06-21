@@ -104,7 +104,10 @@ MC_Start:
    brts  MC_Start_Continue
 
    ;--- Go Back to Sleep ---
-   sbr   Flags,(1 << SF)
+   ;Disable Interrupts
+   cli
+   ;Clear all flags except Stop Flag
+   ldi   Flags,(1 << SF)
    ret
 
 MC_Start_Continue:
@@ -129,8 +132,6 @@ MC_Start_Continue:
 ;***********************************************************************************
 
 MC_Stop:
-   cli
-
    rcall SLED_DeInit
 
    rcall UART_DeInit
