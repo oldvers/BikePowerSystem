@@ -1,0 +1,3962 @@
+,,erSystemFW\BikePowerSystem.asm(2),erSystemFW\BikePowerSystem.asm(2): Including file '..\BikePowerSystemFW\01_Definitions.asm'
+,,erSystemFW\01_Definitions.asm(185),erSystemFW\01_Definitions.asm(185): warning: Register r16 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(2),erSystemFW\BikePowerSystem.asm(2): '..\BikePowerSystemFW\01_Definitions.asm' included form here
+,,erSystemFW\BikePowerSystem.asm(3),erSystemFW\BikePowerSystem.asm(3): Including file '..\BikePowerSystemFW\02_Interrupts.asm'
+,,erSystemFW\BikePowerSystem.asm(4),erSystemFW\BikePowerSystem.asm(4): Including file '..\BikePowerSystemFW\03_Delay.asm'
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): Including file '..\BikePowerSystemFW\04_UART.asm'
+,,erSystemFW\04_UART.asm(37),erSystemFW\04_UART.asm(37): warning: Register r16 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(39),erSystemFW\04_UART.asm(39): warning: Register r21 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(40),erSystemFW\04_UART.asm(40): warning: Register r22 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(42),erSystemFW\04_UART.asm(42): warning: Register r23 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(43),erSystemFW\04_UART.asm(43): warning: Register r24 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(44),erSystemFW\04_UART.asm(44): warning: Register r26 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(45),erSystemFW\04_UART.asm(45): warning: Register r26 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(46),erSystemFW\04_UART.asm(46): warning: Register r27 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(47),erSystemFW\04_UART.asm(47): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(48),erSystemFW\04_UART.asm(48): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(49),erSystemFW\04_UART.asm(49): warning: Register r29 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(50),erSystemFW\04_UART.asm(50): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(51),erSystemFW\04_UART.asm(51): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(52),erSystemFW\04_UART.asm(52): warning: Register r29 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(53),erSystemFW\04_UART.asm(53): warning: Register r30 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(54),erSystemFW\04_UART.asm(54): warning: Register r30 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\04_UART.asm(55),erSystemFW\04_UART.asm(55): warning: Register r31 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(5),erSystemFW\BikePowerSystem.asm(5): '..\BikePowerSystemFW\04_UART.asm' included form here
+,,erSystemFW\BikePowerSystem.asm(6),erSystemFW\BikePowerSystem.asm(6): Including file '..\BikePowerSystemFW\05_WDT.asm'
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): Including file '..\BikePowerSystemFW\06_StatusIndication.asm'
+,,erSystemFW\06_StatusIndication.asm(62),erSystemFW\06_StatusIndication.asm(62): warning: Register r21 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(63),erSystemFW\06_StatusIndication.asm(63): warning: Register r22 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(64),erSystemFW\06_StatusIndication.asm(64): warning: Register r23 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(65),erSystemFW\06_StatusIndication.asm(65): warning: Register r24 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(66),erSystemFW\06_StatusIndication.asm(66): warning: Register r25 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(67),erSystemFW\06_StatusIndication.asm(67): warning: Register r26 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(69),erSystemFW\06_StatusIndication.asm(69): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(70),erSystemFW\06_StatusIndication.asm(70): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(72),erSystemFW\06_StatusIndication.asm(72): warning: Register r29 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(73),erSystemFW\06_StatusIndication.asm(73): warning: Register r29 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(74),erSystemFW\06_StatusIndication.asm(74): warning: Register r30 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\06_StatusIndication.asm(75),erSystemFW\06_StatusIndication.asm(75): warning: Register r31 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(7),erSystemFW\BikePowerSystem.asm(7): '..\BikePowerSystemFW\06_StatusIndication.asm' included form here
+,,erSystemFW\BikePowerSystem.asm(8),erSystemFW\BikePowerSystem.asm(8): Including file '..\BikePowerSystemFW\07_ADC.asm'
+,,erSystemFW\07_ADC.asm(40),erSystemFW\07_ADC.asm(40): warning: Register r21 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(8),erSystemFW\BikePowerSystem.asm(8): '..\BikePowerSystemFW\07_ADC.asm' included form here
+,,erSystemFW\07_ADC.asm(42),erSystemFW\07_ADC.asm(42): warning: Register r24 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(8),erSystemFW\BikePowerSystem.asm(8): '..\BikePowerSystemFW\07_ADC.asm' included form here
+,,erSystemFW\07_ADC.asm(44),erSystemFW\07_ADC.asm(44): warning: Register r25 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(8),erSystemFW\BikePowerSystem.asm(8): '..\BikePowerSystemFW\07_ADC.asm' included form here
+,,erSystemFW\BikePowerSystem.asm(9),erSystemFW\BikePowerSystem.asm(9): Including file '..\BikePowerSystemFW\08_SysTickGears.asm'
+,,erSystemFW\BikePowerSystem.asm(10),erSystemFW\BikePowerSystem.asm(10): Including file '..\BikePowerSystemFW\09_TSOP.asm'
+,,erSystemFW\09_TSOP.asm(43),erSystemFW\09_TSOP.asm(43): warning: Register r3 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(10),erSystemFW\BikePowerSystem.asm(10): '..\BikePowerSystemFW\09_TSOP.asm' included form here
+,,erSystemFW\09_TSOP.asm(44),erSystemFW\09_TSOP.asm(44): warning: Register r16 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(10),erSystemFW\BikePowerSystem.asm(10): '..\BikePowerSystemFW\09_TSOP.asm' included form here
+,,erSystemFW\09_TSOP.asm(45),erSystemFW\09_TSOP.asm(45): warning: Register r28 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(10),erSystemFW\BikePowerSystem.asm(10): '..\BikePowerSystemFW\09_TSOP.asm' included form here
+,,erSystemFW\09_TSOP.asm(46),erSystemFW\09_TSOP.asm(46): warning: Register r29 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(10),erSystemFW\BikePowerSystem.asm(10): '..\BikePowerSystemFW\09_TSOP.asm' included form here
+,,erSystemFW\BikePowerSystem.asm(11),erSystemFW\BikePowerSystem.asm(11): Including file '..\BikePowerSystemFW\10_EEPROM.asm'
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): Including file '..\BikePowerSystemFW\11_LedLight.asm'
+,,erSystemFW\11_LedLight.asm(23),erSystemFW\11_LedLight.asm(23): warning: Register r16 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): '..\BikePowerSystemFW\11_LedLight.asm' included form here
+,,erSystemFW\11_LedLight.asm(25),erSystemFW\11_LedLight.asm(25): warning: Register r18 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): '..\BikePowerSystemFW\11_LedLight.asm' included form here
+,,erSystemFW\11_LedLight.asm(29),erSystemFW\11_LedLight.asm(29): warning: Register r19 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): '..\BikePowerSystemFW\11_LedLight.asm' included form here
+,,erSystemFW\11_LedLight.asm(31),erSystemFW\11_LedLight.asm(31): warning: Register r21 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): '..\BikePowerSystemFW\11_LedLight.asm' included form here
+,,erSystemFW\11_LedLight.asm(33),erSystemFW\11_LedLight.asm(33): warning: Register r22 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): '..\BikePowerSystemFW\11_LedLight.asm' included form here
+,,erSystemFW\11_LedLight.asm(34),erSystemFW\11_LedLight.asm(34): warning: Register r23 already defined by the .DEF directive
+,,erSystemFW\BikePowerSystem.asm(12),erSystemFW\BikePowerSystem.asm(12): '..\BikePowerSystemFW\11_LedLight.asm' included form here
+,,,       
+,,,       
+,,,       
+,,,       ;***** Created: 2011-08-25 21:00 ******* Source: ATmega48.xml ************
+,,,       ;*************************************************************************
+,,,       ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
+,,,       ;* 
+,,,       ;* Number            : AVR000
+,,,       ;* File Name         : "m48def.inc"
+,,,       ;* Title             : Register/Bit Definitions for the ATmega48
+,,,       ;* Date              : 2011-08-25
+,,,       ;* Version           : 2.35
+,,,       ;* Support E-mail    : avr@atmel.com
+,,,       ;* Target MCU        : ATmega48
+,,,       ;* 
+,,,       ;* DESCRIPTION
+,,,       ;* When including this file in the assembly program file, all I/O register 
+,,,       ;* names and I/O register bit names appearing in the data book can be used.
+,,,       ;* In addition, the six registers forming the three data pointers X, Y and 
+,,,       ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
+,,,       ;* SRAM is also defined 
+,,,       ;* 
+,,,       ;* The Register names are represented by their hexadecimal address.
+,,,       ;* 
+,,,       ;* The Register Bit names are represented by their bit number (0-7).
+,,,       ;* 
+,,,       ;* Please observe the difference in using the bit names with instructions
+,,,       ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
+,,,       ;* (skip if bit in register set/cleared). The following example illustrates
+,,,       ;* this:
+,,,       ;* 
+,,,       ;* in    r16,PORTB             ;read PORTB latch
+,,,       ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
+,,,       ;* out   PORTB,r16             ;output to PORTB
+,,,       ;* 
+,,,       ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
+,,,       ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
+,,,       ;* rjmp  TOV0_is_set           ;jump if set
+,,,       ;* ...                         ;otherwise do something else
+,,,       ;*************************************************************************
+,,,       
+,,,       #ifndef _M48DEF_INC_
+,,,       #define _M48DEF_INC_
+,,,       
+,,,       
+,,,       #pragma partinc 0
+,,,       
+,,,       ; ***** SPECIFY DEVICE ***************************************************
+,,,       .device ATmega48
+,,,       #pragma AVRPART ADMIN PART_NAME ATmega48
+,,,       .equ   SIGNATURE_000   = 0x1e
+,,,       .equ   SIGNATURE_001   = 0x92
+,,,       .equ   SIGNATURE_002   = 0x05
+,,,       
+,,,       #pragma AVRPART CORE CORE_VERSION V2E
+,,,       
+,,,       
+,,,       ; ***** I/O REGISTER DEFINITIONS *****************************************
+,,,       ; NOTE:
+,,,       ; Definitions marked "MEMORY MAPPED"are extended I/O ports
+,,,       ; and cannot be used with IN/OUT instructions
+,,,       .equ   UDR0    = 0xc6  ; MEMORY MAPPED
+,,,       .equ   UBRR0L  = 0xc4  ; MEMORY MAPPED
+,,,       .equ   UBRR0H  = 0xc5  ; MEMORY MAPPED
+,,,       .equ   UCSR0C  = 0xc2  ; MEMORY MAPPED
+,,,       .equ   UCSR0B  = 0xc1  ; MEMORY MAPPED
+,,,       .equ   UCSR0A  = 0xc0  ; MEMORY MAPPED
+,,,       .equ   TWAMR   = 0xbd  ; MEMORY MAPPED
+,,,       .equ   TWCR    = 0xbc  ; MEMORY MAPPED
+,,,       .equ   TWDR    = 0xbb  ; MEMORY MAPPED
+,,,       .equ   TWAR    = 0xba  ; MEMORY MAPPED
+,,,       .equ   TWSR    = 0xb9  ; MEMORY MAPPED
+,,,       .equ   TWBR    = 0xb8  ; MEMORY MAPPED
+,,,       .equ   ASSR    = 0xb6  ; MEMORY MAPPED
+,,,       .equ   OCR2B   = 0xb4  ; MEMORY MAPPED
+,,,       .equ   OCR2A   = 0xb3  ; MEMORY MAPPED
+,,,       .equ   TCNT2   = 0xb2  ; MEMORY MAPPED
+,,,       .equ   TCCR2B  = 0xb1  ; MEMORY MAPPED
+,,,       .equ   TCCR2A  = 0xb0  ; MEMORY MAPPED
+,,,       .equ   OCR1BL  = 0x8a  ; MEMORY MAPPED
+,,,       .equ   OCR1BH  = 0x8b  ; MEMORY MAPPED
+,,,       .equ   OCR1AL  = 0x88  ; MEMORY MAPPED
+,,,       .equ   OCR1AH  = 0x89  ; MEMORY MAPPED
+,,,       .equ   ICR1L   = 0x86  ; MEMORY MAPPED
+,,,       .equ   ICR1H   = 0x87  ; MEMORY MAPPED
+,,,       .equ   TCNT1L  = 0x84  ; MEMORY MAPPED
+,,,       .equ   TCNT1H  = 0x85  ; MEMORY MAPPED
+,,,       .equ   TCCR1C  = 0x82  ; MEMORY MAPPED
+,,,       .equ   TCCR1B  = 0x81  ; MEMORY MAPPED
+,,,       .equ   TCCR1A  = 0x80  ; MEMORY MAPPED
+,,,       .equ   DIDR1   = 0x7f  ; MEMORY MAPPED
+,,,       .equ   DIDR0   = 0x7e  ; MEMORY MAPPED
+,,,       .equ   ADMUX   = 0x7c  ; MEMORY MAPPED
+,,,       .equ   ADCSRB  = 0x7b  ; MEMORY MAPPED
+,,,       .equ   ADCSRA  = 0x7a  ; MEMORY MAPPED
+,,,       .equ   ADCH    = 0x79  ; MEMORY MAPPED
+,,,       .equ   ADCL    = 0x78  ; MEMORY MAPPED
+,,,       .equ   TIMSK2  = 0x70  ; MEMORY MAPPED
+,,,       .equ   TIMSK1  = 0x6f  ; MEMORY MAPPED
+,,,       .equ   TIMSK0  = 0x6e  ; MEMORY MAPPED
+,,,       .equ   PCMSK1  = 0x6c  ; MEMORY MAPPED
+,,,       .equ   PCMSK2  = 0x6d  ; MEMORY MAPPED
+,,,       .equ   PCMSK0  = 0x6b  ; MEMORY MAPPED
+,,,       .equ   EICRA   = 0x69  ; MEMORY MAPPED
+,,,       .equ   PCICR   = 0x68  ; MEMORY MAPPED
+,,,       .equ   OSCCAL  = 0x66  ; MEMORY MAPPED
+,,,       .equ   PRR     = 0x64  ; MEMORY MAPPED
+,,,       .equ   CLKPR   = 0x61  ; MEMORY MAPPED
+,,,       .equ   WDTCSR  = 0x60  ; MEMORY MAPPED
+,,,       .equ   SREG    = 0x3f
+,,,       .equ   SPL     = 0x3d
+,,,       .equ   SPH     = 0x3e
+,,,       .equ   SPMCSR  = 0x37
+,,,       .equ   MCUCR   = 0x35
+,,,       .equ   MCUSR   = 0x34
+,,,       .equ   SMCR    = 0x33
+,,,       .equ   ACSR    = 0x30
+,,,       .equ   SPDR    = 0x2e
+,,,       .equ   SPSR    = 0x2d
+,,,       .equ   SPCR    = 0x2c
+,,,       .equ   GPIOR2  = 0x2b
+,,,       .equ   GPIOR1  = 0x2a
+,,,       .equ   OCR0B   = 0x28
+,,,       .equ   OCR0A   = 0x27
+,,,       .equ   TCNT0   = 0x26
+,,,       .equ   TCCR0B  = 0x25
+,,,       .equ   TCCR0A  = 0x24
+,,,       .equ   GTCCR   = 0x23
+,,,       .equ   EEARL   = 0x21
+,,,       .equ   EEDR    = 0x20
+,,,       .equ   EECR    = 0x1f
+,,,       .equ   GPIOR0  = 0x1e
+,,,       .equ   EIMSK   = 0x1d
+,,,       .equ   EIFR    = 0x1c
+,,,       .equ   PCIFR   = 0x1b
+,,,       .equ   TIFR2   = 0x17
+,,,       .equ   TIFR1   = 0x16
+,,,       .equ   TIFR0   = 0x15
+,,,       .equ   PORTD   = 0x0b
+,,,       .equ   DDRD    = 0x0a
+,,,       .equ   PIND    = 0x09
+,,,       .equ   PORTC   = 0x08
+,,,       .equ   DDRC    = 0x07
+,,,       .equ   PINC    = 0x06
+,,,       .equ   PORTB   = 0x05
+,,,       .equ   DDRB    = 0x04
+,,,       .equ   PINB    = 0x03
+,,,       
+,,,       
+,,,       ; ***** BIT DEFINITIONS **************************************************
+,,,       
+,,,       ; ***** USART0 ***********************
+,,,       ; UDR0 - USART I/O Data Register
+,,,       .equ   UDR0_0  = 0     ; USART I/O Data Register bit 0
+,,,       .equ   UDR0_1  = 1     ; USART I/O Data Register bit 1
+,,,       .equ   UDR0_2  = 2     ; USART I/O Data Register bit 2
+,,,       .equ   UDR0_3  = 3     ; USART I/O Data Register bit 3
+,,,       .equ   UDR0_4  = 4     ; USART I/O Data Register bit 4
+,,,       .equ   UDR0_5  = 5     ; USART I/O Data Register bit 5
+,,,       .equ   UDR0_6  = 6     ; USART I/O Data Register bit 6
+,,,       .equ   UDR0_7  = 7     ; USART I/O Data Register bit 7
+,,,       
+,,,       ; UCSR0A - USART Control and Status Register A
+,,,       .equ   MPCM0   = 0     ; Multi-processor Communication Mode
+,,,       .equ   U2X0    = 1     ; Double the USART transmission speed
+,,,       .equ   UPE0    = 2     ; Parity Error
+,,,       .equ   DOR0    = 3     ; Data overRun
+,,,       .equ   FE0     = 4     ; Framing Error
+,,,       .equ   UDRE0   = 5     ; USART Data Register Empty
+,,,       .equ   TXC0    = 6     ; USART Transmitt Complete
+,,,       .equ   RXC0    = 7     ; USART Receive Complete
+,,,       
+,,,       ; UCSR0B - USART Control and Status Register B
+,,,       .equ   TXB80   = 0     ; Transmit Data Bit 8
+,,,       .equ   RXB80   = 1     ; Receive Data Bit 8
+,,,       .equ   UCSZ02  = 2     ; Character Size
+,,,       .equ   TXEN0   = 3     ; Transmitter Enable
+,,,       .equ   RXEN0   = 4     ; Receiver Enable
+,,,       .equ   UDRIE0  = 5     ; USART Data register Empty Interrupt Enable
+,,,       .equ   TXCIE0  = 6     ; TX Complete Interrupt Enable
+,,,       .equ   RXCIE0  = 7     ; RX Complete Interrupt Enable
+,,,       
+,,,       ; UCSR0C - USART Control and Status Register C
+,,,       .equ   UCPOL0  = 0     ; Clock Polarity
+,,,       .equ   UCSZ00  = 1     ; Character Size
+,,,       .equ   UCPHA0  = UCSZ00        ; For compatibility
+,,,       .equ   UCSZ01  = 2     ; Character Size
+,,,       .equ   UDORD0  = UCSZ01        ; For compatibility
+,,,       .equ   USBS0   = 3     ; Stop Bit Select
+,,,       .equ   UPM00   = 4     ; Parity Mode Bit 0
+,,,       .equ   UPM01   = 5     ; Parity Mode Bit 1
+,,,       .equ   UMSEL00 = 6     ; USART Mode Select
+,,,       .equ   UMSEL0  = UMSEL00       ; For compatibility
+,,,       .equ   UMSEL01 = 7     ; USART Mode Select
+,,,       .equ   UMSEL1  = UMSEL01       ; For compatibility
+,,,       
+,,,       ; UBRR0H - USART Baud Rate Register High Byte
+,,,       .equ   UBRR8   = 0     ; USART Baud Rate Register bit 8
+,,,       .equ   UBRR9   = 1     ; USART Baud Rate Register bit 9
+,,,       .equ   UBRR10  = 2     ; USART Baud Rate Register bit 10
+,,,       .equ   UBRR11  = 3     ; USART Baud Rate Register bit 11
+,,,       
+,,,       ; UBRR0L - USART Baud Rate Register Low Byte
+,,,       .equ   _UBRR0  = 0     ; USART Baud Rate Register bit 0
+,,,       .equ   _UBRR1  = 1     ; USART Baud Rate Register bit 1
+,,,       .equ   UBRR2   = 2     ; USART Baud Rate Register bit 2
+,,,       .equ   UBRR3   = 3     ; USART Baud Rate Register bit 3
+,,,       .equ   UBRR4   = 4     ; USART Baud Rate Register bit 4
+,,,       .equ   UBRR5   = 5     ; USART Baud Rate Register bit 5
+,,,       .equ   UBRR6   = 6     ; USART Baud Rate Register bit 6
+,,,       .equ   UBRR7   = 7     ; USART Baud Rate Register bit 7
+,,,       
+,,,       
+,,,       ; ***** TWI **************************
+,,,       ; TWAMR - TWI (Slave) Address Mask Register
+,,,       .equ   TWAM0   = 1     ; 
+,,,       .equ   TWAMR0  = TWAM0 ; For compatibility
+,,,       .equ   TWAM1   = 2     ; 
+,,,       .equ   TWAMR1  = TWAM1 ; For compatibility
+,,,       .equ   TWAM2   = 3     ; 
+,,,       .equ   TWAMR2  = TWAM2 ; For compatibility
+,,,       .equ   TWAM3   = 4     ; 
+,,,       .equ   TWAMR3  = TWAM3 ; For compatibility
+,,,       .equ   TWAM4   = 5     ; 
+,,,       .equ   TWAMR4  = TWAM4 ; For compatibility
+,,,       .equ   TWAM5   = 6     ; 
+,,,       .equ   TWAMR5  = TWAM5 ; For compatibility
+,,,       .equ   TWAM6   = 7     ; 
+,,,       .equ   TWAMR6  = TWAM6 ; For compatibility
+,,,       
+,,,       ; TWBR - TWI Bit Rate register
+,,,       .equ   TWBR0   = 0     ; 
+,,,       .equ   TWBR1   = 1     ; 
+,,,       .equ   TWBR2   = 2     ; 
+,,,       .equ   TWBR3   = 3     ; 
+,,,       .equ   TWBR4   = 4     ; 
+,,,       .equ   TWBR5   = 5     ; 
+,,,       .equ   TWBR6   = 6     ; 
+,,,       .equ   TWBR7   = 7     ; 
+,,,       
+,,,       ; TWCR - TWI Control Register
+,,,       .equ   TWIE    = 0     ; TWI Interrupt Enable
+,,,       .equ   TWEN    = 2     ; TWI Enable Bit
+,,,       .equ   TWWC    = 3     ; TWI Write Collition Flag
+,,,       .equ   TWSTO   = 4     ; TWI Stop Condition Bit
+,,,       .equ   TWSTA   = 5     ; TWI Start Condition Bit
+,,,       .equ   TWEA    = 6     ; TWI Enable Acknowledge Bit
+,,,       .equ   TWINT   = 7     ; TWI Interrupt Flag
+,,,       
+,,,       ; TWSR - TWI Status Register
+,,,       .equ   TWPS0   = 0     ; TWI Prescaler
+,,,       .equ   TWPS1   = 1     ; TWI Prescaler
+,,,       .equ   TWS3    = 3     ; TWI Status
+,,,       .equ   TWS4    = 4     ; TWI Status
+,,,       .equ   TWS5    = 5     ; TWI Status
+,,,       .equ   TWS6    = 6     ; TWI Status
+,,,       .equ   TWS7    = 7     ; TWI Status
+,,,       
+,,,       ; TWDR - TWI Data register
+,,,       .equ   TWD0    = 0     ; TWI Data Register Bit 0
+,,,       .equ   TWD1    = 1     ; TWI Data Register Bit 1
+,,,       .equ   TWD2    = 2     ; TWI Data Register Bit 2
+,,,       .equ   TWD3    = 3     ; TWI Data Register Bit 3
+,,,       .equ   TWD4    = 4     ; TWI Data Register Bit 4
+,,,       .equ   TWD5    = 5     ; TWI Data Register Bit 5
+,,,       .equ   TWD6    = 6     ; TWI Data Register Bit 6
+,,,       .equ   TWD7    = 7     ; TWI Data Register Bit 7
+,,,       
+,,,       ; TWAR - TWI (Slave) Address register
+,,,       .equ   TWGCE   = 0     ; TWI General Call Recognition Enable Bit
+,,,       .equ   TWA0    = 1     ; TWI (Slave) Address register Bit 0
+,,,       .equ   TWA1    = 2     ; TWI (Slave) Address register Bit 1
+,,,       .equ   TWA2    = 3     ; TWI (Slave) Address register Bit 2
+,,,       .equ   TWA3    = 4     ; TWI (Slave) Address register Bit 3
+,,,       .equ   TWA4    = 5     ; TWI (Slave) Address register Bit 4
+,,,       .equ   TWA5    = 6     ; TWI (Slave) Address register Bit 5
+,,,       .equ   TWA6    = 7     ; TWI (Slave) Address register Bit 6
+,,,       
+,,,       
+,,,       ; ***** TIMER_COUNTER_1 **************
+,,,       ; TIMSK1 - Timer/Counter Interrupt Mask Register
+,,,       .equ   TOIE1   = 0     ; Timer/Counter1 Overflow Interrupt Enable
+,,,       .equ   OCIE1A  = 1     ; Timer/Counter1 Output CompareA Match Interrupt Enable
+,,,       .equ   OCIE1B  = 2     ; Timer/Counter1 Output CompareB Match Interrupt Enable
+,,,       .equ   ICIE1   = 5     ; Timer/Counter1 Input Capture Interrupt Enable
+,,,       
+,,,       ; TIFR1 - Timer/Counter Interrupt Flag register
+,,,       .equ   TOV1    = 0     ; Timer/Counter1 Overflow Flag
+,,,       .equ   OCF1A   = 1     ; Output Compare Flag 1A
+,,,       .equ   OCF1B   = 2     ; Output Compare Flag 1B
+,,,       .equ   ICF1    = 5     ; Input Capture Flag 1
+,,,       
+,,,       ; TCCR1A - Timer/Counter1 Control Register A
+,,,       .equ   WGM10   = 0     ; Waveform Generation Mode
+,,,       .equ   WGM11   = 1     ; Waveform Generation Mode
+,,,       .equ   COM1B0  = 4     ; Compare Output Mode 1B, bit 0
+,,,       .equ   COM1B1  = 5     ; Compare Output Mode 1B, bit 1
+,,,       .equ   COM1A0  = 6     ; Comparet Ouput Mode 1A, bit 0
+,,,       .equ   COM1A1  = 7     ; Compare Output Mode 1A, bit 1
+,,,       
+,,,       ; TCCR1B - Timer/Counter1 Control Register B
+,,,       .equ   CS10    = 0     ; Prescaler source of Timer/Counter 1
+,,,       .equ   CS11    = 1     ; Prescaler source of Timer/Counter 1
+,,,       .equ   CS12    = 2     ; Prescaler source of Timer/Counter 1
+,,,       .equ   WGM12   = 3     ; Waveform Generation Mode
+,,,       .equ   WGM13   = 4     ; Waveform Generation Mode
+,,,       .equ   ICES1   = 6     ; Input Capture 1 Edge Select
+,,,       .equ   ICNC1   = 7     ; Input Capture 1 Noise Canceler
+,,,       
+,,,       ; TCCR1C - Timer/Counter1 Control Register C
+,,,       .equ   FOC1B   = 6     ; 
+,,,       .equ   FOC1A   = 7     ; 
+,,,       
+,,,       ; GTCCR - General Timer/Counter Control Register
+,,,       .equ   PSRSYNC = 0     ; Prescaler Reset Timer/Counter1 and Timer/Counter0
+,,,       .equ   TSM     = 7     ; Timer/Counter Synchronization Mode
+,,,       
+,,,       
+,,,       ; ***** TIMER_COUNTER_2 **************
+,,,       ; TIMSK2 - Timer/Counter Interrupt Mask register
+,,,       .equ   TOIE2   = 0     ; Timer/Counter2 Overflow Interrupt Enable
+,,,       .equ   TOIE2A  = TOIE2 ; For compatibility
+,,,       .equ   OCIE2A  = 1     ; Timer/Counter2 Output Compare Match A Interrupt Enable
+,,,       .equ   OCIE2B  = 2     ; Timer/Counter2 Output Compare Match B Interrupt Enable
+,,,       
+,,,       ; TIFR2 - Timer/Counter Interrupt Flag Register
+,,,       .equ   TOV2    = 0     ; Timer/Counter2 Overflow Flag
+,,,       .equ   OCF2A   = 1     ; Output Compare Flag 2A
+,,,       .equ   OCF2B   = 2     ; Output Compare Flag 2B
+,,,       
+,,,       ; TCCR2A - Timer/Counter2 Control Register A
+,,,       .equ   WGM20   = 0     ; Waveform Genration Mode
+,,,       .equ   WGM21   = 1     ; Waveform Genration Mode
+,,,       .equ   COM2B0  = 4     ; Compare Output Mode bit 0
+,,,       .equ   COM2B1  = 5     ; Compare Output Mode bit 1
+,,,       .equ   COM2A0  = 6     ; Compare Output Mode bit 1
+,,,       .equ   COM2A1  = 7     ; Compare Output Mode bit 1
+,,,       
+,,,       ; TCCR2B - Timer/Counter2 Control Register B
+,,,       .equ   CS20    = 0     ; Clock Select bit 0
+,,,       .equ   CS21    = 1     ; Clock Select bit 1
+,,,       .equ   CS22    = 2     ; Clock Select bit 2
+,,,       .equ   WGM22   = 3     ; Waveform Generation Mode
+,,,       .equ   FOC2B   = 6     ; Force Output Compare B
+,,,       .equ   FOC2A   = 7     ; Force Output Compare A
+,,,       
+,,,       ; TCNT2 - Timer/Counter2
+,,,       .equ   TCNT2_0 = 0     ; Timer/Counter 2 bit 0
+,,,       .equ   TCNT2_1 = 1     ; Timer/Counter 2 bit 1
+,,,       .equ   TCNT2_2 = 2     ; Timer/Counter 2 bit 2
+,,,       .equ   TCNT2_3 = 3     ; Timer/Counter 2 bit 3
+,,,       .equ   TCNT2_4 = 4     ; Timer/Counter 2 bit 4
+,,,       .equ   TCNT2_5 = 5     ; Timer/Counter 2 bit 5
+,,,       .equ   TCNT2_6 = 6     ; Timer/Counter 2 bit 6
+,,,       .equ   TCNT2_7 = 7     ; Timer/Counter 2 bit 7
+,,,       
+,,,       ; OCR2A - Timer/Counter2 Output Compare Register A
+,,,       .equ   OCR2A_0 = 0     ; Timer/Counter2 Output Compare Register Bit 0
+,,,       .equ   OCR2A_1 = 1     ; Timer/Counter2 Output Compare Register Bit 1
+,,,       .equ   OCR2A_2 = 2     ; Timer/Counter2 Output Compare Register Bit 2
+,,,       .equ   OCR2A_3 = 3     ; Timer/Counter2 Output Compare Register Bit 3
+,,,       .equ   OCR2A_4 = 4     ; Timer/Counter2 Output Compare Register Bit 4
+,,,       .equ   OCR2A_5 = 5     ; Timer/Counter2 Output Compare Register Bit 5
+,,,       .equ   OCR2A_6 = 6     ; Timer/Counter2 Output Compare Register Bit 6
+,,,       .equ   OCR2A_7 = 7     ; Timer/Counter2 Output Compare Register Bit 7
+,,,       
+,,,       ; OCR2B - Timer/Counter2 Output Compare Register B
+,,,       .equ   OCR2B_0 = 0     ; Timer/Counter2 Output Compare Register Bit 0
+,,,       .equ   OCR2B_1 = 1     ; Timer/Counter2 Output Compare Register Bit 1
+,,,       .equ   OCR2B_2 = 2     ; Timer/Counter2 Output Compare Register Bit 2
+,,,       .equ   OCR2B_3 = 3     ; Timer/Counter2 Output Compare Register Bit 3
+,,,       .equ   OCR2B_4 = 4     ; Timer/Counter2 Output Compare Register Bit 4
+,,,       .equ   OCR2B_5 = 5     ; Timer/Counter2 Output Compare Register Bit 5
+,,,       .equ   OCR2B_6 = 6     ; Timer/Counter2 Output Compare Register Bit 6
+,,,       .equ   OCR2B_7 = 7     ; Timer/Counter2 Output Compare Register Bit 7
+,,,       
+,,,       ; ASSR - Asynchronous Status Register
+,,,       .equ   TCR2BUB = 0     ; Timer/Counter Control Register2 Update Busy
+,,,       .equ   TCR2AUB = 1     ; Timer/Counter Control Register2 Update Busy
+,,,       .equ   OCR2BUB = 2     ; Output Compare Register 2 Update Busy
+,,,       .equ   OCR2AUB = 3     ; Output Compare Register2 Update Busy
+,,,       .equ   TCN2UB  = 4     ; Timer/Counter2 Update Busy
+,,,       .equ   AS2     = 5     ; Asynchronous Timer/Counter2
+,,,       .equ   EXCLK   = 6     ; Enable External Clock Input
+,,,       
+,,,       ; GTCCR - General Timer Counter Control register
+,,,       .equ   PSRASY  = 1     ; Prescaler Reset Timer/Counter2
+,,,       .equ   PSR2    = PSRASY        ; For compatibility
+,,,       ;.equ  TSM     = 7     ; Timer/Counter Synchronization Mode
+,,,       
+,,,       
+,,,       ; ***** AD_CONVERTER *****************
+,,,       ; ADMUX - The ADC multiplexer Selection Register
+,,,       .equ   MUX0    = 0     ; Analog Channel and Gain Selection Bits
+,,,       .equ   MUX1    = 1     ; Analog Channel and Gain Selection Bits
+,,,       .equ   MUX2    = 2     ; Analog Channel and Gain Selection Bits
+,,,       .equ   MUX3    = 3     ; Analog Channel and Gain Selection Bits
+,,,       .equ   ADLAR   = 5     ; Left Adjust Result
+,,,       .equ   REFS0   = 6     ; Reference Selection Bit 0
+,,,       .equ   REFS1   = 7     ; Reference Selection Bit 1
+,,,       
+,,,       ; ADCSRA - The ADC Control and Status register A
+,,,       .equ   ADPS0   = 0     ; ADC  Prescaler Select Bits
+,,,       .equ   ADPS1   = 1     ; ADC  Prescaler Select Bits
+,,,       .equ   ADPS2   = 2     ; ADC  Prescaler Select Bits
+,,,       .equ   ADIE    = 3     ; ADC Interrupt Enable
+,,,       .equ   ADIF    = 4     ; ADC Interrupt Flag
+,,,       .equ   ADATE   = 5     ; ADC  Auto Trigger Enable
+,,,       .equ   ADSC    = 6     ; ADC Start Conversion
+,,,       .equ   ADEN    = 7     ; ADC Enable
+,,,       
+,,,       ; ADCSRB - The ADC Control and Status register B
+,,,       .equ   ADTS0   = 0     ; ADC Auto Trigger Source bit 0
+,,,       .equ   ADTS1   = 1     ; ADC Auto Trigger Source bit 1
+,,,       .equ   ADTS2   = 2     ; ADC Auto Trigger Source bit 2
+,,,       .equ   ACME    = 6     ; 
+,,,       
+,,,       ; ADCH - ADC Data Register High Byte
+,,,       .equ   ADCH0   = 0     ; ADC Data Register High Byte Bit 0
+,,,       .equ   ADCH1   = 1     ; ADC Data Register High Byte Bit 1
+,,,       .equ   ADCH2   = 2     ; ADC Data Register High Byte Bit 2
+,,,       .equ   ADCH3   = 3     ; ADC Data Register High Byte Bit 3
+,,,       .equ   ADCH4   = 4     ; ADC Data Register High Byte Bit 4
+,,,       .equ   ADCH5   = 5     ; ADC Data Register High Byte Bit 5
+,,,       .equ   ADCH6   = 6     ; ADC Data Register High Byte Bit 6
+,,,       .equ   ADCH7   = 7     ; ADC Data Register High Byte Bit 7
+,,,       
+,,,       ; ADCL - ADC Data Register Low Byte
+,,,       .equ   ADCL0   = 0     ; ADC Data Register Low Byte Bit 0
+,,,       .equ   ADCL1   = 1     ; ADC Data Register Low Byte Bit 1
+,,,       .equ   ADCL2   = 2     ; ADC Data Register Low Byte Bit 2
+,,,       .equ   ADCL3   = 3     ; ADC Data Register Low Byte Bit 3
+,,,       .equ   ADCL4   = 4     ; ADC Data Register Low Byte Bit 4
+,,,       .equ   ADCL5   = 5     ; ADC Data Register Low Byte Bit 5
+,,,       .equ   ADCL6   = 6     ; ADC Data Register Low Byte Bit 6
+,,,       .equ   ADCL7   = 7     ; ADC Data Register Low Byte Bit 7
+,,,       
+,,,       ; DIDR0 - Digital Input Disable Register
+,,,       .equ   ADC0D   = 0     ; 
+,,,       .equ   ADC1D   = 1     ; 
+,,,       .equ   ADC2D   = 2     ; 
+,,,       .equ   ADC3D   = 3     ; 
+,,,       .equ   ADC4D   = 4     ; 
+,,,       .equ   ADC5D   = 5     ; 
+,,,       
+,,,       
+,,,       ; ***** ANALOG_COMPARATOR ************
+,,,       ; ACSR - Analog Comparator Control And Status Register
+,,,       .equ   ACIS0   = 0     ; Analog Comparator Interrupt Mode Select bit 0
+,,,       .equ   ACIS1   = 1     ; Analog Comparator Interrupt Mode Select bit 1
+,,,       .equ   ACIC    = 2     ; Analog Comparator Input Capture Enable
+,,,       .equ   ACIE    = 3     ; Analog Comparator Interrupt Enable
+,,,       .equ   ACI     = 4     ; Analog Comparator Interrupt Flag
+,,,       .equ   ACO     = 5     ; Analog Compare Output
+,,,       .equ   ACBG    = 6     ; Analog Comparator Bandgap Select
+,,,       .equ   ACD     = 7     ; Analog Comparator Disable
+,,,       
+,,,       ; DIDR1 - Digital Input Disable Register 1
+,,,       .equ   AIN0D   = 0     ; AIN0 Digital Input Disable
+,,,       .equ   AIN1D   = 1     ; AIN1 Digital Input Disable
+,,,       
+,,,       
+,,,       ; ***** PORTB ************************
+,,,       ; PORTB - Port B Data Register
+,,,       .equ   PORTB0  = 0     ; Port B Data Register bit 0
+,,,       .equ   PB0     = 0     ; For compatibility
+,,,       .equ   PORTB1  = 1     ; Port B Data Register bit 1
+,,,       .equ   PB1     = 1     ; For compatibility
+,,,       .equ   PORTB2  = 2     ; Port B Data Register bit 2
+,,,       .equ   PB2     = 2     ; For compatibility
+,,,       .equ   PORTB3  = 3     ; Port B Data Register bit 3
+,,,       .equ   PB3     = 3     ; For compatibility
+,,,       .equ   PORTB4  = 4     ; Port B Data Register bit 4
+,,,       .equ   PB4     = 4     ; For compatibility
+,,,       .equ   PORTB5  = 5     ; Port B Data Register bit 5
+,,,       .equ   PB5     = 5     ; For compatibility
+,,,       .equ   PORTB6  = 6     ; Port B Data Register bit 6
+,,,       .equ   PB6     = 6     ; For compatibility
+,,,       .equ   PORTB7  = 7     ; Port B Data Register bit 7
+,,,       .equ   PB7     = 7     ; For compatibility
+,,,       
+,,,       ; DDRB - Port B Data Direction Register
+,,,       .equ   DDB0    = 0     ; Port B Data Direction Register bit 0
+,,,       .equ   DDB1    = 1     ; Port B Data Direction Register bit 1
+,,,       .equ   DDB2    = 2     ; Port B Data Direction Register bit 2
+,,,       .equ   DDB3    = 3     ; Port B Data Direction Register bit 3
+,,,       .equ   DDB4    = 4     ; Port B Data Direction Register bit 4
+,,,       .equ   DDB5    = 5     ; Port B Data Direction Register bit 5
+,,,       .equ   DDB6    = 6     ; Port B Data Direction Register bit 6
+,,,       .equ   DDB7    = 7     ; Port B Data Direction Register bit 7
+,,,       
+,,,       ; PINB - Port B Input Pins
+,,,       .equ   PINB0   = 0     ; Port B Input Pins bit 0
+,,,       .equ   PINB1   = 1     ; Port B Input Pins bit 1
+,,,       .equ   PINB2   = 2     ; Port B Input Pins bit 2
+,,,       .equ   PINB3   = 3     ; Port B Input Pins bit 3
+,,,       .equ   PINB4   = 4     ; Port B Input Pins bit 4
+,,,       .equ   PINB5   = 5     ; Port B Input Pins bit 5
+,,,       .equ   PINB6   = 6     ; Port B Input Pins bit 6
+,,,       .equ   PINB7   = 7     ; Port B Input Pins bit 7
+,,,       
+,,,       
+,,,       ; ***** PORTC ************************
+,,,       ; PORTC - Port C Data Register
+,,,       .equ   PORTC0  = 0     ; Port C Data Register bit 0
+,,,       .equ   PC0     = 0     ; For compatibility
+,,,       .equ   PORTC1  = 1     ; Port C Data Register bit 1
+,,,       .equ   PC1     = 1     ; For compatibility
+,,,       .equ   PORTC2  = 2     ; Port C Data Register bit 2
+,,,       .equ   PC2     = 2     ; For compatibility
+,,,       .equ   PORTC3  = 3     ; Port C Data Register bit 3
+,,,       .equ   PC3     = 3     ; For compatibility
+,,,       .equ   PORTC4  = 4     ; Port C Data Register bit 4
+,,,       .equ   PC4     = 4     ; For compatibility
+,,,       .equ   PORTC5  = 5     ; Port C Data Register bit 5
+,,,       .equ   PC5     = 5     ; For compatibility
+,,,       .equ   PORTC6  = 6     ; Port C Data Register bit 6
+,,,       .equ   PC6     = 6     ; For compatibility
+,,,       
+,,,       ; DDRC - Port C Data Direction Register
+,,,       .equ   DDC0    = 0     ; Port C Data Direction Register bit 0
+,,,       .equ   DDC1    = 1     ; Port C Data Direction Register bit 1
+,,,       .equ   DDC2    = 2     ; Port C Data Direction Register bit 2
+,,,       .equ   DDC3    = 3     ; Port C Data Direction Register bit 3
+,,,       .equ   DDC4    = 4     ; Port C Data Direction Register bit 4
+,,,       .equ   DDC5    = 5     ; Port C Data Direction Register bit 5
+,,,       .equ   DDC6    = 6     ; Port C Data Direction Register bit 6
+,,,       
+,,,       ; PINC - Port C Input Pins
+,,,       .equ   PINC0   = 0     ; Port C Input Pins bit 0
+,,,       .equ   PINC1   = 1     ; Port C Input Pins bit 1
+,,,       .equ   PINC2   = 2     ; Port C Input Pins bit 2
+,,,       .equ   PINC3   = 3     ; Port C Input Pins bit 3
+,,,       .equ   PINC4   = 4     ; Port C Input Pins bit 4
+,,,       .equ   PINC5   = 5     ; Port C Input Pins bit 5
+,,,       .equ   PINC6   = 6     ; Port C Input Pins bit 6
+,,,       
+,,,       
+,,,       ; ***** PORTD ************************
+,,,       ; PORTD - Port D Data Register
+,,,       .equ   PORTD0  = 0     ; Port D Data Register bit 0
+,,,       .equ   PD0     = 0     ; For compatibility
+,,,       .equ   PORTD1  = 1     ; Port D Data Register bit 1
+,,,       .equ   PD1     = 1     ; For compatibility
+,,,       .equ   PORTD2  = 2     ; Port D Data Register bit 2
+,,,       .equ   PD2     = 2     ; For compatibility
+,,,       .equ   PORTD3  = 3     ; Port D Data Register bit 3
+,,,       .equ   PD3     = 3     ; For compatibility
+,,,       .equ   PORTD4  = 4     ; Port D Data Register bit 4
+,,,       .equ   PD4     = 4     ; For compatibility
+,,,       .equ   PORTD5  = 5     ; Port D Data Register bit 5
+,,,       .equ   PD5     = 5     ; For compatibility
+,,,       .equ   PORTD6  = 6     ; Port D Data Register bit 6
+,,,       .equ   PD6     = 6     ; For compatibility
+,,,       .equ   PORTD7  = 7     ; Port D Data Register bit 7
+,,,       .equ   PD7     = 7     ; For compatibility
+,,,       
+,,,       ; DDRD - Port D Data Direction Register
+,,,       .equ   DDD0    = 0     ; Port D Data Direction Register bit 0
+,,,       .equ   DDD1    = 1     ; Port D Data Direction Register bit 1
+,,,       .equ   DDD2    = 2     ; Port D Data Direction Register bit 2
+,,,       .equ   DDD3    = 3     ; Port D Data Direction Register bit 3
+,,,       .equ   DDD4    = 4     ; Port D Data Direction Register bit 4
+,,,       .equ   DDD5    = 5     ; Port D Data Direction Register bit 5
+,,,       .equ   DDD6    = 6     ; Port D Data Direction Register bit 6
+,,,       .equ   DDD7    = 7     ; Port D Data Direction Register bit 7
+,,,       
+,,,       ; PIND - Port D Input Pins
+,,,       .equ   PIND0   = 0     ; Port D Input Pins bit 0
+,,,       .equ   PIND1   = 1     ; Port D Input Pins bit 1
+,,,       .equ   PIND2   = 2     ; Port D Input Pins bit 2
+,,,       .equ   PIND3   = 3     ; Port D Input Pins bit 3
+,,,       .equ   PIND4   = 4     ; Port D Input Pins bit 4
+,,,       .equ   PIND5   = 5     ; Port D Input Pins bit 5
+,,,       .equ   PIND6   = 6     ; Port D Input Pins bit 6
+,,,       .equ   PIND7   = 7     ; Port D Input Pins bit 7
+,,,       
+,,,       
+,,,       ; ***** TIMER_COUNTER_0 **************
+,,,       ; TIMSK0 - Timer/Counter0 Interrupt Mask Register
+,,,       .equ   TOIE0   = 0     ; Timer/Counter0 Overflow Interrupt Enable
+,,,       .equ   OCIE0A  = 1     ; Timer/Counter0 Output Compare Match A Interrupt Enable
+,,,       .equ   OCIE0B  = 2     ; Timer/Counter0 Output Compare Match B Interrupt Enable
+,,,       
+,,,       ; TIFR0 - Timer/Counter0 Interrupt Flag register
+,,,       .equ   TOV0    = 0     ; Timer/Counter0 Overflow Flag
+,,,       .equ   OCF0A   = 1     ; Timer/Counter0 Output Compare Flag 0A
+,,,       .equ   OCF0B   = 2     ; Timer/Counter0 Output Compare Flag 0B
+,,,       
+,,,       ; TCCR0A - Timer/Counter  Control Register A
+,,,       .equ   WGM00   = 0     ; Waveform Generation Mode
+,,,       .equ   WGM01   = 1     ; Waveform Generation Mode
+,,,       .equ   COM0B0  = 4     ; Compare Output Mode, Fast PWm
+,,,       .equ   COM0B1  = 5     ; Compare Output Mode, Fast PWm
+,,,       .equ   COM0A0  = 6     ; Compare Output Mode, Phase Correct PWM Mode
+,,,       .equ   COM0A1  = 7     ; Compare Output Mode, Phase Correct PWM Mode
+,,,       
+,,,       ; TCCR0B - Timer/Counter Control Register B
+,,,       .equ   CS00    = 0     ; Clock Select
+,,,       .equ   CS01    = 1     ; Clock Select
+,,,       .equ   CS02    = 2     ; Clock Select
+,,,       .equ   WGM02   = 3     ; 
+,,,       .equ   FOC0B   = 6     ; Force Output Compare B
+,,,       .equ   FOC0A   = 7     ; Force Output Compare A
+,,,       
+,,,       ; TCNT0 - Timer/Counter0
+,,,       .equ   TCNT0_0 = 0     ; 
+,,,       .equ   TCNT0_1 = 1     ; 
+,,,       .equ   TCNT0_2 = 2     ; 
+,,,       .equ   TCNT0_3 = 3     ; 
+,,,       .equ   TCNT0_4 = 4     ; 
+,,,       .equ   TCNT0_5 = 5     ; 
+,,,       .equ   TCNT0_6 = 6     ; 
+,,,       .equ   TCNT0_7 = 7     ; 
+,,,       
+,,,       ; OCR0A - Timer/Counter0 Output Compare Register
+,,,       .equ   OCR0A_0 = 0     ; 
+,,,       .equ   OCR0A_1 = 1     ; 
+,,,       .equ   OCR0A_2 = 2     ; 
+,,,       .equ   OCR0A_3 = 3     ; 
+,,,       .equ   OCR0A_4 = 4     ; 
+,,,       .equ   OCR0A_5 = 5     ; 
+,,,       .equ   OCR0A_6 = 6     ; 
+,,,       .equ   OCR0A_7 = 7     ; 
+,,,       
+,,,       ; OCR0B - Timer/Counter0 Output Compare Register
+,,,       .equ   OCR0B_0 = 0     ; 
+,,,       .equ   OCR0B_1 = 1     ; 
+,,,       .equ   OCR0B_2 = 2     ; 
+,,,       .equ   OCR0B_3 = 3     ; 
+,,,       .equ   OCR0B_4 = 4     ; 
+,,,       .equ   OCR0B_5 = 5     ; 
+,,,       .equ   OCR0B_6 = 6     ; 
+,,,       .equ   OCR0B_7 = 7     ; 
+,,,       
+,,,       ; GTCCR - General Timer/Counter Control Register
+,,,       ;.equ  PSRSYNC = 0     ; Prescaler Reset Timer/Counter1 and Timer/Counter0
+,,,       .equ   PSR10   = PSRSYNC       ; For compatibility
+,,,       ;.equ  TSM     = 7     ; Timer/Counter Synchronization Mode
+,,,       
+,,,       
+,,,       ; ***** EXTERNAL_INTERRUPT ***********
+,,,       ; EICRA - External Interrupt Control Register
+,,,       .equ   ISC00   = 0     ; External Interrupt Sense Control 0 Bit 0
+,,,       .equ   ISC01   = 1     ; External Interrupt Sense Control 0 Bit 1
+,,,       .equ   ISC10   = 2     ; External Interrupt Sense Control 1 Bit 0
+,,,       .equ   ISC11   = 3     ; External Interrupt Sense Control 1 Bit 1
+,,,       
+,,,       ; EIMSK - External Interrupt Mask Register
+,,,       .equ   INT0    = 0     ; External Interrupt Request 0 Enable
+,,,       .equ   INT1    = 1     ; External Interrupt Request 1 Enable
+,,,       
+,,,       ; EIFR - External Interrupt Flag Register
+,,,       .equ   INTF0   = 0     ; External Interrupt Flag 0
+,,,       .equ   INTF1   = 1     ; External Interrupt Flag 1
+,,,       
+,,,       ; PCICR - Pin Change Interrupt Control Register
+,,,       .equ   PCIE0   = 0     ; Pin Change Interrupt Enable 0
+,,,       .equ   PCIE1   = 1     ; Pin Change Interrupt Enable 1
+,,,       .equ   PCIE2   = 2     ; Pin Change Interrupt Enable 2
+,,,       
+,,,       ; PCMSK2 - Pin Change Mask Register 2
+,,,       .equ   PCINT16 = 0     ; Pin Change Enable Mask 16
+,,,       .equ   PCINT17 = 1     ; Pin Change Enable Mask 17
+,,,       .equ   PCINT18 = 2     ; Pin Change Enable Mask 18
+,,,       .equ   PCINT19 = 3     ; Pin Change Enable Mask 19
+,,,       .equ   PCINT20 = 4     ; Pin Change Enable Mask 20
+,,,       .equ   PCINT21 = 5     ; Pin Change Enable Mask 21
+,,,       .equ   PCINT22 = 6     ; Pin Change Enable Mask 22
+,,,       .equ   PCINT23 = 7     ; Pin Change Enable Mask 23
+,,,       
+,,,       ; PCMSK1 - Pin Change Mask Register 1
+,,,       .equ   PCINT8  = 0     ; Pin Change Enable Mask 8
+,,,       .equ   PCINT9  = 1     ; Pin Change Enable Mask 9
+,,,       .equ   PCINT10 = 2     ; Pin Change Enable Mask 10
+,,,       .equ   PCINT11 = 3     ; Pin Change Enable Mask 11
+,,,       .equ   PCINT12 = 4     ; Pin Change Enable Mask 12
+,,,       .equ   PCINT13 = 5     ; Pin Change Enable Mask 13
+,,,       .equ   PCINT14 = 6     ; Pin Change Enable Mask 14
+,,,       
+,,,       ; PCMSK0 - Pin Change Mask Register 0
+,,,       .equ   PCINT0  = 0     ; Pin Change Enable Mask 0
+,,,       .equ   PCINT1  = 1     ; Pin Change Enable Mask 1
+,,,       .equ   PCINT2  = 2     ; Pin Change Enable Mask 2
+,,,       .equ   PCINT3  = 3     ; Pin Change Enable Mask 3
+,,,       .equ   PCINT4  = 4     ; Pin Change Enable Mask 4
+,,,       .equ   PCINT5  = 5     ; Pin Change Enable Mask 5
+,,,       .equ   PCINT6  = 6     ; Pin Change Enable Mask 6
+,,,       .equ   PCINT7  = 7     ; Pin Change Enable Mask 7
+,,,       
+,,,       ; PCIFR - Pin Change Interrupt Flag Register
+,,,       .equ   PCIF0   = 0     ; Pin Change Interrupt Flag 0
+,,,       .equ   PCIF1   = 1     ; Pin Change Interrupt Flag 1
+,,,       .equ   PCIF2   = 2     ; Pin Change Interrupt Flag 2
+,,,       
+,,,       
+,,,       ; ***** SPI **************************
+,,,       ; SPDR - SPI Data Register
+,,,       .equ   SPDR0   = 0     ; SPI Data Register bit 0
+,,,       .equ   SPDR1   = 1     ; SPI Data Register bit 1
+,,,       .equ   SPDR2   = 2     ; SPI Data Register bit 2
+,,,       .equ   SPDR3   = 3     ; SPI Data Register bit 3
+,,,       .equ   SPDR4   = 4     ; SPI Data Register bit 4
+,,,       .equ   SPDR5   = 5     ; SPI Data Register bit 5
+,,,       .equ   SPDR6   = 6     ; SPI Data Register bit 6
+,,,       .equ   SPDR7   = 7     ; SPI Data Register bit 7
+,,,       
+,,,       ; SPSR - SPI Status Register
+,,,       .equ   SPI2X   = 0     ; Double SPI Speed Bit
+,,,       .equ   WCOL    = 6     ; Write Collision Flag
+,,,       .equ   SPIF    = 7     ; SPI Interrupt Flag
+,,,       
+,,,       ; SPCR - SPI Control Register
+,,,       .equ   SPR0    = 0     ; SPI Clock Rate Select 0
+,,,       .equ   SPR1    = 1     ; SPI Clock Rate Select 1
+,,,       .equ   CPHA    = 2     ; Clock Phase
+,,,       .equ   CPOL    = 3     ; Clock polarity
+,,,       .equ   MSTR    = 4     ; Master/Slave Select
+,,,       .equ   DORD    = 5     ; Data Order
+,,,       .equ   SPE     = 6     ; SPI Enable
+,,,       .equ   SPIE    = 7     ; SPI Interrupt Enable
+,,,       
+,,,       
+,,,       ; ***** CPU **************************
+,,,       ; SREG - Status Register
+,,,       .equ   SREG_C  = 0     ; Carry Flag
+,,,       .equ   SREG_Z  = 1     ; Zero Flag
+,,,       .equ   SREG_N  = 2     ; Negative Flag
+,,,       .equ   SREG_V  = 3     ; Two's Complement Overflow Flag
+,,,       .equ   SREG_S  = 4     ; Sign Bit
+,,,       .equ   SREG_H  = 5     ; Half Carry Flag
+,,,       .equ   SREG_T  = 6     ; Bit Copy Storage
+,,,       .equ   SREG_I  = 7     ; Global Interrupt Enable
+,,,       
+,,,       ; OSCCAL - Oscillator Calibration Value
+,,,       .equ   CAL0    = 0     ; Oscillator Calibration Value Bit0
+,,,       .equ   CAL1    = 1     ; Oscillator Calibration Value Bit1
+,,,       .equ   CAL2    = 2     ; Oscillator Calibration Value Bit2
+,,,       .equ   CAL3    = 3     ; Oscillator Calibration Value Bit3
+,,,       .equ   CAL4    = 4     ; Oscillator Calibration Value Bit4
+,,,       .equ   CAL5    = 5     ; Oscillator Calibration Value Bit5
+,,,       .equ   CAL6    = 6     ; Oscillator Calibration Value Bit6
+,,,       .equ   CAL7    = 7     ; Oscillator Calibration Value Bit7
+,,,       
+,,,       ; CLKPR - Clock Prescale Register
+,,,       .equ   CLKPS0  = 0     ; Clock Prescaler Select Bit 0
+,,,       .equ   CLKPS1  = 1     ; Clock Prescaler Select Bit 1
+,,,       .equ   CLKPS2  = 2     ; Clock Prescaler Select Bit 2
+,,,       .equ   CLKPS3  = 3     ; Clock Prescaler Select Bit 3
+,,,       .equ   CLKPCE  = 7     ; Clock Prescaler Change Enable
+,,,       
+,,,       ; SPMCSR - Store Program Memory Control Register
+,,,       .equ   SELFPRGEN       = 0     ; Self Programming Enable
+,,,       .equ   PGERS   = 1     ; Page Erase
+,,,       .equ   PGWRT   = 2     ; Page Write
+,,,       .equ   BLBSET  = 3     ; Boot Lock Bit Set
+,,,       .equ   RWWSRE  = 4     ; Read-While-Write section read enable
+,,,       .equ   RWWSB   = 6     ; Read-While-Write Section Busy
+,,,       .equ   SPMIE   = 7     ; SPM Interrupt Enable
+,,,       
+,,,       ; MCUCR - MCU Control Register
+,,,       .equ   PUD     = 4     ; 
+,,,       
+,,,       ; MCUSR - MCU Status Register
+,,,       .equ   PORF    = 0     ; Power-on reset flag
+,,,       .equ   EXTRF   = 1     ; External Reset Flag
+,,,       .equ   EXTREF  = EXTRF ; For compatibility
+,,,       .equ   BORF    = 2     ; Brown-out Reset Flag
+,,,       .equ   WDRF    = 3     ; Watchdog Reset Flag
+,,,       
+,,,       ; SMCR - 
+,,,       .equ   SE      = 0     ; 
+,,,       .equ   SM0     = 1     ; 
+,,,       .equ   SM1     = 2     ; 
+,,,       .equ   SM2     = 3     ; 
+,,,       
+,,,       ; GPIOR2 - General Purpose I/O Register 2
+,,,       .equ   GPIOR20 = 0     ; 
+,,,       .equ   GPIOR21 = 1     ; 
+,,,       .equ   GPIOR22 = 2     ; 
+,,,       .equ   GPIOR23 = 3     ; 
+,,,       .equ   GPIOR24 = 4     ; 
+,,,       .equ   GPIOR25 = 5     ; 
+,,,       .equ   GPIOR26 = 6     ; 
+,,,       .equ   GPIOR27 = 7     ; 
+,,,       
+,,,       ; GPIOR1 - General Purpose I/O Register 1
+,,,       .equ   GPIOR10 = 0     ; 
+,,,       .equ   GPIOR11 = 1     ; 
+,,,       .equ   GPIOR12 = 2     ; 
+,,,       .equ   GPIOR13 = 3     ; 
+,,,       .equ   GPIOR14 = 4     ; 
+,,,       .equ   GPIOR15 = 5     ; 
+,,,       .equ   GPIOR16 = 6     ; 
+,,,       .equ   GPIOR17 = 7     ; 
+,,,       
+,,,       ; GPIOR0 - General Purpose I/O Register 0
+,,,       .equ   GPIOR00 = 0     ; 
+,,,       .equ   GPIOR01 = 1     ; 
+,,,       .equ   GPIOR02 = 2     ; 
+,,,       .equ   GPIOR03 = 3     ; 
+,,,       .equ   GPIOR04 = 4     ; 
+,,,       .equ   GPIOR05 = 5     ; 
+,,,       .equ   GPIOR06 = 6     ; 
+,,,       .equ   GPIOR07 = 7     ; 
+,,,       
+,,,       ; PRR - Power Reduction Register
+,,,       .equ   PRADC   = 0     ; Power Reduction ADC
+,,,       .equ   PRUSART0        = 1     ; Power Reduction USART
+,,,       .equ   PRSPI   = 2     ; Power Reduction Serial Peripheral Interface
+,,,       .equ   PRTIM1  = 3     ; Power Reduction Timer/Counter1
+,,,       .equ   PRTIM0  = 5     ; Power Reduction Timer/Counter0
+,,,       .equ   PRTIM2  = 6     ; Power Reduction Timer/Counter2
+,,,       .equ   PRTWI   = 7     ; Power Reduction TWI
+,,,       
+,,,       
+,,,       ; ***** WATCHDOG *********************
+,,,       ; WDTCSR - Watchdog Timer Control Register
+,,,       .equ   WDP0    = 0     ; Watch Dog Timer Prescaler bit 0
+,,,       .equ   WDP1    = 1     ; Watch Dog Timer Prescaler bit 1
+,,,       .equ   WDP2    = 2     ; Watch Dog Timer Prescaler bit 2
+,,,       .equ   WDE     = 3     ; Watch Dog Enable
+,,,       .equ   WDCE    = 4     ; Watchdog Change Enable
+,,,       .equ   WDP3    = 5     ; Watchdog Timer Prescaler Bit 3
+,,,       .equ   WDIE    = 6     ; Watchdog Timeout Interrupt Enable
+,,,       .equ   WDIF    = 7     ; Watchdog Timeout Interrupt Flag
+,,,       
+,,,       
+,,,       ; ***** EEPROM ***********************
+,,,       ; EEARL - EEPROM Address Register Low Byte
+,,,       .equ   EEAR0   = 0     ; EEPROM Read/Write Access Bit 0
+,,,       .equ   EEAR1   = 1     ; EEPROM Read/Write Access Bit 1
+,,,       .equ   EEAR2   = 2     ; EEPROM Read/Write Access Bit 2
+,,,       .equ   EEAR3   = 3     ; EEPROM Read/Write Access Bit 3
+,,,       .equ   EEAR4   = 4     ; EEPROM Read/Write Access Bit 4
+,,,       .equ   EEAR5   = 5     ; EEPROM Read/Write Access Bit 5
+,,,       .equ   EEAR6   = 6     ; EEPROM Read/Write Access Bit 6
+,,,       .equ   EEAR7   = 7     ; EEPROM Read/Write Access Bit 7
+,,,       
+,,,       ; EEDR - EEPROM Data Register
+,,,       .equ   EEDR0   = 0     ; EEPROM Data Register bit 0
+,,,       .equ   EEDR1   = 1     ; EEPROM Data Register bit 1
+,,,       .equ   EEDR2   = 2     ; EEPROM Data Register bit 2
+,,,       .equ   EEDR3   = 3     ; EEPROM Data Register bit 3
+,,,       .equ   EEDR4   = 4     ; EEPROM Data Register bit 4
+,,,       .equ   EEDR5   = 5     ; EEPROM Data Register bit 5
+,,,       .equ   EEDR6   = 6     ; EEPROM Data Register bit 6
+,,,       .equ   EEDR7   = 7     ; EEPROM Data Register bit 7
+,,,       
+,,,       ; EECR - EEPROM Control Register
+,,,       .equ   EERE    = 0     ; EEPROM Read Enable
+,,,       .equ   EEPE    = 1     ; EEPROM Write Enable
+,,,       .equ   EEWE    = EEPE  ; For compatibility
+,,,       .equ   EEMPE   = 2     ; EEPROM Master Write Enable
+,,,       .equ   EEMWE   = EEMPE ; For compatibility
+,,,       .equ   EERIE   = 3     ; EEPROM Ready Interrupt Enable
+,,,       .equ   EEPM0   = 4     ; EEPROM Programming Mode Bit 0
+,,,       .equ   EEPM1   = 5     ; EEPROM Programming Mode Bit 1
+,,,       
+,,,       
+,,,       
+,,,       ; ***** LOCKSBITS ********************************************************
+,,,       .equ   LB1     = 0     ; Lockbit
+,,,       .equ   LB2     = 1     ; Lockbit
+,,,       
+,,,       
+,,,       ; ***** FUSES ************************************************************
+,,,       ; LOW fuse bits
+,,,       .equ   CKSEL0  = 0     ; Select Clock Source
+,,,       .equ   CKSEL1  = 1     ; Select Clock Source
+,,,       .equ   CKSEL2  = 2     ; Select Clock Source
+,,,       .equ   CKSEL3  = 3     ; Select Clock Source
+,,,       .equ   SUT0    = 4     ; Select start-up time
+,,,       .equ   SUT1    = 5     ; Select start-up time
+,,,       .equ   CKOUT   = 6     ; Clock output
+,,,       .equ   CKDIV8  = 7     ; Divide clock by 8
+,,,       
+,,,       ; HIGH fuse bits
+,,,       .equ   BODLEVEL0       = 0     ; Brown-out Detector trigger level
+,,,       .equ   BODLEVEL1       = 1     ; Brown-out Detector trigger level
+,,,       .equ   BODLEVEL2       = 2     ; Brown-out Detector trigger level
+,,,       .equ   EESAVE  = 3     ; EEPROM memory is preserved through chip erase
+,,,       .equ   WDTON   = 4     ; Watchdog Timer Always On
+,,,       .equ   SPIEN   = 5     ; Enable Serial programming and Data Downloading
+,,,       .equ   DWEN    = 6     ; debugWIRE Enable
+,,,       .equ   RSTDISBL        = 7     ; External reset disable
+,,,       
+,,,       ; EXTENDED fuse bits
+,,,       ;.equ  SELFPRGEN       = 0     ; Self Programming Enable
+,,,       
+,,,       
+,,,       
+,,,       ; ***** CPU REGISTER DEFINITIONS *****************************************
+,,,       .def   XH      = r27
+,,,       .def   XL      = r26
+,,,       .def   YH      = r29
+,,,       .def   YL      = r28
+,,,       .def   ZH      = r31
+,,,       .def   ZL      = r30
+,,,       
+,,,       
+,,,       
+,,,       ; ***** DATA MEMORY DECLARATIONS *****************************************
+,,,       .equ   FLASHEND        = 0x07ff        ; Note: Word address
+,,,       .equ   IOEND   = 0x00ff
+,,,       .equ   SRAM_START      = 0x0100
+,,,       .equ   SRAM_SIZE       = 512
+,,,       .equ   RAMEND  = 0x02ff
+,,,       .equ   XRAMEND = 0x0000
+,,,       .equ   E2END   = 0x00ff
+,,,       .equ   EEPROMEND       = 0x00ff
+,,,       .equ   EEADRBITS       = 8
+,,,       #pragma AVRPART MEMORY PROG_FLASH 4096
+,,,       #pragma AVRPART MEMORY EEPROM 256
+,,,       #pragma AVRPART MEMORY INT_SRAM SIZE 512
+,,,       #pragma AVRPART MEMORY INT_SRAM START_ADDR 0x100
+,,,       
+,,,       
+,,,       
+,,,       ; ***** BOOTLOADER DECLARATIONS ******************************************
+,,,       .equ   NRWW_START_ADDR = 0x0
+,,,       .equ   NRWW_STOP_ADDR  = 0x7ff
+,,,       .equ   RWW_START_ADDR  = 0x0
+,,,       .equ   RWW_STOP_ADDR   = 0x0
+,,,       .equ   PAGESIZE        = 32
+,,,       
+,,,       
+,,,       
+,,,       ; ***** INTERRUPT VECTORS ************************************************
+,,,       .equ   INT0addr        = 0x0001        ; External Interrupt Request 0
+,,,       .equ   INT1addr        = 0x0002        ; External Interrupt Request 1
+,,,       .equ   PCI0addr        = 0x0003        ; Pin Change Interrupt Request 0
+,,,       .equ   PCI1addr        = 0x0004        ; Pin Change Interrupt Request 0
+,,,       .equ   PCI2addr        = 0x0005        ; Pin Change Interrupt Request 1
+,,,       .equ   WDTaddr = 0x0006        ; Watchdog Time-out Interrupt
+,,,       .equ   OC2Aaddr        = 0x0007        ; Timer/Counter2 Compare Match A
+,,,       .equ   OC2Baddr        = 0x0008        ; Timer/Counter2 Compare Match A
+,,,       .equ   OVF2addr        = 0x0009        ; Timer/Counter2 Overflow
+,,,       .equ   ICP1addr        = 0x000a        ; Timer/Counter1 Capture Event
+,,,       .equ   OC1Aaddr        = 0x000b        ; Timer/Counter1 Compare Match A
+,,,       .equ   OC1Baddr        = 0x000c        ; Timer/Counter1 Compare Match B
+,,,       .equ   OVF1addr        = 0x000d        ; Timer/Counter1 Overflow
+,,,       .equ   OC0Aaddr        = 0x000e        ; TimerCounter0 Compare Match A
+,,,       .equ   OC0Baddr        = 0x000f        ; TimerCounter0 Compare Match B
+,,,       .equ   OVF0addr        = 0x0010        ; Timer/Couner0 Overflow
+,,,       .equ   SPIaddr = 0x0011        ; SPI Serial Transfer Complete
+,,,       .equ   URXCaddr        = 0x0012        ; USART Rx Complete
+,,,       .equ   UDREaddr        = 0x0013        ; USART, Data Register Empty
+,,,       .equ   UTXCaddr        = 0x0014        ; USART Tx Complete
+,,,       .equ   ADCCaddr        = 0x0015        ; ADC Conversion Complete
+,,,       .equ   ERDYaddr        = 0x0016        ; EEPROM Ready
+,,,       .equ   ACIaddr = 0x0017        ; Analog Comparator
+,,,       .equ   TWIaddr = 0x0018        ; Two-wire Serial Interface
+,,,       .equ   SPMRaddr        = 0x0019        ; Store Program Memory Read
+,,,       
+,,,       .equ   INT_VECTORS_SIZE        = 26    ; size in words
+,,,       
+,,,       #endif  /* _M48DEF_INC_ */
+,,,       
+,,,       ; ***** END OF FILE ******************************************************
+,,,       .INCLUDE "01_Definitions.asm"
+,,,       
+,,,       ;*****************[ Common constants ]**********************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       ;Project compilation date and time, device type
+,,,       #define PROJECT_DATE __CENTURY__*1000000 + __YEAR__*10000 + __MONTH__*100 + __DAY__
+,,,       #define PROJECT_TIME __HOUR__*10000 + __MINUTE__*100 + __SECOND__
+,,,       #define DEVICESTRING "ATmega48"
+,,,       
+,,,       ;Version
+,,,       .EQU  IP_VERSION        = $0204
+,,,       .EQU  IP_PROJECT_DATE   = PROJECT_DATE
+,,,       .EQU  IP_PROJECT_TIME   = PROJECT_TIME
+,,,       
+,,,       ;Firmware loading date and time, if exists
+,,,       .EQU  LOAD_DATE_TIME    = ((FLASHEND + 1) - PAGESIZE + 1) ;$07E1
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ Константы протокола EAST2 ]*************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       ;EQU  EAST2_START                    = $85
+,,,       ;EQU  EAST2_STOP                     = $21
+,,,       ;EQU  EAST2_DEVICE_ADDRESS           = $02
+,,,       
+,,,       ;EQU  CMD_CONNECT                    = $00
+,,,       ;EQU  CMD_SLED_CONTROL               = $10 ;
+,,,       ;EQU  CMD_GLED_CONTROL               = $11 ;
+,,,       ;EQU  CMD_GET_STATE                  = $12 ;
+,,,       
+,,,       ;.EQU  CMD_IRIVER_VOLP                = $15;
+,,,       ;.EQU  CMD_IRIVER_BACK                = $16;
+,,,       ;.EQU  CMD_IRIVER_NEXT                = $17;
+,,,       ;.EQU  CMD_PANASONIC_EXTERNAL         = $21;
+,,,       ;.EQU  CMD_PANASONIC_INTERNAL         = $22;
+,,,       ;.EQU  CMD_PANASONIC_LIGHT            = $23;
+,,,       ;.EQU  CMD_PANASONIC_SLEEP_ON         = $24;
+,,,       ;.EQU  CMD_PANASONIC_SLEEP_OFF        = $25;
+,,,       ;.EQU  CMD_PANASONIC_MOTOR_ON         = $26;
+,,,       ;.EQU  CMD_PANASONIC_MOTOR_OFF        = $27;
+,,,       
+,,,       ;EQU  CMD_BOOT_ENTER                 = $F0
+,,,       ;EQU  CMD_DISCONNECT                 = $FF
+,,,       
+,,,       ;EQU  STATUS_SUCCESS                 = $00
+,,,       ;EQU  STATUS_ERROR                   = $02
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ Режимы работы EAST2]********************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       ;EQU EAST2_WAIT_START               = 0
+,,,       ;EQU EAST2_WAIT_SIZEL               = 1
+,,,       ;EQU EAST2_WAIT_SIZEH               = 2
+,,,       ;EQU EAST2_WAIT_DATA                = 3
+,,,       ;EQU EAST2_WAIT_STOP                = 4
+,,,       ;EQU EAST2_WAIT_CSL                 = 5
+,,,       ;EQU EAST2_WAIT_CSH                 = 6
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ Режимы работы State]********************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       ;EQU STATE_IDLE                     = 0
+,,,       ;EQU STATE_POWER_ON                 = 1
+,,,       ;EQU STATE_VBAT_GOOD                = 2
+,,,       ;EQU STATE_VBAT_NORM                = 3
+,,,       ;EQU STATE_VBAT_LOW                 = 4
+,,,       ;EQU STATE_VBAT_FATAL               = 5
+,,,       ;EQU STATE_LIGHT_SAVE_OK            = 6
+,,,       ;EQU STATE_LEDLIGHT_ON              = 7
+,,,       ;EQU STATE_LEDLIGHT_OFF             = 8
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ Режимы работы LED Light]****************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       ;EQU LL_STATE_OFF                   = 0
+,,,       ;EQU LL_STATE_MAX                   = 1
+,,,       ;EQU LL_STATE_MID                   = 2
+,,,       ;EQU LL_STATE_MIN                   = 3
+,,,       ;EQU LL_STATE_FLS                   = 4
+,,,       
+,,,       ;EQU LL_IR_CMD_TOGGLE               = 1
+,,,       ;EQU LL_IR_CMD_NEXT                 = 2
+,,,       ;EQU LL_IR_CMD_MIN                  = 3
+,,,       ;EQU LL_IR_CMD_MID                  = 4
+,,,       ;EQU LL_IR_CMD_MAX                  = 5
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ Hardware ports and pins ]***************************************
+,,,       ;***********************************************************************************
+,,,       ;*** Status  LED  RGB   - Pin 23, 24, 25 - PC0, PC1, PC2 - ADC0, ADC1, ADC2 ***
+,,,       .EQU SLEDDDR   = DDRC
+,,,       .EQU SLEDPORT  = PORTC
+,,,       .EQU SLEDR     = PC0
+,,,       .EQU SLEDG     = PC1
+,,,       .EQU SLEDB     = PC2
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** Power   LED  Green - Pin 26         - PC3           - ADC3 ***
+,,,       .EQU PLEDDDR   = DDRC
+,,,       .EQU PLEDPORT  = PORTC
+,,,       .EQU PLED      = PC3
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** Gear LED 1 Blue    - Pin 9          - PD5           - OC0B ***
+,,,       .EQU GLED1DDR  = DDRD
+,,,       .EQU GLED1PORT = PORTD
+,,,       .EQU GLED1     = PD5
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** Gear LED 2 Blue    - Pin 3          - PD3           - OC2B ***
+,,,       .EQU GLED2DDR  = DDRD
+,,,       .EQU GLED2PORT = PORTD
+,,,       .EQU GLED2     = PD3
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** Phototransistor    - Pin 19         - xxx           - ADC6 ***
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** Power Voltage      - Pin 27, 28     - PC4, PC5      - ADC4, ADC5 ***
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** IR Receiver        - Pin 12, 32     - PB0, PD2      - ICP1, INT0 ***
+,,,       .EQU IRDDR     = DDRB
+,,,       .EQU IRPORT    = PORTB
+,,,       .EQU IR        = PB0
+,,,       .EQU ICMD      = GPIOR0
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** LED Light          - Pin 10         - PD6           - xxx ***
+,,,       .EQU LEDLDDR   = DDRD
+,,,       .EQU LEDLPORT  = PORTD
+,,,       .EQU LEDLPIN   = PIND
+,,,       .EQU LEDLIGHT  = PD6
+,,,       ;-----------------------------------------------------------------------------------
+,,,       ;*** UART               - Pin 30, 31     - PD0, PD1      - RXD, TXD ***
+,,,       .EQU UARTDDR   = DDRD
+,,,       .EQU UARTPORT  = PORTD
+,,,       .EQU URX       = PD0
+,,,       .EQU UTX       = PD1
+,,,       ;EQU UCMD      = GPIOR1
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ RAM variables ]*************************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       .DSEG
+,,,         ; --- UART ---
+000200,0000,,  rUMode:        .BYTE  1
+000202,0000,,  rUSize:        .BYTE  2
+000206,0000,,  rUBuffer:      .BYTE  80
+0002A6,0000,,  rUCnt:         .BYTE  2
+0002AA,0000,,  rUPtr:         .BYTE  2
+0002AE,0000,,  rUCS:          .BYTE  2
+,,,         ; --- IR ---
+0002B2,0000,,  rIIndex:       .BYTE  1
+0002B4,0000,,  rIAddr:        .BYTE  1
+0002B6,0000,,  rInAddr:       .BYTE  1
+0002B8,0000,,  rICmd:         .BYTE  1
+0002BA,0000,,  rInCmd:        .BYTE  1
+,,,         ; --- ADC ---
+0002BC,0000,,  rLuminosity:   .BYTE  2
+0002C0,0000,,  rBattery:      .BYTE  2
+,,,         ; --- Gear LEDs ---
+0002C4,0000,,  rBrightness:   .BYTE  1
+,,,         ; --- SysTick ---
+0002C6,0000,,  rSysTickCnt:   .BYTE  2
+,,,         ; --- State LEDs ---
+0002CA,0000,,  rSState:       .BYTE  1
+0002CC,0000,,  rSStatePhase:  .BYTE  1
+0002CE,0000,,  rSStatePhases: .BYTE  10
+0002E2,0000,,  rSStateTimer:  .BYTE  1
+0002E4,0000,,  rSStateLEDs:   .BYTE  1
+,,,         ; --- LED Light ---
+0002E6,0000,,  rLFlags:       .BYTE  1
+0002E8,0000,,  rLBTimer:      .BYTE  1
+0002EA,0000,,  rLCTimer:      .BYTE  1
+0002EC,0000,,  rLCState:      .BYTE  1
+0002EE,0000,,  rLNState:      .BYTE  1
+,,,       .CSEG
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;*****************[ Register variables ]********************************************
+,,,       ;***********************************************************************************
+,,,       ;Register for storeing SREG in interrupts
+,,,       .DEF SSREG   = r13
+,,,       ;Global temporary register (used also as parameter for get/set values)
+,,,       .DEF Temp    = r16
+,,,       .DEF Value   = r16
+,,,       ;Global flags register (DO NOT USE as General register!!!)
+,,,       .DEF Flags   = r17
+,,,       .EQU  RF     = 0   ;Reset Flag
+,,,       .EQU  SF     = 1   ;Sleep Flag
+,,,       .EQU  UF     = 2   ;UART Flag
+,,,       .EQU  IF     = 3   ;IR Flag
+,,,       .EQU  CF     = 4   ;Command Flag
+,,,       .EQU  BF     = 5   ;Blink Flag
+,,,       .EQU  TF     = 6   ;SysTick Flag
+,,,       .EQU  LF     = 7   ;Led Light Flag
+,,,       ;Global get/set 16 bit parameter registers
+,,,       .DEF ValueL  = r24
+,,,       .DEF ValueH  = r25
+,,,       
+,,,       ;*****************[ Main ]**********************************************************
+,,,       ;DEF Light   = r2
+,,,       ;DEF I_nCmd  = r3
+,,,       ;DEF SSREG   = r13
+,,,       
+,,,       ;DEF Delay0  = r14
+,,,       ;DEF Delay1  = r15
+,,,       ;DEF Del50ms = r16
+,,,       
+,,,       ;DEF Temp    = r16
+,,,       ;DEF Delay   = r17
+,,,       ;DEF Timer   = r18
+,,,       ;DEF Port    = r19
+,,,       
+,,,       
+,,,       ;*****************[ UART ]**********************************************************
+,,,       
+,,,       ;DEF Temp    = r16
+,,,       ;DEF Mode    = r16
+,,,       ;DEF U_Data  = r21
+,,,       ;DEF U_Addr  = r22
+,,,       ;DEF U_Cmd   = r23
+,,,       ;DEF U_Param = r24
+,,,       
+,,,       ;DEF U_Cnt   = r26
+,,,       ;DEF U_CntL  = r26
+,,,       ;DEF U_CntH  = r27
+,,,       ;DEF U_Reg   = r28
+,,,       ;DEF U_RegL  = r28
+,,,       ;DEF U_RegH  = r29
+,,,       ;DEF U_Ptr   = r28
+,,,       ;DEF U_PtrL  = r28
+,,,       ;DEF U_PtrH  = r29
+,,,       ;DEF U_CS    = r30
+,,,       ;DEF U_CSL   = r30
+,,,       ;DEF U_CSH   = r31
+,,,       
+,,,       ;*****************[ IR ]************************************************************
+,,,       
+,,,       ;DEF I_Cmd   = r16
+,,,       ;DEF I_DutyL = r28
+,,,       ;DEF I_DutyH = r29
+,,,       
+,,,       ;*****************[ ADC ]***********************************************************
+,,,       
+,,,       ;DEF A_VL     = r2
+,,,       ;DEF A_VH     = r3
+,,,       ;DEF A_Mode   = r21
+,,,       ;DEF A_ValueL = r28
+,,,       ;DEF A_ValueH = r29
+,,,       
+,,,       ;*****************[ UART ]**********************************************************
+,,,       
+,,,       ;DEF Temp     = r16
+,,,       .DEF E_Data   = r21
+,,,       .DEF E_Addr   = r22
+,,,       
+,,,       ;*****************[ LED Light ]*****************************************************
+,,,       
+,,,       ;DEF L_Flags  = r6  ;  6 7 8 9 10 11 12
+,,,       ;EQU  LFF     = 0   ;Button Fall Flag
+,,,       ;EQU  LRF     = 1   ;Button Rise Flag
+,,,       ;EQU  LNF     = 2   ;Need to switch to next state Flag
+,,,       ;DEF L_BTimer = r7  ;Button Timer
+,,,       ;DEF L_CTimer = r8  ;Command Timer
+,,,       ;DEF L_CState = r9  ;Current State
+,,,       ;DEF L_NState = r10 ;New State if needed
+,,,       ;DEF Temp     = r16
+,,,       ;DEF L_ICmd   = r16
+,,,       ;DEF L_Temp   = r20
+,,,       
+,,,       
+,,,       ;*****************[ System Tick ]***************************************************
+,,,       
+,,,       ;DEF T_State   = r21
+,,,       ;DEF T_Phase   = r22
+,,,       ;DEF T_Timer   = r23
+,,,       ;DEF T_Value   = r24
+,,,       ;DEF T_CntL    = r28
+,,,       ;DEF T_CntH    = r29
+,,,       ;DEF T_PhasesL = r28
+,,,       ;DEF T_PhasesH = r29
+,,,       ;DEF T_FlashL  = r30
+,,,       ;DEF T_FlashH  = r31
+,,,       .INCLUDE "02_Interrupts.asm"
+,,,       
+,,,       ;ATmega48 Interrupts
+,,,       .ORG $0000
+000000,C4F0,,   rjmp  Reset
+,,,       .ORG $0001
+000002,9518,,   reti            ;Int0
+,,,       .ORG $0002
+000004,9518,,   reti            ;Int1
+,,,       .ORG $0003
+000006,9518,,   reti            ;PCInt0
+,,,       .ORG $0004
+000008,9518,,   reti            ;PCInt1
+,,,       .ORG $0005
+00000A,C443,,   rjmp  LEDLIGHT_Btn ;PCInt2
+,,,       .ORG $0006
+00000C,9518,,   reti            ;WDT
+,,,       .ORG $0007
+00000E,9518,,   reti            ;T2 Comp A
+,,,       .ORG $0008
+000010,9518,,   reti            ;T2 Comp B
+,,,       .ORG $0009
+000012,9518,,   reti            ;T2 Ovf
+,,,       .ORG $000A
+000014,C34A,,   rjmp  TSOP_Capture ;T1 Capt
+,,,       .ORG $000B
+000016,9518,,   reti            ;T1 Comp A
+,,,       .ORG $000C
+000018,9518,,   reti            ;T1 Comp B
+,,,       .ORG $000D
+00001A,C3CE,,   rjmp  TSOP_Ovf  ;T1 Ovf
+,,,       .ORG $000E
+00001C,9518,,   reti            ;T0 Comp A
+,,,       .ORG $000F
+00001E,9518,,   reti            ;T0 Comp B
+,,,       .ORG $0010
+000020,C30D,,   rjmp  SysTick_Ovf  ;T0 Ovf
+,,,       .ORG $0011
+000022,9518,,   reti            ;SPI STC
+,,,       .ORG $0012
+000024,C057,,   rjmp  UART_RxC  ;USART Rx
+,,,       .ORG $0013
+000026,9518,,   reti            ;USART UDRE
+,,,       .ORG $0014
+000028,9518,,   reti            ;USART Tx
+,,,       .ORG $0015
+00002A,C290,,   rjmp  ADC_Complete ;ADC
+,,,       .ORG $0016
+00002C,9518,,   reti            ;EE Ready
+,,,       .ORG $0017
+00002E,9518,,   reti            ;AC
+,,,       .ORG $0018
+000030,9518,,   reti            ;TWI
+,,,       .ORG $0019
+000032,9518,,   reti            ;SPM Ready
+,,,       .ORG $0020
+,,,       .INCLUDE "03_Delay.asm"
+,,,       
+,,,       
+,,,       .DEF Delay0  = r14
+,,,       .DEF Delay1  = r15
+,,,       
+,,,       ;*****************[ Delay Function by 25 ms ]***************************************
+,,,       
+,,,       Delay25msX:
+000040,24EE,,   clr   Delay0     ;1
+000042,24FF,,   clr   Delay1     ;1
+,,,       D_Loop:
+000044,94EA,,   dec   Delay0     ;1
+000046,F7F1,,   brne  D_Loop     ;2 -> 3*256 = 768
+000048,94FA,,   dec   Delay1     ;1
+00004A,F7E1,,   brne  D_Loop     ;2 -> (768 + 3)*256 = 197376 (~24.7 ms for 8 MHz)
+00004C,950A,,   dec   Value      ;1
+00004E,F7D1,,   brne  D_Loop     ;2 -> (197376 + 3)*Value
+000050,9508,,   ret
+,,,       .INCLUDE "04_UART.asm"
+,,,       
+,,,       
+,,,       .EQU FOSC = 8000000    ;Hz
+,,,       .EQU BAUD = 38400      ;Bit/s
+,,,       
+,,,       .EQU UBRR = ((FOSC/16/BAUD) - 1)
+,,,       
+,,,       ; --- EAST2 Protocol/Commands ---
+,,,       
+,,,       .EQU  EAST2_START                    = $85
+,,,       .EQU  EAST2_STOP                     = $21
+,,,       .EQU  EAST2_DEVICE_ADDRESS           = $02
+,,,       
+,,,       .EQU  CMD_CONNECT                    = $00
+,,,       .EQU  CMD_SLED_CONTROL               = $10
+,,,       .EQU  CMD_GLED_CONTROL               = $11
+,,,       .EQU  CMD_GET_STATE                  = $12
+,,,       .EQU  CMD_BOOT_ENTER                 = $F0
+,,,       .EQU  CMD_DISCONNECT                 = $FF
+,,,       
+,,,       .EQU  STATUS_SUCCESS                 = $00
+,,,       .EQU  STATUS_ERROR                   = $02
+,,,       
+,,,       ; --- EAST2 States ---
+,,,       
+,,,       .EQU EAST2_WAIT_START                = 0
+,,,       .EQU EAST2_WAIT_SIZEL                = 1
+,,,       .EQU EAST2_WAIT_SIZEH                = 2
+,,,       .EQU EAST2_WAIT_DATA                 = 3
+,,,       .EQU EAST2_WAIT_STOP                 = 4
+,,,       .EQU EAST2_WAIT_CSL                  = 5
+,,,       .EQU EAST2_WAIT_CSH                  = 6
+,,,       
+,,,       ;*****************[ Local Variables ]***********************************************
+,,,       
+,,,       ;DEF Temp    = r16
+,,,       .DEF Mode    = r16
+,,,       ;DEF Flags   = r17
+,,,       .DEF U_Data  = r21
+,,,       .DEF U_Addr  = r22
+,,,       .DEF U_Cmd   = r23
+,,,       .DEF U_Dbg   = r23
+,,,       .DEF U_Param = r24
+,,,       .DEF U_Cnt   = r26
+,,,       .DEF U_CntL  = r26
+,,,       .DEF U_CntH  = r27
+,,,       .DEF U_Reg   = r28
+,,,       .DEF U_RegL  = r28
+,,,       .DEF U_RegH  = r29
+,,,       .DEF U_Ptr   = r28
+,,,       .DEF U_PtrL  = r28
+,,,       .DEF U_PtrH  = r29
+,,,       .DEF U_CS    = r30
+,,,       .DEF U_CSL   = r30
+,,,       .DEF U_CSH   = r31
+,,,       
+,,,       ;*****************[ UART Init]******************************************************
+,,,       
+,,,       UART_Init:
+,,,          ;Init TX pin
+000052,9A51,,   sbi   UARTDDR,UTX
+,,,          ;Init RAM variables
+000054,2700,,   clr   Temp
+000056,9300,,   sts   (rUCnt + 0),Temp
+00005A,9300,,   sts   (rUCnt + 1),Temp
+00005E,9300,,   sts   (rUPtr + 0),Temp
+000062,9300,,   sts   (rUPtr + 1),Temp
+000066,9300,,   sts   (rUCS + 0),Temp
+00006A,9300,,   sts   (rUCS + 1),Temp
+,,,          ;Initial state
+00006E,E000,,   ldi   Mode,EAST2_WAIT_START
+000070,9300,,   sts   rUMode,Mode
+,,,          ;Init BaudRate
+000074,E000,,   ldi   Temp,Byte2(UBRR)
+000076,9300,,   sts   UBRR0H,Temp
+00007A,E00C,,   ldi   Temp,Byte1(UBRR)
+00007C,9300,,   sts   UBRR0L,Temp
+,,,          ;Clear status
+000080,2700,,   clr   Temp
+000082,9300,,   sts   UCSR0A,Temp
+,,,          ;Enable Rx/Tx, Enable interrupt on Rx complete
+000086,E908,,   ldi   Temp,(1<<RXCIE0)|(1<<RXEN0)|(1<<TXEN0)|(0<<TXCIE0)
+000088,9300,,   sts   UCSR0B,Temp
+,,,          ;Async mode, no parity, 8 bit, 1 stop
+00008C,E006,,   ldi   Temp,(0<<UMSEL00)|(0<<UPM00)|(0<<USBS0)|(3<<UCSZ00)|(0<<UCPOL0)
+00008E,9300,,   sts   UCSR0C,Temp
+,,,          ;Send dummy byte
+000092,2700,,   clr   Temp
+000094,9300,,   sts   UDR0,Temp
+000098,9508,,   ret
+,,,       
+,,,       ;*****************[ UART DeInit ]***************************************************
+,,,       
+,,,       UART_DeInit:
+,,,          ;DeInit Tx pin
+00009A,2700,,   clr   Temp
+00009C,9851,,   cbi   UARTDDR,UTX
+,,,          ;DeInit UART
+00009E,2700,,   clr   Temp
+0000A0,9300,,   sts   UCSR0A,Temp
+0000A4,9300,,   sts   UCSR0B,Temp
+0000A8,9300,,   sts   UCSR0C,Temp
+0000AC,9508,,   ret
+,,,       
+,,,       ;*****************[ UART Tx ]*******************************************************
+,,,       
+,,,       UART_Tx:
+0000AE,9100,,   lds   Temp,UCSR0A
+0000B2,6400,,   sbr   Temp,(1<<TXC0)
+0000B4,9300,,   sts   UCSR0A,Temp
+0000B8,9350,,   sts   UDR0,U_Data
+,,,       UT_Wait:
+0000BC,9100,,   lds   Temp,UCSR0A
+0000C0,FF06,,   sbrs  Temp,TXC0
+0000C2,CFFC,,   rjmp  UT_Wait
+0000C4,9508,,   ret
+,,,       
+,,,       ;*****************[ UART Rx ]*******************************************************
+,,,       
+,,,       UART_Rx:
+,,,       UR_Wait:
+0000C6,9100,,   lds   Temp,UCSR0A
+0000CA,FF07,,   sbrs  Temp,RXC0
+0000CC,CFFC,,   rjmp  UR_Wait
+0000CE,9150,,   lds   U_Data,UDR0
+0000D2,9508,,   ret
+,,,       
+,,,       ;*****************[ UART Rx Complete Interrupt ]************************************
+,,,       
+,,,       UART_RxC:
+0000D4,B6DF,,   in    SSREG,SREG
+0000D6,935F,,   push  U_Data
+0000D8,9150,,   lds   U_Data,UDR0
+0000DC,930F,,   push  Mode
+0000DE,9100,,   lds   Mode,rUMode
+,,,       URC_Start:
+0000E2,3000,,   cpi   Mode,EAST2_WAIT_START
+0000E4,F429,,   brne  URC_SizeL
+0000E6,E805,,   ldi   Temp,EAST2_START
+0000E8,1350,,   cpse  U_Data,Temp
+0000EA,C05C,,   rjmp  URC_Error
+0000EC,E001,,   ldi   Mode,EAST2_WAIT_SIZEL
+0000EE,C060,,   rjmp  URC_End
+,,,       URC_SizeL:
+0000F0,3001,,   cpi   Mode,EAST2_WAIT_SIZEL
+0000F2,F431,,   brne  URC_SizeH
+0000F4,9350,,   sts   (rUCnt + 0),U_Data
+0000F8,9350,,   sts   (rUSize + 0),U_Data
+0000FC,E002,,   ldi   Mode,EAST2_WAIT_SIZEH
+0000FE,C058,,   rjmp  URC_End
+,,,       URC_SizeH:
+000100,3002,,   cpi   Mode,EAST2_WAIT_SIZEH
+000102,F4A9,,   brne  URC_Data
+000104,9350,,   sts   (rUCnt + 1),U_Data
+000108,9350,,   sts   (rUSize + 1),U_Data
+,,,       
+00010C,93CF,,   push  U_RegL
+00010E,93DF,,   push  U_RegH
+,,,       
+000110,E0C3,,   ldi   U_RegL,Byte1(rUBuffer)
+000112,E0D1,,   ldi   U_RegH,Byte2(rUBuffer)
+000114,93C0,,   sts   (rUPtr + 0),U_RegL
+000118,93D0,,   sts   (rUPtr + 1),U_RegH
+,,,       
+00011C,27CC,,   clr   U_Reg
+00011E,93C0,,   sts   (rUCS + 0),U_Reg
+000122,93C0,,   sts   (rUCS + 1),U_Reg
+,,,       
+000126,91DF,,   pop   U_RegH
+000128,91CF,,   pop   U_RegL
+,,,       
+00012A,E003,,   ldi   Mode,EAST2_WAIT_DATA
+00012C,C041,,   rjmp  URC_End
+,,,       URC_Data:
+00012E,3003,,   cpi   Mode,EAST2_WAIT_DATA
+000130,F521,,   brne  URC_Stop
+,,,       
+000132,93CF,,   push  U_RegL
+000134,93DF,,   push  U_RegH
+,,,       
+000136,91C0,,   lds   U_RegL,(rUPtr + 0)
+00013A,91D0,,   lds   U_RegH,(rUPtr + 1)
+00013E,9359,,   st    Y+,U_Data
+000140,93C0,,   sts   (rUPtr + 0),U_RegL
+000144,93D0,,   sts   (rUPtr + 1),U_RegH
+,,,       
+000148,91C0,,   lds   U_RegL,(rUCS + 0)
+00014C,91D0,,   lds   U_RegH,(rUCS + 1)
+000150,0FC5,,   add   U_RegL,U_Data
+000152,2755,,   clr   U_Data
+000154,1FD5,,   adc   U_RegH,U_Data
+000156,93C0,,   sts   (rUCS + 0),U_RegL
+00015A,93D0,,   sts   (rUCS + 1),U_RegH
+,,,       
+00015E,91C0,,   lds   U_RegL,(rUCnt + 0)
+000162,91D0,,   lds   U_RegH,(rUCnt + 1)
+000166,9721,,   sbiw  U_Reg,1
+000168,93C0,,   sts   (rUCnt + 0),U_RegL
+00016C,93D0,,   sts   (rUCnt + 1),U_RegH
+,,,       
+000170,91DF,,   pop   U_RegH
+000172,91CF,,   pop   U_RegL
+000174,F4E9,,   brne  URC_End
+,,,       
+000176,E004,,   ldi   Mode,EAST2_WAIT_STOP
+000178,C01B,,   rjmp  URC_End
+,,,       URC_Stop:
+00017A,3004,,   cpi   Mode,EAST2_WAIT_STOP
+00017C,F421,,   brne  URC_CSL
+00017E,3251,,   cpi   U_Data,EAST2_STOP
+000180,F489,,   brne  URC_Error
+000182,E005,,   ldi   Mode,EAST2_WAIT_CSL
+000184,C015,,   rjmp  URC_End
+,,,       URC_CSL:
+000186,3005,,   cpi   Mode,EAST2_WAIT_CSL
+000188,F431,,   brne  URC_CSH
+00018A,9100,,   lds   Temp,(rUCS + 0)
+00018E,1750,,   cp    U_Data,Temp
+000190,F449,,   brne  URC_Error
+000192,E006,,   ldi   Mode,EAST2_WAIT_CSH
+000194,C00D,,   rjmp  URC_End
+,,,       URC_CSH:
+000196,3006,,   cpi   Mode,EAST2_WAIT_CSH
+000198,F429,,   brne  URC_Error
+00019A,9100,,   lds   Temp,(rUCS + 1)
+00019E,1750,,   cp    U_Data,Temp
+0001A0,F409,,   brne  URC_Error
+0001A2,6014,,   sbr   Flags,(1<<UF)
+,,,       URC_Error:
+0001A4,2700,,   clr   Temp
+0001A6,9300,,   sts   (rUCnt + 0),Temp
+0001AA,9300,,   sts   (rUCnt + 1),Temp
+0001AE,E000,,   ldi   Mode,EAST2_WAIT_START
+,,,       URC_End:
+0001B0,9300,,   sts   rUMode,Mode
+0001B4,910F,,   pop   Mode
+0001B6,915F,,   pop   U_Data
+0001B8,BEDF,,   out   SREG,SSREG
+0001BA,9518,,   reti
+,,,       
+,,,       ;*****************[ UART Process Command ]******************************************
+,,,       
+,,,       UART_Process:
+,,,          ;Init variables
+0001BC,E0C3,,   ldi   U_PtrL,Byte1(rUBuffer)
+0001BE,E0D1,,   ldi   U_PtrH,Byte2(rUBuffer)
+0001C0,91A0,,   lds   U_CntL,(rUSize + 0)
+0001C4,91B0,,   lds   U_CntH,(rUSize + 1)
+0001C8,9169,,   ld    U_Addr,Y+
+0001CA,9179,,   ld    U_Cmd,Y+
+0001CC,8188,,   ld    U_Param,Y
+,,,          ;Check device address
+0001CE,3062,,   cpi   U_Addr,EAST2_DEVICE_ADDRESS
+0001D0,F009,,   breq  UCP_Connect
+0001D2,C02D,,   rjmp  UCP_Error
+,,,       ; --- Connect to Device ---
+,,,       UCP_Connect:
+0001D4,3070,,   cpi   U_Cmd,CMD_CONNECT
+0001D6,F4F1,,   brne  UCP_Enter_Boot
+,,,          ;Prepare answer
+,,,          ;Version
+0001D8,E004,,   ldi   Temp,Byte1(IP_VERSION)
+0001DA,9309,,   st    Y+,Temp
+0001DC,E002,,   ldi   Temp,Byte2(IP_VERSION)
+0001DE,9309,,   st    Y+,Temp
+,,,          ;Compilation date
+0001E0,E70E,,   ldi   Temp,Byte1(IP_PROJECT_DATE)
+0001E2,9309,,   st    Y+,Temp
+0001E4,EC07,,   ldi   Temp,Byte2(IP_PROJECT_DATE)
+0001E6,9309,,   st    Y+,Temp
+0001E8,E303,,   ldi   Temp,Byte3(IP_PROJECT_DATE)
+0001EA,9309,,   st    Y+,Temp
+0001EC,E001,,   ldi   Temp,Byte4(IP_PROJECT_DATE)
+0001EE,9309,,   st    Y+,Temp
+,,,          ;Compilation time
+0001F0,EF0D,,   ldi   Temp,Byte1(IP_PROJECT_TIME)
+0001F2,9309,,   st    Y+,Temp
+0001F4,E605,,   ldi   Temp,Byte2(IP_PROJECT_TIME)
+0001F6,9309,,   st    Y+,Temp
+0001F8,E003,,   ldi   Temp,Byte3(IP_PROJECT_TIME)
+0001FA,9309,,   st    Y+,Temp
+0001FC,E000,,   ldi   Temp,Byte4(IP_PROJECT_TIME)
+0001FE,9309,,   st    Y+,Temp
+,,,          ;Loading date and time
+000200,ECE2,,   ldi   ZL,Byte1(2*LOAD_DATE_TIME)
+000202,E0FF,,   ldi   ZH,Byte2(2*LOAD_DATE_TIME)
+000204,E0A8,,   ldi   U_Cnt,8
+,,,       UCPC_Loop:
+000206,9105,,   lpm   Temp,Z+
+000208,9309,,   st    Y+,Temp
+00020A,95AA,,   dec   U_Cnt
+00020C,F7E1,,   brne  UCPC_Loop
+,,,          ;Prepare answer length
+00020E,27BB,,   clr   U_CntH
+000210,E1A4,,   ldi   U_CntL,20
+000212,C04E,,   rjmp  UCP_End
+,,,       ; --- Enter to firmware upgrade mode ---
+,,,       UCP_Enter_Boot:
+000214,3F70,,   cpi   U_Cmd,CMD_BOOT_ENTER
+000216,F441,,   brne  UCP_Disconnect
+,,,          ;Store Key in RAM
+000218,E50A,,   ldi   Temp,Byte1($A55A)
+00021A,9300,,   sts   ($0100),Temp
+00021E,EA05,,   ldi   Temp,Byte2($A55A)
+000220,9300,,   sts   ($0101),Temp
+,,,          ;Start WatchDog for reset and enter to Bootloader
+000224,D078,,   rcall WDT_On
+,,,          ;Wait for reset
+,,,       UCPEB_WaitBoot:
+000226,CFFF,,   rjmp  UCPEB_WaitBoot
+,,,       ; --- Disconnect from Device ---
+,,,       UCP_Disconnect:
+000228,3F7F,,   cpi   U_Cmd,CMD_DISCONNECT
+00022A,F439,,   brne  UCP_SLED
+00022C,C03C,,   rjmp  UCP_Success
+,,,       ; --- Wrong Command ---
+,,,       UCP_Error:
+,,,          ;Prepare answer length
+00022E,27BB,,   clr   U_CntH
+000230,E0A3,,   ldi   U_CntL,3
+,,,          ;Prepare answer
+000232,E002,,   ldi   Temp,STATUS_ERROR
+000234,9300,,   sts   (rUBuffer + 2),Temp
+000238,C03B,,   rjmp  UCP_End
+,,,       ; --- Status LEDs control ---
+,,,       UCP_SLED:
+00023A,E150,,   ldi   U_Data,CMD_SLED_CONTROL
+00023C,1375,,   cpse  U_Cmd,U_Data
+00023E,C011,,   rjmp  UCP_GLED
+,,,          ;Status LED Red
+000240,FF80,,   sbrs  U_Param,0
+000242,D0C2,,   rcall SLEDR_Off
+000244,FD80,,   sbrc  U_Param,0
+000246,D0BE,,   rcall SLEDR_On
+,,,          ;Status LED Green
+000248,FF81,,   sbrs  U_Param,1
+00024A,D0C8,,   rcall SLEDG_Off
+00024C,FD81,,   sbrc  U_Param,1
+00024E,D0C4,,   rcall SLEDG_On
+,,,          ;Status LED Blue
+000250,FF82,,   sbrs  U_Param,2
+000252,D0C8,,   rcall SLEDB_Off
+000254,FD82,,   sbrc  U_Param,2
+000256,D0C4,,   rcall SLEDB_On
+,,,          ;Power LED
+000258,FF83,,   sbrs  U_Param,3
+00025A,D0CE,,   rcall PLED_Off
+00025C,FD83,,   sbrc  U_Param,3
+00025E,D0CA,,   rcall PLED_On
+000260,C022,,   rjmp  UCP_Success
+,,,       ; --- Gear LEDs control  ---
+,,,       UCP_GLED:
+000262,E151,,   ldi   U_Data,CMD_GLED_CONTROL
+000264,1375,,   cpse  U_Cmd,U_Data
+000266,C005,,   rjmp  UCP_State
+000268,9109,,   ld    Temp,Y+
+00026A,D1FC,,   rcall GLED1_SetBright
+00026C,9109,,   ld    Temp,Y+
+00026E,D1FC,,   rcall GLED2_SetBright
+000270,C01A,,   rjmp  UCP_Success
+,,,       ; --- Get Device State ---
+,,,       UCP_State:
+000272,E152,,   ldi   U_Data,CMD_GET_STATE
+000274,1375,,   cpse  U_Cmd,U_Data
+000276,C016,,   rjmp  UCP_Unknown
+,,,          ;Prepare answer length
+000278,27BB,,   clr   U_CntH
+00027A,E0AB,,   ldi   U_CntL,11
+,,,          ;Battery voltage
+00027C,D19B,,   rcall ADC_GetBatteryVoltage
+,,,          ;lds   Temp,(rBattery + 0)
+,,,          ;st    Y+,Temp
+00027E,9389,,   st    Y+,ValueL
+,,,          ;lds   Temp,(rBattery + 1)
+,,,          ;st    Y+,Temp
+000280,9399,,   st    Y+,ValueH
+,,,          ;Luminosity voltage
+000282,D19D,,   rcall ADC_GetLuminosityVoltage
+,,,          ;lds   Temp,(rLuminosity + 0)
+,,,          ;st    Y+,Temp
+000284,9389,,   st    Y+,ValueL
+,,,          ;lds   Temp,(rLuminosity + 1)
+,,,          ;st    Y+,Temp
+000286,9399,,   st    Y+,ValueH
+,,,          ;The last IR command
+000288,9100,,   lds   Temp,rIAddr
+00028C,9309,,   st    Y+,Temp
+00028E,9100,,   lds   Temp,rICmd
+000292,9309,,   st    Y+,Temp
+,,,          ;Status LED state
+000294,D0BA,,   rcall SLEDs_Capture
+000296,9309,,   st    Y+,Temp
+,,,          ;Gear 1 LED brightness
+000298,B508,,   in    Temp,OCR0B
+00029A,9309,,   st    Y+,Temp
+,,,          ;Gear 2 LED brightness
+00029C,9100,,   lds   Temp,OCR2B
+0002A0,9309,,   st    Y+,Temp
+0002A2,C006,,   rjmp  UCP_End
+,,,       ; --- Unknown command ---
+,,,       UCP_Unknown:
+0002A4,9508,,   ret
+,,,       ;   ldi   U_Data,CMD_IRIVER_VOLP
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Back
+,,,       ;   rcall iRiver_VolP
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Back:
+,,,       ;   ldi   U_Data,CMD_IRIVER_BACK
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Next
+,,,       ;   rcall iRiver_Back
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Next:
+,,,       ;   ldi   U_Data,CMD_IRIVER_NEXT
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_External
+,,,       ;   rcall iRiver_Next
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_External:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_EXTERNAL
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Internal
+,,,       ;   rcall Panasonic_External
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Internal:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_INTERNAL
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Light
+,,,       ;   rcall Panasonic_Internal
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Light:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_LIGHT
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Sleep_On
+,,,       ;   mov   Light,U_Param
+,,,       ;   rcall Panasonic_Light
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Sleep_On:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_SLEEP_ON
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Sleep_Off
+,,,       ;   mov   Light,U_Param
+,,,       ;   rcall Panasonic_Sleep_On
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Sleep_Off:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_SLEEP_OFF
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Motor_On
+,,,       ;   mov   Light,U_Param
+,,,       ;   rcall Panasonic_Sleep_Off
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Motor_On:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_MOTOR_ON
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_Motor_Off
+,,,       ;   mov   Light,U_Param
+,,,       ;   rcall Panasonic_Motor_On
+,,,       ;   rjmp  UCP_Success
+,,,       ;UCP_Motor_Off:
+,,,       ;   ldi   U_Data,CMD_PANASONIC_MOTOR_OFF
+,,,       ;   cpse  U_Cmd,U_Data
+,,,       ;   rjmp  UCP_End
+,,,       ;   mov   Light,U_Param
+,,,       ;   rcall Panasonic_Motor_Off
+,,,       
+,,,       ; --- Prepare success answer ---
+,,,       UCP_Success:
+,,,          ;Prepare answer length
+0002A6,27BB,,   clr   U_CntH
+0002A8,E0A3,,   ldi   U_CntL,3
+,,,          ;Prepare answer
+0002AA,E000,,   ldi   Temp,STATUS_SUCCESS
+0002AC,9300,,   sts   (rUBuffer + 2),Temp
+,,,       ; --- Send answer ---
+,,,       UCP_End:
+,,,          ;Indicate command processing complete (clear flag)
+0002B0,7F1B,,   cbr   Flags,(1 << UF)
+,,,          ;Send prepared answer
+0002B2,D001,,   rcall UART_Tx_Answer
+0002B4,9508,,   ret
+,,,       
+,,,       ;*****************[ UART Send Answer ]**********************************************
+,,,       
+,,,       UART_Tx_Answer:
+,,,          ;Prepare control sum
+0002B6,27EE,,   clr   U_CSL
+0002B8,27FF,,   clr   U_CSH
+,,,          ;Load pointer to prepared answer
+0002BA,E0C3,,   ldi   U_PtrL,Byte1(rUBuffer)
+0002BC,E0D1,,   ldi   U_PtrH,Byte2(rUBuffer)
+,,,          ;Send start byte
+0002BE,E855,,   ldi   U_Data,EAST2_START
+0002C0,DEF6,,   rcall UART_Tx
+,,,          ;Send length lower byte
+0002C2,2F5A,,   mov   U_Data,U_CntL
+0002C4,DEF4,,   rcall UART_Tx
+,,,          ;Send length higher byte
+0002C6,2F5B,,   mov   U_Data,U_CntH
+0002C8,DEF2,,   rcall UART_Tx
+,,,       
+,,,          ;Send prepared answer
+,,,       UTA_Loop:
+,,,          ;Load answer byte
+0002CA,9159,,   ld    U_Data,Y+
+,,,          ;Calculate control sum
+0002CC,2700,,   clr   Temp
+0002CE,0FE5,,   add   U_CSL,U_Data
+0002D0,1FF0,,   adc   U_CSH,Temp
+,,,          ;Send answer byte
+0002D2,DEED,,   rcall UART_Tx
+,,,          ;Check answer end
+0002D4,9711,,   sbiw  U_CntL,1
+0002D6,F7C9,,   brne  UTA_Loop
+,,,       
+,,,          ;Send stop byte
+0002D8,E251,,   ldi   U_Data,EAST2_STOP
+0002DA,DEE9,,   rcall UART_Tx
+,,,       
+,,,          ;Send control sum lower byte
+0002DC,2F5E,,   mov   U_Data,U_CSL
+0002DE,DEE7,,   rcall UART_Tx
+,,,          ;Send control sum higher byte
+0002E0,2F5F,,   mov   U_Data,U_CSH
+0002E2,DEE5,,   rcall UART_Tx
+0002E4,9508,,   ret
+,,,       
+,,,       ;***********************************************************************************
+,,,       
+,,,       UART_Dbg:
+0002E6,935F,,   push  U_Data
+0002E8,930F,,   push  Temp
+,,,          ;Start
+0002EA,E855,,   ldi   U_Data,EAST2_START
+0002EC,DEE0,,   rcall UART_Tx
+,,,          ;Length
+0002EE,E053,,   ldi   U_Data,3
+0002F0,DEDE,,   rcall UART_Tx
+0002F2,E050,,   ldi   U_Data,0
+0002F4,DEDC,,   rcall UART_Tx
+,,,          ;Address
+0002F6,E052,,   ldi   U_Data,EAST2_DEVICE_ADDRESS
+0002F8,DEDA,,   rcall UART_Tx
+,,,          ;Command
+0002FA,E153,,   ldi   U_Data,$13
+0002FC,DED8,,   rcall UART_Tx
+,,,          ;Data
+0002FE,2F57,,   mov   U_Data,U_Dbg
+000300,DED6,,   rcall UART_Tx
+,,,          ;Stop
+000302,E251,,   ldi   U_Data,EAST2_STOP
+000304,DED4,,   rcall UART_Tx
+,,,          ;CS
+000306,2F57,,   mov   U_Data,U_Dbg
+000308,5E5B,,   subi  U_Data,-$15
+00030A,DED1,,   rcall UART_Tx
+00030C,E050,,   ldi   U_Data,0
+00030E,DECF,,   rcall UART_Tx
+000310,910F,,   pop   Temp
+000312,915F,,   pop   U_Data
+000314,9508,,   ret
+,,,       
+,,,       ;***********************************************************************************
+,,,       .INCLUDE "05_WDT.asm"
+,,,       
+,,,       
+,,,       WDT_On:
+,,,          ;Turn off global interrupt
+,,,          ;cli
+,,,          ;Reset Watchdog Timer
+000316,95A8,,   wdr
+,,,          ;Start timed sequence
+000318,9100,,   lds   Temp,WDTCSR
+00031C,6108,,   ori   Temp,(1<<WDCE)|(1<<WDE)
+00031E,9300,,   sts   WDTCSR,Temp
+,,,          ;-- Got four cycles to set the new values from here -
+,,,          ;Set new prescaler(time-out) value = 1024K cycles (~8s)
+000322,E008,,   ldi   Temp,(1<<WDE) ;|(1<<WDP3)|(1<<WDP0)
+000324,9300,,   sts   WDTCSR,Temp
+,,,          ;-- Finished setting new values, used 2 cycles -
+,,,          ;Turn on global interrupt
+,,,          ;sei
+000328,9508,,   ret
+,,,       
+,,,       ;*****************[ WDT Off ]*******************************************************
+,,,       
+,,,       WDT_Off:
+00032A,94F8,,   cli
+,,,          ;Reset Watchdog Timer
+00032C,95A8,,   wdr
+,,,          ;Clear WDRF in MCUSR
+00032E,2700,,   clr   Temp
+000330,BF04,,   out   MCUSR,Temp
+,,,          ;Write logical one to WDCE and WDE.
+,,,          ;Keep old prescaler setting to prevent unintentional time-out
+000332,9100,,   lds   Temp,WDTCSR
+000336,6108,,   ori   Temp,(1<<WDCE)|(1<<WDE)
+000338,9300,,   sts   WDTCSR,Temp
+,,,          ;Turn off WDT
+00033C,E000,,   ldi   Temp,(0<<WDE)
+00033E,9300,,   sts   WDTCSR,Temp
+000342,9508,,   ret
+,,,       
+,,,       ;***********************************************************************************
+,,,       .INCLUDE "06_StatusIndication.asm"
+,,,       
+,,,       
+,,,       ; --- Status LEDs states ---
+,,,       
+,,,       .EQU SLEDS_STATE_IDLE           = 0
+,,,       .EQU SLEDS_STATE_POWER_ON       = 1
+,,,       .EQU SLEDS_STATE_VBAT_GOOD      = 2
+,,,       .EQU SLEDS_STATE_VBAT_NORM      = 3
+,,,       .EQU SLEDS_STATE_VBAT_LOW       = 4
+,,,       .EQU SLEDS_STATE_VBAT_FATAL     = 5
+,,,       .EQU SLEDS_STATE_LIGHT_SAVE_OK  = 6
+,,,       .EQU SLEDS_STATE_LEDLIGHT_ON    = 7
+,,,       .EQU SLEDS_STATE_LEDLIGHT_OFF   = 8
+,,,       
+,,,       ; --- Battery voltages ---
+,,,       ; ---------------------------
+,,,       ; | Description |  VBat, V  |
+,,,       ; ---------------------------
+,,,       ; | Good        |  4.20     |
+,,,       ; | Good        |  4.01     |
+,,,       ; | Normal      |  4.00     |
+,,,       ; | Normal      |  3.61     |
+,,,       ; | Low         |  3.60     |
+,,,       ; | Low         |  3.30     |
+,,,       ; | Fatal       |  3.29     |
+,,,       ; | Fatal       |  2.50     |
+,,,       ; ---------------------------
+,,,       
+,,,       .EQU SLEDS_VBAT_GOOD_MIN  = 4010
+,,,       .EQU SLEDS_VBAT_NORM_MIN  = 3610
+,,,       .EQU SLEDS_VBAT_LOW_MIN   = 3300
+,,,       
+,,,       ; --- Device States Indication Table ---
+,,,       
+,,,       ;Format of Byte
+,,,       ; Bit Number   | 7  6  5  4  3  2  1  0
+,,,       ; Description  | B  G  R  {---Time----}
+,,,       ;   Time is in 50 ms Discrete
+,,,       
+,,,       ;--- Power On = 4 Green Flashes
+,,,2
+,,,2
+,,,2
+,,,6
+00034C,0000,ROM_StatePowerOn     ,ROM_StatePowerOn     : .DB $42, $02, $42, $02, $42, $02, $46, $00, $00, $00
+,,,       ;--- Battery Voltage Good = 5 Aqua Flashes
+,,,1
+,,,1
+,,,1
+,,,1
+000356,00C1,ROM_StateVBatGood    ,ROM_StateVBatGood    : .DB $C1, $01, $C1, $06, $C1, $02, $C1, $02, $C1, $00
+,,,       ;--- Battery Voltage Normal = 5 Green Flashes
+,,,1
+,,,1
+,,,1
+,,,1
+000360,0041,ROM_StateVBatNorm    ,ROM_StateVBatNorm    : .DB $41, $01, $41, $06, $41, $02, $41, $02, $41, $00
+,,,       ;--- Battery Voltage Low = 5 Yellow Flashes
+,,,1
+,,,1
+,,,1
+,,,1
+00036A,0061,ROM_StateVBatLow     ,ROM_StateVBatLow     : .DB $61, $01, $61, $06, $61, $02, $61, $02, $61, $00
+,,,       ;--- Battery Voltage Fatal = 5 Red Flashes
+,,,1
+,,,1
+,,,1
+,,,1
+000374,0021,ROM_StateVBatFatal   ,ROM_StateVBatFatal   : .DB $21, $01, $21, $06, $21, $02, $21, $02, $21, $00
+,,,       ;--- Light On = 3 Long Green Flashes
+,,a,a
+,,a,a
+,,a,a
+,,,0
+00037E,0000,ROM_StateLedLightOn  ,ROM_StateLedLightOn  : .DB $4A, $0A, $4A, $0A, $4A, $0A, $00, $00, $00, $00
+,,,       ;--- Light On = 3 Long Blue Flashes
+,,a,a
+,,a,a
+,,a,a
+,,,0
+000388,0000,ROM_StateLedLightOff ,ROM_StateLedLightOff : .DB $8A, $0A, $8A, $0A, $8A, $0A, $00, $00, $00, $00
+,,,       
+,,,       ;*****************[ Local variables ]***********************************************
+,,,       
+,,,       ;DEF Temp      = r16
+,,,       ;DEF Value     = r16
+,,,       ;DEF Flags     = r17
+,,,       .DEF Timer     = r18
+,,,       .DEF Port      = r19
+,,,       .DEF T_State   = r21
+,,,       .DEF T_Phase   = r22
+,,,       .DEF T_Timer   = r23
+,,,       .DEF T_Value   = r24
+,,,       .DEF T_ConstL  = r25
+,,,       .DEF T_ConstH  = r26
+,,,       ;DEF ValueL    = r28
+,,,       .DEF T_CntL    = r28
+,,,       .DEF T_PhasesL = r28
+,,,       ;DEF ValueH    = r29
+,,,       .DEF T_CntH    = r29
+,,,       .DEF T_PhasesH = r29
+,,,       .DEF T_FlashL  = r30
+,,,       .DEF T_FlashH  = r31
+,,,       
+,,,       ;*****************[ Status LEDs Init ]**********************************************
+,,,       
+,,,       SLED_Init:   
+,,,          ;Configure Status LEDs
+00038A,B107,,   in    Temp,SLEDDDR
+00038C,6007,,   ori   Temp,(1 << SLEDR) | (1 << SLEDG) | (1 << SLEDB)
+00038E,B907,,   out   SLEDDDR,Temp
+000390,9A40,,   sbi   SLEDPORT,SLEDR
+000392,9A41,,   sbi   SLEDPORT,SLEDG
+000394,9A42,,   sbi   SLEDPORT,SLEDB
+,,,       
+,,,          ;Configure Power Status LED
+000396,B107,,   in    Temp,PLEDDDR
+000398,6008,,   ori   Temp,(1 << PLED)
+00039A,B907,,   out   PLEDDDR,Temp
+00039C,9A43,,   sbi   PLEDPORT,PLED
+,,,       
+,,,          ;Init RAm variables
+00039E,2700,,   clr   Temp
+0003A0,9300,,   sts   rSState,Temp
+0003A4,9300,,   sts   rSStateTimer,Temp
+0003A8,9300,,   sts   rSStateLEDs,Temp
+,,,       
+0003AC,9508,,   ret
+,,,       
+,,,       ;*****************[ Status LEDs DeInit ]********************************************
+,,,       
+,,,       SLED_DeInit:   
+,,,          ;Configure Status LEDs
+0003AE,B107,,   in    Temp,SLEDDDR
+0003B0,7F08,,   andi  Temp,~((1 << SLEDR) | (1 << SLEDG) | (1 << SLEDB))
+0003B2,B907,,   out   SLEDDDR,Temp
+0003B4,9840,,   cbi   SLEDPORT,SLEDR
+0003B6,9841,,   cbi   SLEDPORT,SLEDG
+0003B8,9842,,   cbi   SLEDPORT,SLEDB
+,,,       
+,,,          ;Configure Power Status LED
+0003BA,B107,,   in    Temp,PLEDDDR
+0003BC,7F07,,   andi  Temp,~(1 << PLED)
+0003BE,B907,,   out   PLEDDDR,Temp
+0003C0,9843,,   cbi   PLEDPORT,PLED
+0003C2,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Red LED On ]*********************************************
+,,,       
+,,,       SLEDR_On:
+0003C4,9840,,   cbi   SLEDPORT,SLEDR
+0003C6,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Red LED Off ]********************************************
+,,,       
+,,,       SLEDR_Off:
+0003C8,9A40,,   sbi   SLEDPORT,SLEDR
+0003CA,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Red LED Toggle ]*****************************************
+,,,       
+,,,       SLEDR_Toggle:
+0003CC,B108,,   in    Temp,SLEDPORT
+0003CE,FD00,,   sbrc  Temp,SLEDR
+0003D0,9840,,   cbi   SLEDPORT,SLEDR
+0003D2,FF00,,   sbrs  Temp,SLEDR
+0003D4,9A40,,   sbi   SLEDPORT,SLEDR
+0003D6,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Green LED On ]*******************************************
+,,,       
+,,,       SLEDG_On:
+0003D8,9841,,   cbi   SLEDPORT,SLEDG
+0003DA,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Green LED Off ]******************************************
+,,,       
+,,,       SLEDG_Off:
+0003DC,9A41,,   sbi   SLEDPORT,SLEDG
+0003DE,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Blue LED On ]********************************************
+,,,       
+,,,       SLEDB_On:
+0003E0,9842,,   cbi   SLEDPORT,SLEDB
+0003E2,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Blue LED Off ]*******************************************
+,,,       
+,,,       SLEDB_Off:
+0003E4,9A42,,   sbi   SLEDPORT,SLEDB
+0003E6,9508,,   ret
+,,,       
+,,,       ;*****************[ Status Blue LED Toggle ]****************************************
+,,,       
+,,,       SLEDB_Toggle:
+0003E8,B108,,   in    Temp,SLEDPORT
+0003EA,FD02,,   sbrc  Temp,SLEDB
+0003EC,9842,,   cbi   SLEDPORT,SLEDB
+0003EE,FF02,,   sbrs  Temp,SLEDB
+0003F0,9A42,,   sbi   SLEDPORT,SLEDB
+0003F2,9508,,   ret
+,,,       
+,,,       ;*****************[ Power LED On ]**************************************************
+,,,       
+,,,       PLED_On:
+0003F4,9843,,   cbi   PLEDPORT,PLED
+0003F6,9508,,   ret
+,,,       
+,,,       ;*****************[ Power LED Off ]*************************************************
+,,,       
+,,,       PLED_Off:
+0003F8,9A43,,   sbi   PLEDPORT,PLED
+0003FA,9508,,   ret
+,,,       
+,,,       ;*****************[ Status LEDs Switch ]********************************************
+,,,       
+,,,       SLEDs_Switch:
+0003FC,B138,,   in    Port,SLEDPORT
+0003FE,9500,,   com   Value
+000400,7007,,   andi  Value,0b00000111
+000402,7F38,,   andi  Port,0b11111000
+000404,2B30,,   or    Port,Value
+000406,B938,,   out   SLEDPORT,Port
+000408,9508,,   ret
+,,,       
+,,,       ;*****************[ Status LEDs Capture State ]*************************************
+,,,       
+,,,       SLEDs_Capture:
+00040A,B108,,   in    Value,SLEDPORT
+00040C,9500,,   com   Value
+00040E,700F,,   andi  Value,0b00001111
+000410,9508,,   ret
+,,,       
+,,,       ;*****************[ Status LED Set State ]******************************************
+,,,       
+,,,       SLEDs_SetState:
+,,,          ;Store new state
+000412,2F50,,   mov   T_State,Value
+,,,          ;Save Status LEDs state
+000414,DFFA,,   rcall SLEDs_Capture
+000416,9300,,   sts   rSStateLEDs,Temp
+,,,       
+,,,          ;Init count of phases
+00041A,E00A,,   ldi   Temp,10
+00041C,2766,,   clr   T_Phase
+,,,          ;Init phases pointer in RAM
+00041E,E6C7,,   ldi   T_PhasesL,Byte1(rSStatePhases)
+000420,E0D1,,   ldi   T_PhasesH,Byte2(rSStatePhases)
+,,,          ;Init phases pointer in Flash
+,,,       STSS_PowerOn:
+000422,3051,,   cpi   T_State,SLEDS_STATE_POWER_ON
+000424,F419,,   brne  STSS_VBatGood
+000426,E4E4,,   ldi   T_FlashL,Byte1(2*ROM_StatePowerOn)
+000428,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StatePowerOn)
+00042A,C01D,,   rjmp  STSS_Loop
+,,,       STSS_VBatGood:
+00042C,3052,,   cpi   T_State,SLEDS_STATE_VBAT_GOOD
+00042E,F419,,   brne  STSS_VBatNorm
+000430,E4EE,,   ldi   T_FlashL,Byte1(2*ROM_StateVBatGood)
+000432,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StateVBatGood)
+000434,C018,,   rjmp  STSS_Loop
+,,,       STSS_VBatNorm:
+000436,3053,,   cpi   T_State,SLEDS_STATE_VBAT_NORM
+000438,F419,,   brne  STSS_VBatLow
+00043A,E5E8,,   ldi   T_FlashL,Byte1(2*ROM_StateVBatNorm)
+00043C,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StateVBatNorm)
+00043E,C013,,   rjmp  STSS_Loop
+,,,       STSS_VBatLow:
+000440,3054,,   cpi   T_State,SLEDS_STATE_VBAT_LOW
+000442,F419,,   brne  STSS_VBatFatal
+000444,E6E2,,   ldi   T_FlashL,Byte1(2*ROM_StateVBatLow)
+000446,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StateVBatLow)
+000448,C00E,,   rjmp  STSS_Loop
+,,,       STSS_VBatFatal:
+00044A,3055,,   cpi   T_State,SLEDS_STATE_VBAT_FATAL
+00044C,F419,,   brne  STSS_LedLightOn
+00044E,E6EC,,   ldi   T_FlashL,Byte1(2*ROM_StateVBatFatal)
+000450,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StateVBatFatal)
+000452,C009,,   rjmp  STSS_Loop
+,,,       STSS_LedLightOn:
+000454,3057,,   cpi   T_State,SLEDS_STATE_LEDLIGHT_ON
+000456,F419,,   brne  STSS_LedLightOff
+000458,E7E6,,   ldi   T_FlashL,Byte1(2*ROM_StateLedLightOn)
+00045A,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StateLedLightOn)
+00045C,C004,,   rjmp  STSS_Loop
+,,,       STSS_LedLightOff:
+00045E,3058,,   cpi   T_State,SLEDS_STATE_LEDLIGHT_OFF
+000460,F451,,   brne  STSS_End
+000462,E8E0,,   ldi   T_FlashL,Byte1(2*ROM_StateLedLightOff)
+000464,E0F3,,   ldi   T_FlashH,Byte2(2*ROM_StateLedLightOff)
+,,,          ;rjmp  STSS_Loop
+,,,          ;Load phases from Flash to RAM
+,,,       STSS_Loop:
+000466,9185,,   lpm   T_Value,Z+
+000468,9389,,   st    Y+,T_Value
+00046A,950A,,   dec   Temp
+00046C,F7E1,,   brne  STSS_Loop
+,,,          ;Save new state
+00046E,9350,,   sts   rSState,T_State
+,,,          ;Save phase
+000472,9360,,   sts   rSStatePhase,T_Phase
+,,,       STSS_End:
+000476,9508,,   ret
+,,,       
+,,,       ;*****************[ Status LEDs System Tick Function ]******************************
+,,,       
+,,,       SLEDs_Process:
+,,,          ;Check if idle state
+000478,9150,,   lds   T_State,rSState
+00047C,3050,,   cpi   T_State,SLEDS_STATE_IDLE
+00047E,F111,,   breq  ST_CheckVBat
+,,,          ;Check if all the phases were complete
+000480,9160,,   lds   T_Phase,rSStatePhase
+000484,306A,,   cpi   T_Phase,10
+000486,F4F0,,   brsh  ST_CheckVBat
+,,,       
+,,,          ;Load phase description from RAM
+000488,E6C7,,   ldi   T_PhasesL,Byte1(rSStatePhases)
+00048A,E0D1,,   ldi   T_PhasesH,Byte2(rSStatePhases)
+00048C,2700,,   clr   Temp
+00048E,0FC6,,   add   T_PhasesL,T_Phase
+000490,1FD0,,   adc   T_PhasesH,Temp
+000492,8188,,   ld    T_Value,Y
+,,,          ;Switch Status LEDs according to the current phase
+000494,2F08,,   mov   Temp,T_Value
+000496,9502,,   swap  Temp
+000498,9506,,   lsr   Temp
+00049A,DFB0,,   rcall SLEDs_Switch
+,,,          ;Get current phase timer
+00049C,2F08,,   mov   Temp,T_Value
+00049E,710F,,   andi  Temp,$1F
+,,,          ;If timer == 0 - go to the next phase
+0004A0,3000,,   cpi   Temp,0
+0004A2,F029,,   breq  ST_NextPhase
+,,,          ;Decrement timer
+0004A4,950A,,   dec   Temp
+,,,          ;Compose timer and Status LEDs state
+0004A6,7E80,,   andi  T_Value,$E0
+0004A8,2B80,,   or    T_Value,Temp
+,,,          ;Save phase description to RAM
+0004AA,8388,,   st    Y,T_Value
+0004AC,C00B,,   rjmp  ST_CheckVBat
+,,,       
+,,,       ST_NextPhase:
+,,,          ;Increment phase
+0004AE,9563,,   inc   T_Phase
+0004B0,9360,,   sts   rSStatePhase,T_Phase
+,,,          ;Check if all the phases were complete
+0004B4,306A,,   cpi   T_Phase,10
+0004B6,F431,,   brne  ST_CheckVBat
+,,,          ;Recover previous Status LEDs state
+0004B8,9100,,   lds   Value,rSStateLEDs
+0004BC,DF9F,,   rcall SLEDs_Switch
+,,,          ;Go to Idle state
+0004BE,E050,,   ldi   T_State,SLEDS_STATE_IDLE
+0004C0,9350,,   sts   rSState,T_State
+,,,       
+,,,       ST_CheckVBat:
+,,,          ;Timer Interval = 12.5 s
+0004C4,9120,,   lds   Timer,rSStateTimer
+0004C8,9523,,   inc   Timer
+0004CA,3F2A,,   cpi   Timer,250
+0004CC,F429,,   brne  ST_End
+0004CE,2722,,   clr   Timer
+0004D0,D006,,   rcall SLEDs_CheckBattery
+0004D2,3005,,   cpi   Temp,SLEDS_STATE_VBAT_FATAL
+0004D4,F409,,   brne  ST_End
+0004D6,DF9D,,   rcall SLEDs_SetState
+,,,       
+,,,       ST_End:
+0004D8,9320,,   sts   rSStateTimer,Timer
+0004DC,9508,,   ret
+,,,       
+,,,       ;*****************[ Status LEDs Check Battery ]*************************************
+,,,       
+,,,       SLEDs_CheckBattery:
+0004DE,D06A,,   rcall ADC_GetBatteryVoltage
+0004E0,EA9A,,   ldi   T_ConstL,Byte1(SLEDS_VBAT_GOOD_MIN)
+0004E2,E0AF,,   ldi   T_ConstH,Byte2(SLEDS_VBAT_GOOD_MIN)
+0004E4,1789,,   cp    ValueL,T_ConstL
+0004E6,079A,,   cpc   ValueH,T_ConstH
+0004E8,F460,,   brsh  AGBS_Good
+0004EA,E19A,,   ldi   T_ConstL,Byte1(SLEDS_VBAT_NORM_MIN)
+0004EC,E0AE,,   ldi   T_ConstH,Byte2(SLEDS_VBAT_NORM_MIN)
+0004EE,1789,,   cp    ValueL,T_ConstL
+0004F0,079A,,   cpc   ValueH,T_ConstH
+0004F2,F448,,   brsh  AGBS_Norm
+0004F4,EE94,,   ldi   T_ConstL,Byte1(SLEDS_VBAT_LOW_MIN)
+0004F6,E0AC,,   ldi   T_ConstH,Byte2(SLEDS_VBAT_LOW_MIN)
+0004F8,1789,,   cp    ValueL,T_ConstL
+0004FA,079A,,   cpc   ValueH,T_ConstH
+0004FC,F430,,   brsh  AGBS_Low
+0004FE,E005,,   ldi   Temp,SLEDS_STATE_VBAT_FATAL
+000500,9508,,   ret
+,,,       AGBS_Good:
+000502,E002,,   ldi   Temp,SLEDS_STATE_VBAT_GOOD
+000504,9508,,   ret
+,,,       AGBS_Norm:
+000506,E003,,   ldi   Temp,SLEDS_STATE_VBAT_NORM
+000508,9508,,   ret
+,,,       AGBS_Low:
+00050A,E004,,   ldi   Temp,SLEDS_STATE_VBAT_LOW
+00050C,9508,,   ret
+,,,       .INCLUDE "07_ADC.asm"
+,,,       
+,,,       
+,,,       ;Fclk    = 8 000 000 Hz
+,,,       ;Fclkadc = 8 000 000 / 128 = 62 500 Hz (16 us)
+,,,       ;Fadc    = 62 500 / 13 = 4 807,69 Hz (208 us)
+,,,       
+,,,       ;R1      = 510000 Ohm
+,,,       ;R2      = 100000 Ohm
+,,,       ;VBat    = (ADC * 1.1 / 1024) * (R1 + R2) / R2 = 0.006553 * ADC
+,,,       ;VBat    = ADC * 1678 / 256 [mV]
+,,,       ;ADC     = VBat / 0.006553
+,,,       
+,,,       ;------------------------------------
+,,,       ; Description |  VBat, V  | ADC
+,,,       ;------------------------------------
+,,,       ; Good        |  4.20     | ---
+,,,       ; Good        |  4.01     | 612
+,,,       ; Normal      |  4.00     | 611
+,,,       ; Normal      |  3.61     | 551
+,,,       ; Low         |  3.60     | 550
+,,,       ; Low         |  3.30     | 503
+,,,       ; Fatal       |  3.29     | 502
+,,,       ; Fatal       |  2.50     | ---
+,,,       
+,,,       .EQU ADC_COEFFICIENT = 1678
+,,,       
+,,,       ;*****************[ Local variables ]***********************************************
+,,,       
+,,,       .DEF A_ML     = r0
+,,,       .DEF A_MH     = r1
+,,,       .DEF A_VL     = r2
+,,,       .DEF A_VH     = r3
+,,,       .DEF A_RN     = r4
+,,,       .DEF A_RL     = r5
+,,,       .DEF A_RH     = r6
+,,,       .DEF A_RO     = r7
+,,,       ;DEF Temp     = r16
+,,,       ;DEF Value    = r16
+,,,       ;DEF Flags    = r17
+,,,       .DEF A_Mode   = r21
+,,,       ;DEF ValueL   = r24
+,,,       .DEF A_CL     = r24
+,,,       ;DEF ValueH   = r25
+,,,       .DEF A_CH     = r25
+,,,       
+,,,       ;*****************[ ADC Init ]******************************************************
+,,,       
+,,,       ADC_Init:
+00050E,2700,,   clr   Temp
+000510,9300,,   sts   (rLuminosity + 0),Temp
+000514,9300,,   sts   (rLuminosity + 1),Temp
+000518,9300,,   sts   (rBattery + 0),Temp
+00051C,9300,,   sts   (rBattery + 1),Temp
+,,,       
+,,,          ;Disable Digital Input Buffers on analog pins
+000520,E30F,,   ldi   Temp,(1<<ADC5D)|(1<<ADC4D)|(1<<ADC3D)|(1<<ADC2D)|(1<<ADC1D)|(1<<ADC0D)
+000522,9300,,   sts   DIDR0,Temp
+,,,          ;Internal 1.1V Reference, Result is right adjusted, Select ADC5 input
+000526,EC05,,   ldi   Temp,(3 << REFS0) | (0 << ADLAR) | (5 << MUX0)
+000528,9300,,   sts   ADMUX,Temp
+,,,          ;Enable ADC, Enable auto trigger, Enable interrupt, Prescaller = 128
+00052C,EA0F,,   ldi   Temp,(1 << ADEN) | (1 << ADATE) | (1 << ADIE) | (7 << ADPS0)
+00052E,9300,,   sts   ADCSRA,Temp
+000532,2700,,   clr   Temp
+000534,9300,,   sts   ADCSRB,Temp
+,,,          ;Start Conversion
+000538,9100,,   lds   Temp,ADCSRA
+00053C,6400,,   sbr   Temp,(1<<ADSC)
+00053E,9300,,   sts   ADCSRA,Temp
+000542,9508,,   ret
+,,,       
+,,,       ;*****************[ ADC DeInit ]****************************************************
+,,,       
+,,,       ADC_DeInit:
+000544,2700,,   clr   Temp
+000546,9300,,   sts   ADCSRA,Temp
+00054A,9508,,   ret
+,,,       
+,,,       ;*****************[ ADC Conversion Complete ]***************************************
+,,,       
+,,,       ADC_Complete:
+00054C,B6DF,,   in    SSREG,SREG
+00054E,935F,,   push  A_Mode
+000550,922F,,   push  A_VL
+000552,923F,,   push  A_VH
+,,,       
+000554,9020,,   lds   A_VL,ADCL
+000558,9030,,   lds   A_VH,ADCH
+,,,       
+,,,          ;Luminosity - ADC6 = 0b0110
+,,,          ;Battery    - ADC5 = 0b0101
+00055C,9150,,   lds   A_Mode,ADMUX
+000560,7051,,   andi  A_Mode,$01
+000562,F441,,   brne  AC_Luminosity
+,,,       AC_Battery:
+000564,9220,,   sts   (rBattery + 0),A_VL
+000568,9230,,   sts   (rBattery + 1),A_VH
+00056C,EC55,,   ldi   A_Mode,(3 << REFS0) | (0 << ADLAR) | (5 << MUX0)
+00056E,9350,,   sts   ADMUX,A_Mode
+000572,C007,,   rjmp  AC_End
+,,,       AC_Luminosity:
+000574,9220,,   sts   (rLuminosity + 0),A_VL
+000578,9230,,   sts   (rLuminosity + 1),A_VH
+00057C,EC56,,   ldi   A_Mode,(3 << REFS0) | (0 << ADLAR) | (6 << MUX0)
+00057E,9350,,   sts   ADMUX,A_Mode
+,,,       
+,,,       AC_End:
+000582,903F,,   pop   A_VH
+000584,902F,,   pop   A_VL
+000586,915F,,   pop   A_Mode
+000588,BEDF,,   out   SREG,SSREG
+00058A,9518,,   reti
+,,,       
+,,,       ;*****************[ ADC Calculate Voltage in mV ]***********************************
+,,,       
+,,,       ADC_CalcVoltage:
+,,,          ;Load conversion coefficient
+00058C,E88E,,   ldi   A_CL,Byte1(ADC_COEFFICIENT)
+00058E,E096,,   ldi   A_CH,Byte2(ADC_COEFFICIENT)
+,,,          ;Clear for carry operations
+000590,2700,,   clr   Temp
+,,,          ;Multiply MSBs
+000592,9E39,,   mul   A_VH,A_CH
+,,,          ;Copy to MSW Result
+000594,2C60,,   mov   A_RH,A_ML
+000596,2C71,,   mov   A_RO,A_MH
+,,,          ;Multiply LSBs
+000598,9E28,,   mul   A_VL,A_CL
+,,,          ;Copy to LSW Result
+00059A,2C40,,   mov   A_RN,A_ML
+00059C,2C51,,   mov   A_RL,A_MH
+,,,          ;Multiply 1H with 2L
+00059E,9E38,,   mul   A_VH,A_CL
+,,,          ;Add to Result
+0005A0,0C50,,   add   A_RL,A_ML
+0005A2,1C61,,   adc   A_RH,A_MH
+,,,          ;Add carry
+0005A4,1E70,,   adc   A_RO,Temp
+,,,          ;Multiply 1L with 2H
+0005A6,9E29,,   mul   A_VL,A_CH
+,,,          ;Add to Result
+0005A8,0C50,,   add   A_RL,A_ML
+0005AA,1C61,,   adc   A_RH,A_MH
+0005AC,1E70,,   adc   A_RO,Temp
+,,,          ;Copy to Value
+0005AE,2D85,,   mov   ValueL,A_RL
+0005B0,2D96,,   mov   ValueH,A_RH
+0005B2,9508,,   ret
+,,,       
+,,,       ;*****************[ ADC Get Battery Voltage in mV ]*********************************
+,,,       
+,,,       ADC_GetBatteryVoltage:
+0005B4,9020,,   lds   A_VL,(rBattery + 0)
+0005B8,9030,,   lds   A_VH,(rBattery + 1)
+0005BC,CFE7,,   rjmp  ADC_CalcVoltage
+,,,       
+,,,       ;*****************[ ADC Get Luminosity Voltage in mV ]******************************
+,,,       
+,,,       ADC_GetLuminosityVoltage:
+0005BE,9020,,   lds   A_VL,(rLuminosity + 0)
+0005C2,9030,,   lds   A_VH,(rLuminosity + 1)
+0005C6,CFE2,,   rjmp  ADC_CalcVoltage
+,,,       
+,,,       ;***********************************************************************************
+,,,       .INCLUDE "08_SysTickGears.asm"
+,,,       
+,,,       
+,,,       .EQU TIME_INTERVAL = 3125/2
+,,,       .EQU DEFAULT_BRIGHTNESS = 15
+,,,       
+,,,       ;*****************[ System Tick/Gear LEDs Init ]************************************
+,,,       
+,,,       SysTickGears_Init:
+0005C8,E00F,,   ldi   Temp,DEFAULT_BRIGHTNESS
+0005CA,9300,,   sts   rBrightness,Temp
+,,,       
+,,,          ;Configure Gear LED 1
+0005CE,B10A,,   in    Temp,GLED1DDR
+0005D0,6200,,   ori   Temp,(1 << GLED1)
+0005D2,B90A,,   out   GLED1DDR,Temp
+0005D4,985D,,   cbi   GLED1PORT,GLED1
+,,,          ;  8 MHz / 256 = 31 kHz PWM
+0005D6,E303,,   ldi   Temp,(0 << COM0A0) | (3 << COM0B0) | (3 << WGM00)
+0005D8,BD04,,   out   TCCR0A,Temp
+0005DA,E001,,   ldi   Temp,(0 << WGM02) | (1 << CS00)
+0005DC,BD05,,   out   TCCR0B,Temp
+0005DE,E00F,,   ldi   Temp,DEFAULT_BRIGHTNESS
+0005E0,BD08,,   out   OCR0B,Temp
+,,,          ;Enable Overflow Interrupt for SysTick
+0005E2,E001,,   ldi   Temp,(1 << TOV0)
+0005E4,9300,,   sts   TIMSK0,Temp
+,,,       
+,,,          ;Configure Gear LED 2
+0005E8,B10A,,   in    Temp,GLED2DDR
+0005EA,6008,,   ori   Temp,(1 << GLED2)
+0005EC,B90A,,   out   GLED2DDR,Temp
+0005EE,985B,,   cbi   GLED2PORT,GLED2
+,,,          ;  8 MHz / 256 = 31 kHz PWM
+0005F0,E303,,   ldi   Temp,(0 << COM2A0) | (3 << COM2B0) | (3 << WGM20)
+0005F2,9300,,   sts   TCCR2A,Temp
+0005F6,E001,,   ldi   Temp,(0 << WGM22) | (1 << CS20)
+0005F8,9300,,   sts   TCCR2B,Temp
+0005FC,E00F,,   ldi   Temp,DEFAULT_BRIGHTNESS
+0005FE,9300,,   sts   OCR2B,Temp
+,,,       
+,,,          ;Store SysTick Interval
+000602,E1CA,,   ldi   T_CntL,Byte1(TIME_INTERVAL)
+000604,E0D6,,   ldi   T_CntH,Byte2(TIME_INTERVAL)
+000606,93C0,,   sts   (rSysTickCnt + 0),T_CntL
+00060A,93D0,,   sts   (rSysTickCnt + 1),T_CntH
+00060E,9508,,   ret
+,,,       
+,,,       ;*****************[ System Tick DeInit ]********************************************
+,,,       
+,,,       SysTickGears_DeInit:
+,,,          ;DeInit Gear LED 1
+000610,B10A,,   in    Temp,GLED1DDR
+000612,7D0F,,   andi  Temp,~(1 << GLED1)
+000614,B90A,,   out   GLED1DDR,Temp
+000616,985D,,   cbi   GLED1PORT,GLED1
+000618,2700,,   clr   Temp
+00061A,BD04,,   out   TCCR0A,Temp
+00061C,BD05,,   out   TCCR0B,Temp
+00061E,BD08,,   out   OCR0B,Temp
+,,,          ;Disable Timer Interrupts
+000620,9300,,   sts   TIMSK0,Temp
+,,,       
+,,,          ;DeInit Gear LED 2
+000624,B10A,,   in    Temp,GLED2DDR
+000626,7F07,,   andi  Temp,~(1 << GLED2)
+000628,B90A,,   out   GLED2DDR,Temp
+00062A,985B,,   cbi   GLED2PORT,GLED2
+00062C,2700,,   clr   Temp
+00062E,9300,,   sts   TCCR2A,Temp
+000632,9300,,   sts   TCCR2B,Temp
+000636,9300,,   sts   OCR2B,Temp
+,,,          
+00063A,9508,,   ret
+,,,       
+,,,       ;*****************[ System Tick Interrupt ]*****************************************
+,,,       
+,,,       SysTick_Ovf:
+00063C,B6DF,,   in    SSREG,SREG
+00063E,93CF,,   push  T_CntL
+000640,93DF,,   push  T_CntH
+,,,       
+000642,91C0,,   lds   T_CntL,(rSysTickCnt + 0)
+000646,91D0,,   lds   T_CntH,(rSysTickCnt + 1)
+00064A,9721,,   sbiw  T_CntL,1
+00064C,F419,,   brne  STO_End
+,,,       
+00064E,6410,,   sbr   Flags,(1 << TF)
+000650,E1CA,,   ldi   T_CntL,Byte1(TIME_INTERVAL)
+000652,E0D6,,   ldi   T_CntH,Byte2(TIME_INTERVAL)
+,,,       
+,,,       STO_End:
+000654,93C0,,   sts   (rSysTickCnt + 0),T_CntL
+000658,93D0,,   sts   (rSysTickCnt + 1),T_CntH
+00065C,91DF,,   pop   T_CntH
+00065E,91CF,,   pop   T_CntL
+000660,BEDF,,   out   SREG,SSREG
+000662,9518,,   reti
+,,,       
+,,,       ;*****************[ Gear LEDs Brightness Control ]**********************************
+,,,       
+,,,       GLED1_SetBright:
+000664,BD08,,   out   OCR0B,Temp
+000666,9508,,   ret
+,,,       
+,,,       GLED2_SetBright:
+000668,9300,,   sts   OCR2B,Temp
+00066C,9508,,   ret
+,,,       .INCLUDE "09_TSOP.asm"
+,,,       
+,,,       
+,,,       ; --- NEC Protocol Time Intervals ---
+,,,       ;Name  Symbol  Norm      Min Time      Max Time        Min         Max
+,,,       ;Clean C           96,75 ms  87,075    106,425     10884       13303
+,,,       ;Pause P           40,5 ms       36,45     44,55           4556        5568
+,,,       ;Start S           13,5 ms       12,263    14,85           1540        1856
+,,,       ;Repeat        R           11,25 ms  10,125    12,263      1265        1539
+,,,       ;One   H           2,25 ms       2,025     2,475           253         309
+,,,       ;Zero  L           1,125 ms  1,013         1,238           126         154
+,,,       
+,,,       ;For Fosc = 8000000 and Fosc/64
+,,,       .EQU LMin = 126
+,,,       .EQU LMax = 154
+,,,       .EQU HMin = 253
+,,,       .EQU HMax = 309
+,,,       .EQU RMin = 1265
+,,,       .EQU RMax = 1538
+,,,       .EQU SMin = 1541
+,,,       .EQU SMax = 1856
+,,,       .EQU PMin = 4556
+,,,       .EQU PMax = 5568
+,,,       .EQU CMin = 10884
+,,,       .EQU CMax = 13303
+,,,       
+,,,       ; --- IR commands ---
+,,,       .EQU IR_CMD_PLAY      = 0
+,,,       .EQU IR_CMD_CH_M      = 1
+,,,       .EQU IR_CMD_CH_P      = 2
+,,,       .EQU IR_CMD_EQ        = 4
+,,,       .EQU IR_CMD_M         = 5
+,,,       .EQU IR_CMD_P         = 6
+,,,       .EQU IR_CMD_0         = 8
+,,,       .EQU IR_CMD_PREV      = 9
+,,,       .EQU IR_CMD_NEXT      = 10
+,,,       .EQU IR_CMD_1         = 12
+,,,       .EQU IR_CMD_2         = 13
+,,,       .EQU IR_CMD_PICK_SONG = 24
+,,,       .EQU IR_CMD_CH_SET    = 26
+,,,       
+,,,       ;*****************[ Local variables ]***********************************************
+,,,       
+,,,       .DEF I_nCmd    = r3
+,,,       .DEF I_Cmd     = r16
+,,,       .DEF I_DutyL   = r28
+,,,       .DEF I_DutyH   = r29
+,,,       
+,,,       ;*****************[ TSOP Init ]*****************************************************
+,,,       
+,,,       TSOP_Init:
+,,,          ;Init IR pin
+00066E,9A28,,   sbi   IRPORT,IR
+,,,          ;Clear flags
+000670,7F17,,   cbr   Flags,(1 << IF)
+,,,          ;Init RAM variables
+000672,2700,,   clr   Temp
+000674,9300,,   sts   rIAddr,Temp
+000678,9300,,   sts   rInAddr,Temp
+00067C,9300,,   sts   rICmd,Temp
+000680,9300,,   sts   rInCmd,Temp
+,,,       
+,,,          ;Timer 1 capture mode
+000684,E000,,   ldi   Temp,(0 << COM1A0) | (0 << COM1B0) | (0 << WGM10)
+000686,9300,,   sts   TCCR1A,Temp
+,,,          ;Capture Falling Edge, 8 us Tick
+00068A,E803,,   ldi   Temp,(1 << ICNC1) | (0 << ICES1) | (0 << WGM12) | (3 << CS10)
+00068C,9300,,   sts   TCCR1B,Temp
+,,,          ;ICP and OVF Interrupts
+000690,E201,,   ldi   Temp,(1 << ICIE1) | (1 << TOIE1)
+000692,9300,,   sts   TIMSK1,Temp
+000696,9508,,   ret
+,,,       
+,,,       ;*****************[ TSOP DeInit ]***************************************************
+,,,       
+,,,       TSOP_DeInit:
+,,,          ;DeInit IR pin
+000698,9A28,,   sbi   IRPORT,IR
+,,,          ;DeInit timer
+00069A,2700,,   clr   Temp
+00069C,9300,,   sts   TCCR1A,Temp
+0006A0,9300,,   sts   TCCR1B,Temp
+0006A4,9300,,   sts   TIMSK1,Temp
+0006A8,9508,,   ret
+,,,       
+,,,       ;*****************[ TSOP Capture Interrupt ]****************************************
+,,,       
+,,,       TSOP_Capture:
+0006AA,930F,,   push  Temp
+0006AC,B6DF,,   in    SSREG,SREG
+,,,          ;Clear timer counter
+0006AE,2700,,   clr   Temp
+0006B0,9300,,   sts   TCNT1H,Temp
+0006B4,9300,,   sts   TCNT1L,Temp
+,,,          ;Check if receiving in progress
+0006B8,FD13,,   sbrc  Flags,IF
+0006BA,C004,,   rjmp  T1C_Impuls
+,,,       T1C_Start:
+,,,          ;Indicate receiving in progress (the first capture)
+0006BC,6018,,   sbr   Flags,(1 << IF)
+,,,          ;Wait for the next capture
+0006BE,BEDF,,   out   SREG,SSREG
+0006C0,910F,,   pop   Temp
+0006C2,9518,,   reti
+,,,       T1C_Impuls:
+0006C4,93CF,,   push  I_DutyL
+0006C6,93DF,,   push  I_DutyH
+,,,          ;Load impulse duration
+0006C8,91C0,,   lds   I_DutyL,ICR1L
+0006CC,91D0,,   lds   I_DutyH,ICR1H
+,,,       ; --- Check impulse kind ---
+,,,       T1C_CMax:
+0006D0,E303,,   ldi   Temp,Byte2(CMax)
+0006D2,3FC7,,   cpi   I_DutyL,Byte1(CMax)
+0006D4,07D0,,   cpc   I_DutyH,Temp
+0006D6,F570,,   brsh  T1C_Error
+,,,       T1C_CMin:
+0006D8,E20A,,   ldi   Temp,Byte2(CMin)
+0006DA,38C4,,   cpi   I_DutyL,Byte1(CMin)
+0006DC,07D0,,   cpc   I_DutyH,Temp
+0006DE,F5A0,,   brsh  T1C_P
+,,,       T1C_PMax:
+0006E0,E105,,   ldi   Temp,Byte2(PMax)
+0006E2,3CC0,,   cpi   I_DutyL,Byte1(PMax)
+0006E4,07D0,,   cpc   I_DutyH,Temp
+0006E6,F530,,   brsh  T1C_Error
+,,,       T1C_PMin:
+0006E8,E101,,   ldi   Temp,Byte2(PMin)
+0006EA,3CCC,,   cpi   I_DutyL,Byte1(PMin)
+0006EC,07D0,,   cpc   I_DutyH,Temp
+0006EE,F560,,   brsh  T1C_P
+,,,       T1C_SMax:
+0006F0,E007,,   ldi   Temp,Byte2(SMax)
+0006F2,34C0,,   cpi   I_DutyL,Byte1(SMax)
+0006F4,07D0,,   cpc   I_DutyH,Temp
+0006F6,F4F0,,   brsh  T1C_Error
+,,,       T1C_SMin:
+0006F8,E006,,   ldi   Temp,Byte2(SMin)
+0006FA,30C5,,   cpi   I_DutyL,Byte1(SMin)
+0006FC,07D0,,   cpc   I_DutyH,Temp
+0006FE,F500,,   brsh  T1C_S
+,,,       T1C_RMax:
+000700,E006,,   ldi   Temp,Byte2(RMax)
+000702,30C2,,   cpi   I_DutyL,Byte1(RMax)
+000704,07D0,,   cpc   I_DutyH,Temp
+000706,F4B0,,   brsh  T1C_Error
+,,,       T1C_RMin:
+000708,E004,,   ldi   Temp,Byte2(RMin)
+00070A,3FC1,,   cpi   I_DutyL,Byte1(RMin)
+00070C,07D0,,   cpc   I_DutyH,Temp
+00070E,F500,,   brsh  T1C_R
+,,,       T1C_HMax:
+000710,E001,,   ldi   Temp,Byte2(HMax)
+000712,33C5,,   cpi   I_DutyL,Byte1(HMax)
+000714,07D0,,   cpc   I_DutyH,Temp
+000716,F470,,   brsh  T1C_Error
+,,,       T1C_HMin:
+,,,          ;Set T Flag in SREG = 1 (One)
+000718,9468,,   set
+00071A,E000,,   ldi   Temp,Byte2(HMin)
+00071C,3FCD,,   cpi   I_DutyL,Byte1(HMin)
+00071E,07D0,,   cpc   I_DutyH,Temp
+000720,F4F0,,   brsh  T1C_HL
+,,,       T1C_LMax:
+000722,E000,,   ldi   Temp,Byte2(LMax)
+000724,39CA,,   cpi   I_DutyL,Byte1(LMax)
+000726,07D0,,   cpc   I_DutyH,Temp
+000728,F428,,   brsh  T1C_Error
+,,,       T1C_LMin:
+,,,          ;Clear T Flag in SREG = 0 (Zero)
+00072A,94E8,,   clt
+00072C,E000,,   ldi   Temp,Byte2(LMin)
+00072E,37CE,,   cpi   I_DutyL,Byte1(LMin)
+000730,07D0,,   cpc   I_DutyH,Temp
+000732,F4A8,,   brsh  T1C_HL
+,,,       T1C_Error:
+,,,          ;Indicate no receiving
+000734,7F17,,   cbr   Flags,(1 << IF)
+000736,91DF,,   pop   I_DutyH
+000738,91CF,,   pop   I_DutyL
+00073A,BEDF,,   out   SREG,SSREG
+00073C,910F,,   pop   Temp
+00073E,9518,,   reti
+,,,       ; --- Start impulse ---
+,,,       T1C_S:
+,,,          ;Clear bit index
+000740,2700,,   clr   Temp
+000742,9300,,   sts   rIIndex,Temp
+000746,C033,,   rjmp  T1C_End
+,,,       ; --- Pause impulse ---
+,,,       T1C_P:
+,,,          ;Set bit index to specific value for future use
+000748,E40D,,   ldi   Temp,77
+00074A,9300,,   sts   rIIndex,Temp
+00074E,C02F,,   rjmp  T1C_End
+,,,       ; --- Repeat impulse ---
+,,,       T1C_R:
+,,,          ;Check if Pause impulse was received
+000750,9100,,   lds   Temp,rIIndex
+000754,340D,,   cpi   Temp,77
+,,,          ;Clear bit index
+000756,2700,,   clr   Temp
+000758,9300,,   sts   rIIndex,Temp
+,,,          ;Repeat previous command
+00075C,C01C,,   rjmp  T1C_CheckCmd
+,,,       ; --- High/Low (One/Zero) impulse ---
+,,,       T1C_HL:
+,,,          ;Shift right all received bits
+00075E,9100,,   lds   Temp,rInCmd
+000762,9506,,   lsr   Temp
+,,,          ;Load T flag and save to the highest received bit
+000764,F907,,   bld   Temp,7
+000766,9300,,   sts   rInCmd,Temp
+00076A,9100,,   lds   Temp,rICmd
+00076E,9507,,   ror   Temp
+000770,9300,,   sts   rICmd,Temp
+000774,9100,,   lds   Temp,rInAddr
+000778,9507,,   ror   Temp
+00077A,9300,,   sts   rInAddr,Temp
+00077E,9100,,   lds   Temp,rIAddr
+000782,9507,,   ror   Temp
+000784,9300,,   sts   rIAddr,Temp
+,,,       T1C_CheckIndex:
+000788,9100,,   lds   Temp,rIIndex
+00078C,9503,,   inc   Temp
+00078E,9300,,   sts   rIIndex,Temp
+,,,          ;Check if all the bits are received
+000792,3200,,   cpi   Temp,32
+000794,F461,,   brne  T1C_End
+,,,       ; --- Check received command ---
+,,,       T1C_CheckCmd:
+000796,923F,,   push  I_nCmd
+000798,9100,,   lds   Temp,rICmd
+00079C,9030,,   lds   I_nCmd,rInCmd
+0007A0,9430,,   com   I_nCmd
+,,,          ;Compare positive and negative received commands
+0007A2,1503,,   cp    Temp,I_nCmd
+0007A4,903F,,   pop   I_nCmd
+0007A6,F631,,   brne  T1C_Error
+,,,       
+,,,          ;Indicate IR receiving complete
+0007A8,7F17,,   cbr   Flags,(1 << IF)
+0007AA,6110,,   sbr   Flags,(1 << CF)
+,,,          ;Store command to special register
+0007AC,BB0E,,   out   ICMD,Temp
+,,,       ; --- Error ---
+,,,       T1C_End:
+0007AE,91DF,,   pop   I_DutyH
+0007B0,91CF,,   pop   I_DutyL
+0007B2,BEDF,,   out   SREG,SSREG
+0007B4,910F,,   pop   Temp
+0007B6,9518,,   reti
+,,,       
+,,,       ;*****************[ TSOP Overflow Interrupt ]***************************************
+,,,       
+,,,       TSOP_Ovf:
+0007B8,B6DF,,   in    SSREG,SREG
+,,,          ;Indicate no receiving
+0007BA,7F17,,   cbr   Flags,(1 << IF)
+0007BC,BEDF,,   out   SREG,SSREG
+0007BE,9518,,   reti
+,,,       
+,,,       ;*****************[ TSOP Check Start Command ]**************************************
+,,,       
+,,,       TSOP_CheckStartCommand:
+,,,          ;Clear T flag
+0007C0,94E8,,   clt
+,,,          ;Check if IR command was received
+0007C2,FF14,,   sbrs  Flags,CF
+0007C4,9508,,   ret
+,,,          ;Load received command
+,,,          ;lds   Temp,rICmd
+0007C6,B30E,,   in    I_Cmd,ICMD
+,,,          ;Check if command == Play
+0007C8,3000,,   cpi   I_Cmd,IR_CMD_PLAY
+0007CA,F409,,   brne  TCSC_End
+,,,          ;Set T flag - means Device can Wake Up
+0007CC,9468,,   set
+,,,       TCSC_End:
+0007CE,9508,,   ret
+,,,       
+,,,       ;*****************[ TSOP Command Processing ]***************************************
+,,,       
+,,,       TSOP_Process:
+,,,          ;lds   I_Cmd,rICmd
+0007D0,B30E,,   in    I_Cmd,ICMD
+,,,       TCP_Play:
+0007D2,3000,,   cpi   I_Cmd,IR_CMD_PLAY
+0007D4,F409,,   brne  TCP_ChM
+0007D6,C046,,   rjmp  TCP_End
+,,,       TCP_ChM:
+0007D8,3001,,   cpi   I_Cmd,IR_CMD_CH_M
+0007DA,F411,,   brne  TCP_ChP
+0007DC,DDF5,,   rcall SLEDR_Off
+0007DE,C042,,   rjmp  TCP_End
+,,,       TCP_ChP:
+0007E0,3002,,   cpi   I_Cmd,IR_CMD_CH_P
+0007E2,F411,,   brne  TCP_EQ
+0007E4,DDEF,,   rcall SLEDR_On
+0007E6,C03E,,   rjmp  TCP_End
+,,,       TCP_EQ:
+0007E8,3004,,   cpi   I_Cmd,IR_CMD_EQ
+0007EA,F411,,   brne  TCP_M
+0007EC,6012,,   sbr   Flags,(1 << SF)
+0007EE,C03A,,   rjmp  TCP_End
+,,,       TCP_M:
+0007F0,3005,,   cpi   I_Cmd,IR_CMD_M
+0007F2,F449,,   brne  TCP_P
+0007F4,DDF7,,   rcall SLEDB_Off
+0007F6,9100,,   lds   Temp,rBrightness
+0007FA,5001,,   subi  Temp,1
+0007FC,9300,,   sts   rBrightness,Temp
+000800,DF31,,   rcall GLED1_SetBright
+000802,DF32,,   rcall GLED2_SetBright
+000804,C02F,,   rjmp  TCP_End
+,,,       TCP_P:
+000806,3006,,   cpi   I_Cmd,IR_CMD_P
+000808,F449,,   brne  TCP_0
+00080A,DDEA,,   rcall SLEDB_On
+00080C,9100,,   lds   Temp,rBrightness
+000810,5F0F,,   subi  Temp,-1
+000812,9300,,   sts   rBrightness,Temp
+000816,DF26,,   rcall GLED1_SetBright
+000818,DF27,,   rcall GLED2_SetBright
+00081A,C024,,   rjmp  TCP_End
+,,,       TCP_0:
+00081C,3008,,   cpi   I_Cmd,IR_CMD_0
+00081E,F431,,   brne  TCP_1
+000820,E000,,   ldi   Temp,0
+000822,9300,,   sts   rBrightness,Temp
+000826,DF1E,,   rcall GLED1_SetBright
+000828,DF1F,,   rcall GLED2_SetBright
+00082A,C01C,,   rjmp  TCP_End
+,,,       TCP_1:
+00082C,300C,,   cpi   I_Cmd,IR_CMD_1
+00082E,F409,,   brne  TCP_2
+,,,       ;   rcall LEDLIGHT_Next
+,,,          ;clr   I_Cmd
+,,,          ;sts   rICmd,I_Cmd
+,,,          ;sts   rInCmd,I_Cmd
+000830,C014,,   rjmp  TCP_NoRepeat ;TCP_End
+,,,       TCP_2:
+000832,300D,,   cpi   I_Cmd,IR_CMD_2
+000834,F409,,   brne  TCP_Prev
+,,,       ;   rcall LEDLIGHT_Next
+,,,       ;   rcall LEDLIGHT_Next
+,,,       ;   rcall LEDLIGHT_Next
+,,,          ;clr   I_Cmd
+,,,          ;sts   rICmd,I_Cmd
+,,,          ;sts   rInCmd,I_Cmd
+000836,C011,,   rjmp  TCP_NoRepeat ;TCP_End
+,,,       TCP_Prev:
+000838,3009,,   cpi   I_Cmd,IR_CMD_PREV
+00083A,F419,,   brne  TCP_Next
+00083C,DDCF,,   rcall SLEDG_Off
+00083E,7D1F,,   cbr   Flags,(1 << BF)
+000840,C011,,   rjmp  TCP_End
+,,,       TCP_Next:
+000842,300A,,   cpi   I_Cmd,IR_CMD_NEXT
+000844,F419,,   brne  TCP_PickSong
+000846,6210,,   sbr   Flags,(1 << BF)
+000848,DDC7,,   rcall SLEDG_On
+00084A,C00C,,   rjmp  TCP_End
+,,,       TCP_PickSong:
+00084C,3108,,   cpi   I_Cmd,IR_CMD_PICK_SONG
+00084E,F409,,   brne  TCP_ChSet
+,,,          ;clr   I_Cmd
+,,,          ;sts   rICmd,I_Cmd
+,,,          ;sts   rInCmd,I_Cmd
+,,,       ;   rcall LEDLIGHT_Toggle
+000850,C004,,   rjmp  TCP_NoRepeat ;TCP_End
+,,,       TCP_ChSet:
+000852,310A,,   cpi   I_Cmd,IR_CMD_CH_SET
+000854,F439,,   brne  TCP_End
+000856,DE43,,   rcall SLEDs_CheckBattery
+000858,DDDC,,   rcall SLEDs_SetState
+,,,       ;  rjmp  TCP_End
+,,,       TCP_NoRepeat:
+00085A,2700,,   clr   I_Cmd
+00085C,9300,,   sts   rICmd,I_Cmd
+000860,9300,,   sts   rInCmd,I_Cmd
+,,,       TCP_End:
+000864,7E1F,,   cbr   Flags,(1 << CF)
+000866,9508,,   ret
+,,,       
+,,,       ;***********************************************************************************
+,,,       .INCLUDE "10_EEPROM.asm"
+,,,       
+,,,          ;Ожидание завершения предыдущей записи
+000868,99F9,,   sbic  EECR,EEWE
+00086A,CFFE,,   rjmp  EEPROM_Write    
+,,,          ;Установка адреса
+,,,          ;out   EEARH,EE_AdrH
+00086C,BD61,,   out   EEARL,E_Addr
+,,,          ;Запись данных
+00086E,BD50,,   out   EEDR,E_Data
+,,,          ;Установка EEMWE
+000870,9AFA,,   sbi   EECR,EEMWE
+,,,          ;Запуск записи (установка EEWE)
+000872,9AF9,,   sbi   EECR,EEWE
+000874,9508,,   ret
+,,,       
+,,,       
+,,,       EEPROM_Read:
+,,,          ;Ожидание завершения предыдущей записи
+000876,99F9,,   sbic  EECR,EEWE
+000878,CFFE,,   rjmp  EEPROM_Read
+,,,          ;Установка адреса
+,,,          ;out   EEARH,EE_AdrH
+00087A,BD61,,   out   EEARL,E_Addr
+,,,          ;Запуск чтения (установка EERE)
+00087C,9AF8,,   sbi   EECR,EERE
+,,,          ;Чтение данных
+00087E,B550,,   in    E_Data,EEDR
+000880,9508,,   ret
+,,,       
+,,,       .INCLUDE "11_LedLight.asm"
+,,,       
+,,,       
+,,,       .EQU LL_STATE_OFF                   = 0
+,,,       .EQU LL_STATE_MAX                   = 1
+,,,       .EQU LL_STATE_MID                   = 2
+,,,       .EQU LL_STATE_MIN                   = 3
+,,,       .EQU LL_STATE_FLS                   = 4
+,,,       
+,,,       .EQU LL_IR_CMD_TOGGLE               = 1
+,,,       .EQU LL_IR_CMD_NEXT                 = 2
+,,,       .EQU LL_IR_CMD_MIN                  = 3
+,,,       .EQU LL_IR_CMD_MID                  = 4
+,,,       .EQU LL_IR_CMD_MAX                  = 5
+,,,       
+,,,       ; --- Time intervals (discrete 50 ms -> SysTick) ---
+,,,       .EQU LL_TIME_SHORT_SWITCH           = 3
+,,,       .EQU LL_TIME_LONG_SWITCH            = 62
+,,,       
+,,,       ;*****************[ Local variables ]***********************************************
+,,,       
+,,,       ;DEF Temp     = r16
+,,,       ;DEF Value    = r16
+,,,       .DEF L_ICmd   = r16
+,,,       ;DEF Flags    = r17
+,,,       .DEF L_Flags  = r18 ;  6 7 8 9 10 11 12
+,,,       .EQU  LFF     = 0   ;Button Fall Flag
+,,,       .EQU  LRF     = 1   ;Button Rise Flag
+,,,       .EQU  LNF     = 2   ;Need switch to the next state Flag
+,,,       .DEF L_BTimer = r19 ;Button Timer
+,,,       .DEF L_CTimer = r20 ;Command Timer
+,,,       .DEF L_CState = r21 ;Current State
+,,,       ;DEF L_Dbg    = r21 ;Debug Data
+,,,       .DEF L_NState = r22 ;New State if needed
+,,,       .DEF L_Temp   = r23
+,,,       ;DEF ValueL   = r24
+,,,       ;DEF ValueH   = r25
+,,,       
+,,,       ;*****************[ Private functions ]*********************************************
+,,,       ; --- NOTE: Consider all the state registers in private functions are ---
+,,,       ; ---       already loaded ---
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_Hold:
+,,,          ;LED Light Pin (Output) -> Pull down to Gnd
+000882,B10A,,   in    Temp,LEDLDDR
+000884,6400,,   ori   Temp,(1 << LEDLIGHT)
+000886,B90A,,   out   LEDLDDR,Temp
+000888,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_Release:
+,,,          ;LED Light Pin (Input) -> Pull up to Vcc
+00088A,B10A,,   in    Temp,LEDLDDR
+00088C,7B0F,,   andi  Temp,~(1 << LEDLIGHT)
+00088E,B90A,,   out   LEDLDDR,Temp
+000890,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_Btn:
+000892,932F,,   push  L_Flags
+000894,B6DF,,   in    SSREG,SREG
+,,,       
+,,,          ;Load flags from RAM
+000896,9120,,   lds   L_Flags,rLFlags
+,,,          ;nop
+,,,          ;nop
+,,,          ;Set T bit in SREG
+,,,          ;set
+00089A,0000,,   nop
+,,,          ;Check LedLight Button pin state
+00089C,994E,,   sbic  LEDLPIN,LEDLIGHT
+00089E,C002,,   rjmp  LLB_Released
+,,,       LLB_Held:
+,,,          ;rcall SLEDB_On
+,,,          ;Load T bit and save it to Flag
+,,,          ;bld   L_Flags,LFF
+,,,          ;Pin low -> Falling edge detected
+0008A0,6021,,   sbr   L_Flags,(1 << LFF)
+0008A2,C001,,   rjmp  LLB_End
+,,,       LLB_Released:
+,,,          ;rcall SLEDB_Off
+,,,          ;Load T bit and save it to Flag
+,,,          ;bld   L_Flags,LRF
+,,,          ;Pin high -> Rising edge detected
+0008A4,6022,,   sbr   L_Flags,(1 << LRF)
+,,,       LLB_End:
+,,,          ;Store flags to RAM
+0008A6,9320,,   sts   rLFlags,L_Flags
+,,,          
+0008AA,BEDF,,   out   SREG,SSREG
+0008AC,912F,,   pop   L_Flags
+0008AE,9518,,   reti
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;  private void toggle()
+,,,       ;  {
+,,,       ;    if (fCurState == LL_STATE_OFF)
+,,,       ;    {
+,,,       ;      fCurState = LL_STATE_MAX;
+,,,       ;    }
+,,,       ;    else
+,,,       ;    {
+,,,       ;      fCurState = LL_STATE_OFF;
+,,,       ;    }
+,,,       ;    
+,,,       ;    fOwner.updateLedLight(fCurState);
+,,,       ;  }
+,,,       LEDLIGHT_Toggle:
+,,,          ;ldi   L_Temp,LL_STATE_OFF
+,,,       ;   lds   L_CState,rLCState
+,,,          ;cp    L_CState,L_Temp
+0008B0,3050,,   cpi   L_CState,LL_STATE_OFF
+0008B2,F411,,   brne  LLT_GoToOff
+,,,       LLT_GoToMax:
+,,,          ;ldi   L_Temp,LL_STATE_MAX
+0008B4,E051,,   ldi   L_CState,LL_STATE_MAX
+0008B6,9508,,   ret
+,,,       LLT_GoToOff:
+,,,          ;mov   L_CState,L_Temp
+,,,       ;   sts   rLCState,L_CState
+0008B8,6012,,   sbr   Flags,(1 << SF)
+0008BA,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;  private void next()
+,,,       ;  {
+,,,       ;    if (fCurState == LL_STATE_OFF) return;
+,,,       ;    fCurState++;
+,,,       ;    if (fCurState > LL_STATE_FLS) fCurState = LL_STATE_MAX;
+,,,       ;
+,,,       ;    fOwner.updateLedLight(fCurState);
+,,,       ;  }
+,,,       LEDLIGHT_Next:
+,,,          ;ldi   L_Temp,LL_STATE_OFF
+,,,       ;   lds   L_CState,rLCState
+,,,          ;cpse  L_CState,L_Temp
+0008BC,3050,,   cpi   L_CState,LL_STATE_OFF
+,,,          ;rjmp  LLN_Begin
+0008BE,F411,,   brne  LLN_Begin
+0008C0,6012,,   sbr   Flags,(1 << SF)
+0008C2,9508,,   ret
+,,,       LLN_Begin:
+0008C4,9553,,   inc   L_CState
+,,,          ;ldi   L_Temp,(LL_STATE_FLS + 1)
+0008C6,E005,,   ldi   Temp,(LL_STATE_FLS + 1)
+,,,          ;cp    L_CState,L_Temp
+0008C8,1750,,   cp    L_CState,Temp
+0008CA,F008,,   brlo  LLN_End
+,,,          ;ldi   L_Temp,LL_STATE_MAX
+,,,          ;mov   L_CState,L_Temp
+0008CC,E051,,   ldi   L_CState,LL_STATE_MAX
+,,,       LLN_End:
+,,,       ;   sts   rLCState,L_CState
+0008CE,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;  private void checkstate()
+,,,       ;  {
+,,,       ;    if ((fLLNeedNext) && (fCurState != fNewState))
+,,,       ;    {
+,,,       ;      fCmdTimer = 3;
+,,,       ;      fLLBtnFall = true;
+,,,       ;    }
+,,,       ;    else fLLNeedNext = false;
+,,,       ;  }
+,,,       LEDLIGHT_CheckState:
+,,,       ;   lds   L_Flags,rLFlags
+,,,       ;   lds   L_CState,rLCState
+,,,       
+,,,          ;If switching to the next state needed
+0008D0,FF22,,   sbrs  L_Flags,LNF
+0008D2,C006,,   rjmp  LLCS_NoSwitch
+,,,          ;Current state == New state -> No switching needed
+0008D4,1756,,   cp    L_CState,L_NState
+0008D6,F021,,   breq  LLCS_NoSwitch
+,,,          ;Load Command Timer with short switch time
+,,,       ;   ldi   L_Temp,3
+,,,       ;   mov   L_CTimer,L_Temp
+0008D8,E043,,   ldi   L_CTimer,LL_TIME_SHORT_SWITCH
+,,,          
+0008DA,2F75,,   mov   L_Temp,L_CState
+0008DC,5D70,,   subi  L_Temp,-$30
+0008DE,DD03,,   rcall UART_Dbg
+,,,          
+,,,       ;   clt
+,,,       ;   bld   L_Flags,LNF
+,,,       LLCS_NoSwitch:
+,,,          ;Clear New state switch flag
+0008E0,7F2B,,   cbr   L_Flags,(1 << LNF)
+0008E2,9508,,   ret
+,,,       ;LLCS_NoSwitch:
+,,,       ;   clt
+,,,       ;   bld   L_Flags,LNF
+,,,       ;   cbr   L_Flags,(1 << LNF)
+,,,       ;   ret
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_Init:
+,,,          ;LED Light Pin (Input)
+0008E4,985E,,   cbi   LEDLPORT,LEDLIGHT
+0008E6,DFD1,,   rcall LEDLIGHT_Release
+,,,       
+,,,          ;ldi   Temp,LEDLIGHT_OFF
+,,,          ;sts   rLCState,Temp
+0008E8,2700,,   clr   Temp
+0008EA,9300,,   sts   rLFlags,Temp
+0008EE,9300,,   sts   rLBTimer,Temp
+0008F2,9300,,   sts   rLCTimer,Temp
+0008F6,9300,,   sts   rLCState,Temp
+0008FA,9300,,   sts   rLNState,Temp
+,,,       
+,,,          ;Enable External Interrupt 22 (PCINT22/PD6, Led Light) for Wake Up
+0008FE,E004,,   ldi   Temp,(1 << PCIF2)
+000900,9300,,   sts   PCIFR,Temp
+000904,E004,,   ldi   Temp,(1 << PCIE2)
+000906,9300,,   sts   PCICR,Temp
+00090A,E400,,   ldi   Temp,(1 << PCINT22)
+00090C,9300,,   sts   PCMSK2,Temp
+,,,       
+000910,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_DeInit:
+000912,9150,,   lds   L_CState,rLCState
+,,,          ;cpi   Temp,LEDLIGHT_OFF
+,,,          ;breq  LDI_End
+,,,       
+,,,          ;ldi   L_Temp,LL_STATE_OFF
+000916,3050,,   cpi   L_CState,LL_STATE_OFF
+000918,F019,,   breq  LDI_End
+00091A,DFB3,,   rcall LEDLIGHT_Hold
+,,,          ;Delay 3000 ms
+00091C,E708,,   ldi   Value,120
+00091E,DB90,,   rcall Delay25msX
+,,,       LDI_End:
+000920,985E,,   cbi   LEDLPORT,LEDLIGHT
+000922,DFB3,,   rcall LEDLIGHT_Release
+000924,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_CheckButtonHeld:
+000926,94E8,,   clt
+000928,994E,,   sbic  LEDLPIN,LEDLIGHT
+00092A,9508,,   ret
+,,,       LLCBH_Held:
+,,,          ;rcall SLEDB_On
+00092C,9120,,   lds   L_Flags,rLFlags
+000930,6021,,   sbr   L_Flags,(1 << LFF)
+000932,9320,,   sts   rLFlags,L_Flags
+000936,9468,,   set
+000938,9508,,   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_Process:
+,,,          ;Load current state
+00093A,9120,,   lds   L_Flags,rLFlags
+00093E,9130,,   lds   L_BTimer,rLBTimer
+000942,9140,,   lds   L_CTimer,rLCTimer
+000946,9150,,   lds   L_CState,rLCState
+00094A,9160,,   lds   L_NState,rLNState
+,,,       
+,,,       ;  @Override
+,,,       ;  public void run()
+,,,       ;  {
+,,,       ;    while(fInWork) 
+,,,       ;    {
+,,,       ;      /* Led Light Button is pressed/IR command is issued */
+,,,       ;      if (fLLBtnFall)
+,,,       ;      {
+,,,       ;        fTimer = 0;
+,,,       ;        fLLBtnFall = false;
+,,,       ;        fOwner.updateLedLightPin(false);
+,,,       ;      }
+,,,       LLP_CheckBtnFall:
+,,,          ;Check if falling edge of LedLight Button detected
+00094E,FF20,,   sbrs  L_Flags,LFF
+000950,C005,,   rjmp  LLP_CheckBtnRise
+,,,          ;Start counting how long Button will be held
+000952,2733,,   clr   L_BTimer
+,,,       ;   clt
+,,,       ;   bld   L_Flags,LFF
+000954,7F2E,,   cbr   L_Flags,(1 << LFF)
+,,,          
+,,,          ;Prepare state for indication
+000956,E008,,   ldi   Temp,SLEDS_STATE_LEDLIGHT_OFF
+000958,DD5C,,   rcall SLEDs_SetState
+,,,       
+00095A,C00A,,   rjmp  LLP_CheckIrCmdTimer
+,,,       
+,,,       ;      /* Led Light Button is released/IR command is finished */
+,,,       ;      if (fLLBtnRise)
+,,,       ;      {
+,,,       ;        fTimer += 1;
+,,,       ;        fLLBtnRise = false;
+,,,       ;        
+,,,       ;        log("  * Timeout = %d ms", fTimer * 50);
+,,,       ;        fOwner.updateLedLightPin(true);
+,,,       ;
+,,,       ;        if (fTimer > 60)
+,,,       ;        {
+,,,       ;          toggle();
+,,,       ;        }
+,,,       ;        else
+,,,       ;        {
+,,,       ;          next();
+,,,       ;        }
+,,,       ;        checkstate();
+,,,       ;      }
+,,,       LLP_CheckBtnRise:
+,,,          ;Check if rising edge of LedLight Button detected
+00095C,FF21,,   sbrs  L_Flags,LRF
+00095E,C008,,   rjmp  LLP_CheckIrCmdTimer
+,,,          ;Check how long the Button was held
+000960,9533,,   inc   L_BTimer
+,,,       ;   clt
+,,,       ;   bld   L_Flags,LRF
+000962,7F2D,,   cbr   L_Flags,(1 << LRF)
+,,,          
+,,,          ;
+,,,       ;   ldi   L_Temp,61
+,,,       ;   cp    L_BTimer,L_Temp
+,,,          ;If Button was held more than 3 s -> Toggle state (OFF->MAX/MAX->OFF)
+000964,333D,,   cpi   L_BTimer,(LL_TIME_LONG_SWITCH - 1)
+000966,F410,,   brsh  LLP_CBR_Toggle
+,,,       LLP_CBR_Next:
+,,,          ;Else -> Go to the next state
+000968,DFA9,,   rcall LEDLIGHT_Next
+00096A,C001,,   rjmp  LLP_CBR_CheckState
+,,,       LLP_CBR_Toggle:
+00096C,DFA1,,   rcall LEDLIGHT_Toggle
+,,,       LLP_CBR_CheckState:
+,,,          ;Check if current state is final state
+00096E,DFB0,,   rcall LEDLIGHT_CheckState
+,,,       
+,,,       ;      /* Timer for IR Command */
+,,,       ;      if (fCmdTimer > 0)
+,,,       ;      {
+,,,       ;        fCmdTimer--;
+,,,       ;        
+,,,       ;        if (fCmdTimer == 0) fLLBtnRise = true;
+,,,       ;      }
+,,,       LLP_CheckIrCmdTimer:
+,,,          ;Release the Button if IR command was received
+,,,          ;And Command Timer expired
+000970,2344,,   tst   L_CTimer
+000972,F039,,   breq  LLP_End
+000974,954A,,   dec   L_CTimer
+000976,2344,,   tst   L_CTimer
+000978,F421,,   brne  LLP_End
+00097A,DF87,,   rcall LEDLIGHT_Release
+,,,          
+00097C,2F75,,   mov   L_Temp,L_CState
+00097E,5D70,,   subi  L_Temp,-$30
+000980,DCB2,,   rcall UART_Dbg
+,,,       
+,,,       ;      fTimer++;
+,,,       ;
+,,,       ;      delay(50);
+,,,       ;    }
+,,,       ;  }
+,,,       LLP_End:
+000982,9533,,   inc   L_BTimer
+,,,          
+,,,          ;Store current state
+000984,9320,,   sts   rLFlags,L_Flags
+000988,9330,,   sts   rLBTimer,L_BTimer
+00098C,9340,,   sts   rLCTimer,L_CTimer
+000990,9350,,   sts   rLCState,L_CState
+000994,9360,,   sts   rLNState,L_NState
+,,,       
+000998,9508,,   ret
+,,,          
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       LEDLIGHT_IR_Cmd:
+,,,       ;    if (fCurState == LL_STATE_OFF) {
+,,,       ;      fCmdTimer = 65;
+,,,       ;    } else {
+,,,       ;      fCmdTimer = 2;
+,,,       ;    }
+,,,       ;--> Pin Control --> IRQ --> fLLBtnFall = true;
+,,,       ;    fLLNeedNext = false;
+,,,       
+,,,       ;   ldi   L_Temp,LL_STATE_OFF
+,,,       ;   cp    L_CState,L_Temp
+00099A,3050,,   cpi   L_CState,LL_STATE_OFF
+00099C,F411,,   brne  LLIC_TimeoutShort
+,,,       LLIC_TimeoutLong:
+,,,       ;   ldi   L_Temp,65
+00099E,E442,,   ldi   L_CTimer,(LL_TIME_LONG_SWITCH + 4)
+0009A0,C001,,   rjmp  LLIC_TimeoutEnd
+,,,       LLIC_TimeoutShort:
+,,,       ;   ldi   L_Temp,2
+0009A2,E042,,   ldi   L_CTimer,(LL_TIME_SHORT_SWITCH - 1)
+,,,       LLIC_TimeoutEnd:
+,,,       ;   mov   L_CTimer,L_Temp
+,,,       ;   clt
+,,,       ;   bld   L_Flags,LNF
+0009A4,7F2D,,   cbr   L_Flags,LNF
+,,,       
+,,,       ;    switch(cmd)
+,,,       ;    {
+,,,       ;      case IR_CMD_TOGGLE:
+,,,       ;        fCmdTimer = 65;
+,,,       ;        break;
+,,,       LLIC_IRToggle:
+0009A6,3001,,   cpi   L_ICmd,LL_IR_CMD_TOGGLE
+0009A8,F411,,   brne  LLIC_IRNext
+,,,       ;   ldi   L_Temp,65
+,,,       ;   mov   L_CTimer,L_Temp
+0009AA,E442,,   ldi   L_CTimer,(LL_TIME_LONG_SWITCH + 4)
+0009AC,C013,,   rjmp  LLIC_IREnd
+,,,       ;      case IR_CMD_NEXT:
+,,,       ;        break;
+,,,       LLIC_IRNext:
+0009AE,3002,,   cpi   L_ICmd,LL_IR_CMD_NEXT
+0009B0,F409,,   brne  LLIC_IRMin
+,,,       
+0009B2,C010,,   rjmp  LLIC_IREnd
+,,,       ;      case IR_CMD_MIN:
+,,,       ;        fNewState = LL_STATE_MIN;
+,,,       ;        fLLNeedNext = true;
+,,,       ;        break;
+,,,       LLIC_IRMin:
+0009B4,3003,,   cpi   L_ICmd,LL_IR_CMD_MIN
+0009B6,F419,,   brne  LLIC_IRMid
+,,,       ;   ldi   L_Temp,LL_STATE_MIN
+,,,       ;   mov   L_NState,L_Temp
+0009B8,E063,,   ldi   L_NState,LL_STATE_MIN
+,,,       ;   set
+,,,       ;   bld   L_Flags,LNF
+0009BA,6022,,   sbr   L_Flags,LNF
+0009BC,C00B,,   rjmp  LLIC_IREnd
+,,,       ;      case IR_CMD_MID:
+,,,       ;        fNewState = LL_STATE_MID;
+,,,       ;        fLLNeedNext = true;
+,,,       ;        break;
+,,,       LLIC_IRMid:
+0009BE,3004,,   cpi   L_ICmd,LL_IR_CMD_MID
+0009C0,F419,,   brne  LLIC_IRMax
+,,,       ;   ldi   L_Temp,LL_STATE_MID
+,,,       ;   mov   L_NState,L_Temp
+0009C2,E062,,   ldi   L_NState,LL_STATE_MID
+,,,       ;   set
+,,,       ;   bld   L_Flags,LNF
+0009C4,6022,,   sbr   L_Flags,LNF
+0009C6,C006,,   rjmp  LLIC_IREnd
+,,,       ;      case IR_CMD_MAX:
+,,,       ;        fNewState = LL_STATE_MAX;
+,,,       ;        fLLNeedNext = true;
+,,,       ;        break;
+,,,       LLIC_IRMax:
+0009C8,3005,,   cpi   L_ICmd,LL_IR_CMD_MAX
+0009CA,F419,,   brne  LLIC_IRError
+,,,       ;   ldi   L_Temp,LL_STATE_MAX
+,,,       ;   mov   L_NState,L_Temp
+0009CC,E061,,   ldi   L_NState,LL_STATE_MAX
+,,,       ;   set
+,,,       ;   bld   L_Flags,LNF
+0009CE,6022,,   sbr   L_Flags,LNF
+0009D0,C001,,   rjmp  LLIC_IREnd
+,,,       ;      default:
+,,,       ;        fCmdTimer = 0;
+,,,       ;        fLLBtnFall = false;
+,,,       ;        break;
+,,,       ;    }
+,,,       LLIC_IRError:
+0009D2,2744,,   clr   L_CTimer
+,,,       LLIC_IREnd:
+,,,       
+,,,       ;    if ((fLLNeedNext) && (fCurState == fNewState))
+,,,       ;    {
+,,,       ;      fCmdTimer = 0;
+,,,       ;      fLLBtnFall = false;
+,,,       ;      fLLNeedNext = false;
+,,,       ;    }
+,,,       ;  }
+0009D4,FF22,,   sbrs  L_Flags,LNF
+0009D6,9508,,   ret
+0009D8,1356,,   cpse  L_CState,L_NState
+0009DA,9508,,   ret
+0009DC,2744,,   clr   L_CTimer
+,,,       ;   clt
+,,,       ;   bld   L_Flags,LNF
+0009DE,7F2D,,   cbr   L_Flags,LNF
+0009E0,9508,,   ret
+,,,          
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       
+,,,       ;LEDLIGHT_Toggle:
+,,,       ;   lds   Temp,rLLightMode
+,,,       ;LLT_Max:
+,,,       ;LLT_On:
+,,,       ;   cpi   Temp,LEDLIGHT_OFF
+,,,          ;brne  LLT_Mid
+,,,       ;   brne  LLT_Off
+,,,       ;   ldi   Temp,LEDLIGHT_MAX
+,,,       ;   sts   rLLightMode,Temp
+,,,       ;   ldi   Temp,STATE_LEDLIGHT_ON
+,,,       ;   rjmp  LLT_End
+,,,       ;LLT_Mid:
+,,,       ;   cpi   Temp,LEDLIGHT_MAX
+,,,       ;   brne  LLT_Min
+,,,       ;   ldi   Temp,LEDLIGHT_MID
+,,,       ;   sts   rLedLightMode,Temp
+,,,       ;   ldi   Temp,STATE_IDLE
+,,,       ;   rjmp  LLT_End
+,,,       ;LLT_Min:
+,,,       ;   cpi   Temp,LEDLIGHT_MID
+,,,       ;   brne  LLT_Flash
+,,,       ;   ldi   Temp,LEDLIGHT_MIN
+,,,       ;   sts   rLedLightMode,Temp
+,,,       ;   ldi   Temp,STATE_IDLE
+,,,       ;   rjmp  LLT_End
+,,,       ;LLT_Flash:
+,,,       ;   cpi   Temp,LEDLIGHT_MIN
+,,,       ;   brne  LLT_Off
+,,,       ;   ldi   Temp,LEDLIGHT_FLASH
+,,,       ;   sts   rLedLightMode,Temp
+,,,       ;   ldi   Temp,STATE_IDLE
+,,,       ;   rjmp  LLT_End
+,,,       ;LLT_Off:
+,,,       ;   cpi   Temp,LEDLIGHT_FLASH
+,,,       ;   brne  LLT_Error
+,,,       ;   ldi   Temp,LEDLIGHT_OFF
+,,,       ;   sts   rLLightMode,Temp
+,,,       ;   ldi   Temp,STATE_LEDLIGHT_OFF
+,,,          ;rjmp  LLT_End
+,,,       ;LLT_End:
+,,,       ;   rcall SLEDs_SetState
+,,,       ;   rcall LEDLIGHT_Hold
+,,,       ;LLT_Error:
+,,,       ;   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;LEDLIGHT_Next:
+,,,       ;   rcall LEDLIGHT_Hold
+,,,          ;Delay 75 ms
+,,,       ;   ldi   Temp,3
+,,,       ;   rcall Delay
+,,,       ;   rcall LEDLIGHT_Release
+,,,          ;Delay 150 ms
+,,,       ;   ldi   Temp,6
+,,,       ;   rcall Delay
+,,,       ;   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;LEDLIGHT_Process:
+,,,       ;   lds   Temp,rLLightMode
+,,,       ;   cpi   Temp,LEDLIGHT_OFF
+,,,       ;   brne  LLP_End
+,,,       ;   cpi   Temp,LEDLIGHT_MAX
+,,,       ;   brne  LLP_End
+,,,       
+,,,       ;   lds   Timer,rLLightTimer
+,,,       ;   inc   Timer
+,,,       ;   cpi   Timer,60
+,,,       ;   brne  LLP_SaveTimer
+,,,       ;   rcall LEDLIGHT_Release
+,,,       ;   clr   Timer
+,,,       ;LLP_SaveTimer:
+,,,       ;   sts   rLLightTimer,Timer
+,,,       ;LLP_End:
+,,,       ;   ret
+,,,       
+,,,       ;SLEDs_SetState:
+,,,       ;   in    Port,SLEDPORT
+,,,       ;   com   Temp
+,,,       ;   andi  Temp,0b00000111
+,,,       ;   andi  Port,0b11111000
+,,,       ;   or    Port,Temp
+,,,       ;   out   SLEDPORT,Port
+,,,       ;   ret
+,,,       
+,,,       ;-----------------------------------------------------------------------------------
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;***[ Main Program ]****************************************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       Reset:
+0009E2,EF0F,,   ldi   Temp,Byte1(RAMEND)
+0009E4,BF0D,,   out   SPL,Temp
+0009E6,E002,,   ldi   Temp,Byte2(RAMEND)
+0009E8,BF0E,,   out   SPH,Temp
+,,,          
+,,,          ;Disable Power to TWI
+0009EA,E800,,   ldi   Temp,(1 << PRTWI)
+0009EC,9300,,   sts   PRR,Temp
+,,,          ;Disable Power to AC
+0009F0,E800,,   ldi   Temp,(1 << ACD)
+0009F2,BF00,,   out   ACSR,Temp
+0009F4,E003,,   ldi   Temp,(1 << AIN1D) | (1 << AIN0D)
+0009F6,9300,,   sts   DIDR1,Temp
+,,,       
+0009FA,6011,,   sbr   Flags,(1 << RF)
+,,,       
+,,,       MainLoop:
+0009FC,FD10,,   sbrc  Flags,RF
+0009FE,D009,,   rcall MC_Start
+000A00,FD12,,   sbrc  Flags,UF
+000A02,DBDC,,   rcall UART_Process
+000A04,FD14,,   sbrc  Flags,CF
+000A06,DEE4,,   rcall TSOP_Process
+000A08,FD16,,   sbrc  Flags,TF
+000A0A,D03E,,   rcall SysTick_Process
+000A0C,FD11,,   sbrc  Flags,SF
+000A0E,D020,,   rcall MC_Stop
+000A10,CFF5,,   rjmp  MainLoop
+,,,       
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;***[ MicroController Start ]*******************************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       MC_Start:
+000A12,7F1E,,   cbr   Flags,(1 << RF)
+,,,       ;   cli
+,,,       
+,,,          ;Init LEDs
+000A14,DCBA,,   rcall SLED_Init
+000A16,DCEE,,   rcall PLED_On
+,,,          
+,,,          ;Init System Tick and Gear LEDs
+000A18,DDD7,,   rcall SysTickGears_Init
+,,,          
+,,,          ;Init UART
+000A1A,DB1B,,   rcall UART_Init
+,,,       
+,,,          ;--- Check if WakeUp was on LedLight Button ---
+000A1C,DF63,,   rcall LEDLIGHT_Init
+,,,       
+000A1E,9478,,   sei
+,,,       
+,,,          ;Delay 50 ms
+000A20,E002,,   ldi   Value,2
+000A22,DB0E,,   rcall Delay25msX
+,,,       
+000A24,DF80,,   rcall LEDLIGHT_CheckButtonHeld
+,,,          
+,,,          ;Prepare state for indication
+000A26,E007,,   ldi   Value,SLEDS_STATE_LEDLIGHT_ON
+000A28,F076,,   brts  MC_Start_Continue
+,,,       
+,,,          ;--- Check if WakeUp was on IR Command ---
+000A2A,DE21,,   rcall TSOP_Init
+,,,       
+,,,       ;   sei
+,,,       
+,,,          ;Delay 200 ms
+000A2C,E008,,   ldi   Value,8
+000A2E,DB08,,   rcall Delay25msX
+,,,       
+000A30,EF0F,,   ser   Temp
+,,,          ;sts   rICmd,Temp
+000A32,BB0E,,   out   ICMD,Temp
+000A34,7E1F,,   cbr   Flags,(1 << CF)
+,,,       
+,,,          ;Delay 1 s
+000A36,E208,,   ldi   Value,40
+000A38,DB03,,   rcall Delay25msX
+,,,       
+000A3A,DEC2,,   rcall TSOP_CheckStartCommand
+,,,          
+,,,          ;Prepare state for indication
+000A3C,E001,,   ldi   Value,SLEDS_STATE_POWER_ON
+000A3E,F01E,,   brts  MC_Start_Continue
+,,,       
+,,,          ;--- Go Back to Sleep ---
+,,,          ;Disable Interrupts
+000A40,94F8,,   cli
+,,,          ;Clear all flags except Stop Flag
+000A42,E012,,   ldi   Flags,(1 << SF)
+000A44,9508,,   ret
+,,,       
+,,,       MC_Start_Continue:
+000A46,9300,,   sts   UDR0,Value
+000A4A,DCE3,,   rcall SLEDs_SetState
+,,,       
+,,,          ;Init ADC
+000A4C,DD60,,   rcall ADC_Init
+,,,       
+,,,          ;Init System Tick and Gear LEDs
+,,,          ;clr   Timer
+,,,          ;rcall SysTickGears_Init
+,,,          
+,,,          ;ldi   Temp,SLEDS_STATE_POWER_ON
+,,,          ;rcall SLEDs_SetState
+,,,       
+000A4E,9508,,   ret
+,,,       
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;***[ MicroController Stop ]********************************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       MC_Stop:
+000A50,DCAE,,   rcall SLED_DeInit
+,,,       
+000A52,DB23,,   rcall UART_DeInit
+,,,       
+000A54,DD77,,   rcall ADC_DeInit
+,,,       
+000A56,DDDC,,   rcall SysTickGears_DeInit
+,,,       
+000A58,DF5C,,   rcall LEDLIGHT_DeInit
+,,,       
+000A5A,DE1E,,   rcall TSOP_DeInit
+,,,       
+,,,          ;Delay 325 ms
+000A5C,E00D,,   ldi   Value,13
+000A5E,DAF0,,   rcall Delay25msX
+,,,       
+,,,          ;Enable External Interrupt 0 (IR in) for Wake Up
+000A60,E000,,   ldi   Temp,(0 << ISC00)
+000A62,9300,,   sts   EICRA,Temp
+000A66,E001,,   ldi   Temp,(1 << INT0)
+000A68,BB0D,,   out   EIMSK,Temp
+,,,          ;Enable External Interrupt 22 (PCINT22/PD6, Led Light) for Wake Up
+,,,       ;   ldi   Temp,(1 << PCIE2)
+,,,       ;   sts   PCICR,Temp
+,,,       ;   ldi   Temp,(1 << PCINT22)
+,,,       ;   sts   PCMSK2,Temp
+,,,       
+000A6A,9478,,   sei
+,,,       
+,,,          ;Config Sleep Mode to Power-Down and Go to Sleep
+000A6C,E005,,   ldi   Temp,(2 << SM0) | (1 << SE)
+000A6E,BF03,,   out   SMCR,Temp
+000A70,9588,,   sleep
+000A72,2700,,   clr   Temp
+000A74,BF03,,   out   SMCR,Temp
+,,,       
+,,,          ;Disable External Interrupt 0 for Normal Work
+000A76,2700,,   clr   Temp
+000A78,9300,,   sts   EICRA,Temp
+000A7C,BB0D,,   out   EIMSK,Temp
+000A7E,E001,,   ldi   Temp,(1 << INTF0)
+000A80,BB0C,,   out   EIFR,Temp
+,,,          ;Disable External Interrupt 22 for Normal Work
+,,,       ;   clr   Temp
+,,,       ;   sts   PCICR,Temp
+,,,       ;   sts   PCMSK2,Temp
+,,,       ;   ldi   Temp,(1 << PCIF2)
+,,,       ;   sts   PCIFR,Temp
+,,,       
+000A82,7F1D,,   cbr   Flags,(1 << SF)
+000A84,6011,,   sbr   Flags,(1 << RF)
+000A86,9508,,   ret
+,,,       
+,,,       ;***********************************************************************************
+,,,       ;***[ System Tick Function ]********************************************************
+,,,       ;***********************************************************************************
+,,,       
+,,,       SysTick_Process:
+000A88,DCF7,,   rcall SLEDs_Process
+000A8A,DF57,,   rcall LEDLIGHT_Process
+,,,       ;   lds   T_State,rState
+,,,       ;   cpi   T_State,STATE_IDLE
+,,,       ;   breq  ST_CheckVBat
+,,,       ;   lds   T_Phase,rStatePhase
+,,,       ;   cpi   T_Phase,10
+,,,       ;   brsh  ST_CheckVBat
+,,,       
+,,,       ;   ldi   T_PhasesL,Byte1(rStatePhases)
+,,,       ;   ldi   T_PhasesH,Byte2(rStatePhases)
+,,,       ;   clr   Temp
+,,,       ;   add   T_PhasesL,T_Phase
+,,,       ;   adc   T_PhasesH,Temp
+,,,       ;   ld    T_Value,Y
+,,,       
+,,,       ;   mov   Temp,T_Value
+,,,       ;   swap  Temp
+,,,       ;   lsr   Temp
+,,,       ;   rcall SLEDs_SetState
+,,,       
+,,,       ;   mov   Temp,T_Value
+,,,       ;   andi  Temp,$1F
+,,,       ;   cpi   Temp,0
+,,,       ;   breq  ST_NextPhase
+,,,       ;   dec   Temp
+,,,       ;   andi  T_Value,$E0
+,,,       ;   or    T_Value,Temp
+,,,       ;   st    Y,T_Value
+,,,       ;   rjmp  ST_CheckVBat
+,,,       
+,,,       ;ST_NextPhase:
+,,,       ;   inc   T_Phase
+,,,       ;   sts   rStatePhase,T_Phase
+,,,       ;   cpi   T_Phase,10
+,,,       ;   brne  ST_CheckVBat
+,,,       ;   rcall LEDLIGHT_Release
+,,,       ;   ldi   T_State,STATE_IDLE
+,,,       ;   sts   rState,T_State
+,,,       
+,,,       ;ST_CheckVBat:
+,,,       ;   ;Timer Interval = 12.5 s
+,,,       ;   inc   Timer
+,,,       ;   cpi   Timer,250
+,,,       ;   brne  ST_End
+,,,       ;   clr   Timer
+,,,       ;   rcall ADC_GetBatteryState
+,,,       ;   cpi   Temp,STATE_VBAT_FATAL
+,,,       ;   brne  ST_End
+,,,       ;   rcall SysTick_SetState
+,,,       
+,,,       ;ST_End:
+000A8C,7B1F,,   cbr   Flags,(1 << TF)
+000A8E,9508,,   ret
+,,,       
+,,,       
+,,,
+,,,
