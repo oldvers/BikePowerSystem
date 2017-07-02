@@ -48,7 +48,7 @@ ROM_StateVBatLow     : .DB $61, $01, $61, $06, $61, $02, $61, $02, $61, $00
 ;--- Battery Voltage Fatal = 5 Red Flashes
 ROM_StateVBatFatal   : .DB $21, $01, $21, $06, $21, $02, $21, $02, $21, $00
 ;--- Light On = 3 Long Green Flashes
-ROM_StateLedLightOn  : .DB $4A, $0A, $4A, $0A, $4A, $0A, $00, $00, $00, $00
+ROM_StateLedLightOn  : .DB $4A, $0A, $4A, $0A, $4A, $0D, $5F, $00, $00, $00
 ;--- Light On = 3 Long Blue Flashes
 ROM_StateLedLightOff : .DB $8A, $0A, $8A, $0A, $8A, $0A, $00, $00, $00, $00
 

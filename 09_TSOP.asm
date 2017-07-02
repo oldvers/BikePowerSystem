@@ -35,6 +35,13 @@
 .EQU IR_CMD_NEXT      = 10
 .EQU IR_CMD_1         = 12
 .EQU IR_CMD_2         = 13
+.EQU IR_CMD_3         = 14
+.EQU IR_CMD_4         = 16
+.EQU IR_CMD_5         = 17
+.EQU IR_CMD_6         = 18
+.EQU IR_CMD_7         = 20
+.EQU IR_CMD_8         = 21
+.EQU IR_CMD_9         = 22
 .EQU IR_CMD_PICK_SONG = 24
 .EQU IR_CMD_CH_SET    = 26
 
@@ -326,21 +333,23 @@ TCP_0:
    cpi   I_Cmd,IR_CMD_0
    brne  TCP_1
    ldi   Temp,0
-   sts   rBrightness,Temp
-   rcall GLED1_SetBright
-   rcall GLED2_SetBright
+   ;sts   rBrightness,Temp
+   ;rcall GLED1_SetBright
+   ;rcall GLED2_SetBright
+   rcall LEDLIGHT_IR_Next
    rjmp  TCP_End
 TCP_1:
    cpi   I_Cmd,IR_CMD_1
    brne  TCP_2
-;   rcall LEDLIGHT_Next
+   rcall LEDLIGHT_IR_Min
    ;clr   I_Cmd
    ;sts   rICmd,I_Cmd
    ;sts   rInCmd,I_Cmd
    rjmp  TCP_NoRepeat ;TCP_End
 TCP_2:
    cpi   I_Cmd,IR_CMD_2
-   brne  TCP_Prev
+   brne  TCP_3
+   rcall LEDLIGHT_IR_Mid
 ;   rcall LEDLIGHT_Next
 ;   rcall LEDLIGHT_Next
 ;   rcall LEDLIGHT_Next
@@ -348,6 +357,20 @@ TCP_2:
    ;sts   rICmd,I_Cmd
    ;sts   rInCmd,I_Cmd
    rjmp  TCP_NoRepeat ;TCP_End
+
+
+TCP_3:
+   cpi   I_Cmd,IR_CMD_3
+   brne  TCP_5
+   rcall LEDLIGHT_IR_Max
+   rjmp  TCP_NoRepeat
+TCP_5:
+   cpi   I_Cmd,IR_CMD_5
+   brne  TCP_Prev
+   rcall LEDLIGHT_IR_Fls
+   rjmp  TCP_NoRepeat
+
+
 TCP_Prev:
    cpi   I_Cmd,IR_CMD_PREV
    brne  TCP_Next
@@ -366,7 +389,7 @@ TCP_PickSong:
    ;clr   I_Cmd
    ;sts   rICmd,I_Cmd
    ;sts   rInCmd,I_Cmd
-;   rcall LEDLIGHT_Toggle
+   rcall LEDLIGHT_IR_Toggle
    rjmp  TCP_NoRepeat ;TCP_End
 TCP_ChSet:
    cpi   I_Cmd,IR_CMD_CH_SET

@@ -64,29 +64,30 @@ MC_Start:
    ;Init UART
    rcall UART_Init
 
-   ;--- Check if WakeUp was on LedLight Button ---
+   ;Init Led Light Button
    rcall LEDLIGHT_Init
+
+   ;Init IR Receiver
+   rcall TSOP_Init
 
    sei
 
-   ;Delay 50 ms
-   ldi   Value,2
+   ;Delay 25 ms
+   ldi   Value,1
    rcall Delay25msX
 
+   ;--- Check if WakeUp was on LedLight Button ---
    rcall LEDLIGHT_CheckButtonHeld
    
    ;Prepare state for indication
    ldi   Value,SLEDS_STATE_LEDLIGHT_ON
    brts  MC_Start_Continue
 
-   ;--- Check if WakeUp was on IR Command ---
-   rcall TSOP_Init
-
 ;   sei
 
    ;Delay 200 ms
-   ldi   Value,8
-   rcall Delay25msX
+;   ldi   Value,8
+;   rcall Delay25msX
 
    ser   Temp
    ;sts   rICmd,Temp
@@ -97,6 +98,7 @@ MC_Start:
    ldi   Value,40
    rcall Delay25msX
 
+   ;--- Check if WakeUp was on IR Command ---
    rcall TSOP_CheckStartCommand
    
    ;Prepare state for indication
@@ -169,6 +171,7 @@ MC_Stop:
    out   SMCR,Temp
 
    ;Disable External Interrupt 0 for Normal Work
+   cli
    clr   Temp
    sts   EICRA,Temp
    out   EIMSK,Temp
