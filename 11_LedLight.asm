@@ -219,11 +219,46 @@ LDI_End:
 ;-----------------------------------------------------------------------------------
 
 LEDLIGHT_CheckButtonHeld:
+   ;Clear result
    clt
+   ;Delay 25 ms
+   ldi   Value,1
+   rcall Delay25msX
+   ;Check if Led Light pressed
    sbic  LEDLPIN,LEDLIGHT
    ret
-LLCBH_Held:
+   ;Indicate state
+   ldi   Value,SLEDS_STATE_LEDLIGHT_ON
+   rcall SLEDs_SetState
+   ;Indicate Led Light button falling edge
    sbi   LEDFLAGS,LFF
+
+LLCBH_PowerOnWait:
+   ;Check if SysTick timeout
+   sbrs  Flags,TF
+   rjmp  LLCBH_PowerOnWait
+   ;Check if Led Light button released
+   sbic  LEDFLAGS,LRF
+   rjmp  LLCBH_PowerOn
+   ;Process Status/Led Light state
+   rcall SLEDs_Process
+   rcall LEDLIGHT_Process
+   cbr   Flags,(1 << TF)
+   rjmp  LLCBH_PowerOnWait
+   
+LLCBH_PowerOn:
+   ;Process Status/Led Light state
+   rcall SLEDs_Process
+   rcall LEDLIGHT_Process
+   cbr   Flags,(1 << TF)
+   ;Check if state changed
+   ldi   Temp,LL_STATE_MAX
+   lds   L_CState,rLCState
+   cpse  L_CState,Temp
+   ;Led Light button was pressed during too short time - return
+   ret
+   
+   ;Led Light button was pressed during more tgan 3 seconds - can start
    set
    ret
 
@@ -267,7 +302,7 @@ LLP_CBR_Toggle:
 
 LLP_CheckIrCmdTimer:
    ;Release the Button if IR command was received
-   ;And Command Timer expired
+   ;  and Command Timer expired
    ;Go to the next state if needed
    tst   L_CTimer
    breq  LLP_End

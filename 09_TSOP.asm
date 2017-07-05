@@ -269,20 +269,68 @@ TSOP_Ovf:
 ;*****************[ TSOP Check Start Command ]**************************************
 
 TSOP_CheckStartCommand:
-   ;Clear T flag
+   ;Clear result
    clt
-   ;Check if IR command was received
-   sbrs  Flags,CF
+   ;Clear IR command
+   ser   Temp
+   out   ICMD,Temp
+   cbr   Flags,(1 << CF)
+   ;Indicate state
+   ldi   Value,SLEDS_STATE_POWER_ON
+   rcall SLEDs_SetState
+   ;Delay during 1 second (20 x 50 ms SysTick)
+   ldi   Temp,20
+   push  Temp
+   
+TCSC_PowerOnWait:
+   sbrc  Flags,CF
+   rjmp  TCSC_CheckCommand
+   sbrs  Flags,TF
+   ;Process State/Led Light
+   rcall SLEDs_Process
+   rcall LEDLIGHT_Process
+   cbr   Flags,(1 << TF)
+   ;Decrement timeout
+   pop   Temp
+   dec   Temp
+   push  Temp
+   brne  TCSC_PowerOnWait
+   ;Timeout 1 s expired - return
+   pop   Temp
    ret
+   
+TCSC_CheckCommand:
+   
+   ;Delay 1 s
+   ;ldi   Value,40
+   ;rcall Delay25msX
+
+   ;--- Check if WakeUp was on IR Command ---
+   ;rcall TSOP_CheckStartCommand
+   
+   ;Prepare state for indication
+   ;ldi   Value,SLEDS_STATE_POWER_ON
+   ;brts  MC_Start_Continue
+   
+   ;   ldi   Value,SLEDS_STATE_POWER_ON
+      
+   
+
+   
+
+   ;Check if IR command was received
+;   sbrs  Flags,CF
+;   ret
    ;Load received command
    ;lds   Temp,rICmd
+   cbr   Flags,(1 << CF)
    in    I_Cmd,ICMD
    ;Check if command == Play
    cpi   I_Cmd,IR_CMD_PLAY
-   brne  TCSC_End
+   brne  TCSC_PowerOnWait
    ;Set T flag - means Device can Wake Up
    set
-TCSC_End:
+;TCSC_End:
    ret
 
 ;*****************[ TSOP Command Processing ]***************************************

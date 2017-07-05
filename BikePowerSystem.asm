@@ -73,14 +73,14 @@ MC_Start:
    sei
 
    ;Delay 25 ms
-   ldi   Value,1
-   rcall Delay25msX
+   ;ldi   Value,1
+   ;rcall Delay25msX
 
    ;--- Check if WakeUp was on LedLight Button ---
    rcall LEDLIGHT_CheckButtonHeld
    
    ;Prepare state for indication
-   ldi   Value,SLEDS_STATE_LEDLIGHT_ON
+   ;ldi   Value,SLEDS_STATE_LEDLIGHT_ON
    brts  MC_Start_Continue
 
 ;   sei
@@ -89,20 +89,20 @@ MC_Start:
 ;   ldi   Value,8
 ;   rcall Delay25msX
 
-   ser   Temp
+;   ser   Temp
    ;sts   rICmd,Temp
-   out   ICMD,Temp
-   cbr   Flags,(1 << CF)
+;   out   ICMD,Temp
+;   cbr   Flags,(1 << CF)
 
    ;Delay 1 s
-   ldi   Value,40
-   rcall Delay25msX
+;   ldi   Value,40
+;   rcall Delay25msX
 
    ;--- Check if WakeUp was on IR Command ---
    rcall TSOP_CheckStartCommand
    
    ;Prepare state for indication
-   ldi   Value,SLEDS_STATE_POWER_ON
+;   ldi   Value,SLEDS_STATE_POWER_ON
    brts  MC_Start_Continue
 
    ;--- Go Back to Sleep ---
@@ -113,8 +113,8 @@ MC_Start:
    ret
 
 MC_Start_Continue:
-   sts   UDR0,Value
-   rcall SLEDs_SetState
+;   sts   UDR0,Value
+;   rcall SLEDs_SetState
 
    ;Init ADC
    rcall ADC_Init
@@ -134,8 +134,6 @@ MC_Start_Continue:
 ;***********************************************************************************
 
 MC_Stop:
-   rcall SLED_DeInit
-
    rcall UART_DeInit
 
    rcall ADC_DeInit
@@ -149,6 +147,9 @@ MC_Stop:
    ;Delay 325 ms
    ldi   Value,13
    rcall Delay25msX
+
+   rcall PLED_Off
+   rcall SLED_DeInit
 
    ;Enable External Interrupt 0 (IR in) for Wake Up
    ldi   Temp,(0 << ISC00)
