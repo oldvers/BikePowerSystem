@@ -58,13 +58,14 @@ TSOP_Init:
    ;Init IR pin
    sbi   IRPORT,IR
    ;Clear flags
-   cbr   Flags,(1 << IF)
+   cbr   Flags,(1 << IF) | (1 << CF)
    ;Init RAM variables
-   clr   Temp
+   ser   Temp
    sts   rIAddr,Temp
    sts   rInAddr,Temp
    sts   rICmd,Temp
    sts   rInCmd,Temp
+   out   ICMD,Temp
 
    ;Timer 1 capture mode
    ldi   Temp,(0 << COM1A0) | (0 << COM1B0) | (0 << WGM10)
@@ -270,17 +271,17 @@ TSOP_Ovf:
 
 TSOP_CheckStartCommand:
    ;Clear result
-   clt
-   ;Clear IR command
-   ser   Temp
-   out   ICMD,Temp
-   cbr   Flags,(1 << CF)
+   ;clt
+;   ;Clear IR command
+;   ser   Temp
+;   out   ICMD,Temp
+;   cbr   Flags,(1 << CF)
    ;Indicate state
    ldi   Value,SLEDS_STATE_POWER_ON
    rcall SLEDs_SetState
    ;Delay during 1 second (20 x 50 ms SysTick)
    ldi   Temp,20
-   push  Temp
+   sts   rITimer,Temp
    
 TCSC_PowerOnWait:
    sbrc  Flags,CF
@@ -292,17 +293,14 @@ TCSC_PowerOnWait:
    rcall LEDLIGHT_Process
    cbr   Flags,(1 << TF)
    ;Decrement timeout
-   pop   Temp
+   lds   Temp,rITimer
    dec   Temp
-   push  Temp
+   sts   rITimer,Temp
    brne  TCSC_PowerOnWait
    ;Timeout 1 s expired - return
-   pop   Temp
    ret
    
 TCSC_CheckCommand:
-   pop   Temp
-   
    ;Delay 1 s
    ;ldi   Value,40
    ;rcall Delay25msX
@@ -318,7 +316,8 @@ TCSC_CheckCommand:
       
    
 
-   
+   ;Clear result
+   clt
 
    ;Check if IR command was received
 ;   sbrs  Flags,CF
@@ -330,6 +329,7 @@ TCSC_CheckCommand:
    ;Check if command == Play
    cpi   I_Cmd,IR_CMD_PLAY
    brne  TCSC_PowerOnWait
+
    ;Set T flag - means Device can Wake Up
    set
 ;TCSC_End:
@@ -343,7 +343,7 @@ TSOP_Process:
 TCP_Play:
    cpi   I_Cmd,IR_CMD_PLAY
    brne  TCP_ChM
-   rjmp  TCP_End
+   rjmp  TCP_NoRepeat
 TCP_ChM:
    cpi   I_Cmd,IR_CMD_CH_M
    brne  TCP_ChP
@@ -358,7 +358,7 @@ TCP_EQ:
    cpi   I_Cmd,IR_CMD_EQ
    brne  TCP_M
    sbr   Flags,(1 << SF)
-   rjmp  TCP_End
+   rjmp  TCP_NoRepeat
 TCP_M:
    cpi   I_Cmd,IR_CMD_M
    brne  TCP_P
@@ -387,7 +387,7 @@ TCP_0:
    ;rcall GLED1_SetBright
    ;rcall GLED2_SetBright
    rcall LEDLIGHT_IR_Next
-   rjmp  TCP_End
+   rjmp  TCP_NoRepeat
 TCP_1:
    cpi   I_Cmd,IR_CMD_1
    brne  TCP_2
@@ -448,7 +448,8 @@ TCP_ChSet:
    rcall SLEDs_SetState
 ;  rjmp  TCP_End
 TCP_NoRepeat:
-   clr   I_Cmd
+   ser   I_Cmd
+   out   ICMD,I_Cmd
    sts   rICmd,I_Cmd
    sts   rInCmd,I_Cmd
 TCP_End:

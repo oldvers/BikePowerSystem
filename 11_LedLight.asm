@@ -207,6 +207,7 @@ LEDLIGHT_DeInit:
    lds   L_CState,rLCState
    cpi   L_CState,LL_STATE_OFF
    breq  LDI_End
+   ;Press the button
    rcall LEDLIGHT_Hold
    ;Delay 3000 ms
    ldi   Value,120

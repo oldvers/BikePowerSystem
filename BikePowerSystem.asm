@@ -134,6 +134,8 @@ MC_Start_Continue:
 ;***********************************************************************************
 
 MC_Stop:
+   rcall SLEDR_On
+
    rcall UART_DeInit
 
    rcall ADC_DeInit

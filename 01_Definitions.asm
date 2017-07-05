@@ -85,6 +85,7 @@
   rInAddr:       .BYTE  1
   rICmd:         .BYTE  1
   rInCmd:        .BYTE  1
+  rITimer:       .BYTE  1
   ; --- ADC ---
   rLuminosity:   .BYTE  2
   rBattery:      .BYTE  2
