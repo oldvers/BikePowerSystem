@@ -286,6 +286,7 @@ TCSC_PowerOnWait:
    sbrc  Flags,CF
    rjmp  TCSC_CheckCommand
    sbrs  Flags,TF
+   rjmp  TCSC_PowerOnWait
    ;Process State/Led Light
    rcall SLEDs_Process
    rcall LEDLIGHT_Process
@@ -300,6 +301,7 @@ TCSC_PowerOnWait:
    ret
    
 TCSC_CheckCommand:
+   pop   Temp
    
    ;Delay 1 s
    ;ldi   Value,40
