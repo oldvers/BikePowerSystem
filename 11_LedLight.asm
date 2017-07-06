@@ -259,7 +259,7 @@ LLCBH_PowerOn:
    ;Led Light button was pressed during too short time - return
    ret
    
-   ;Led Light button was pressed during more tgan 3 seconds - can start
+   ;Led Light button was pressed during more than 3 seconds - can start
    set
    ret
 

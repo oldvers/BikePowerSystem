@@ -58,7 +58,7 @@ TSOP_Init:
    ;Init IR pin
    sbi   IRPORT,IR
    ;Clear flags
-   cbr   Flags,(1 << IF) | (1 << CF)
+   cbr   Flags,(1 << CF)
    ;Init RAM variables
    ser   Temp
    sts   rIAddr,Temp
@@ -270,17 +270,22 @@ TSOP_Ovf:
 ;*****************[ TSOP Check Start Command ]**************************************
 
 TSOP_CheckStartCommand:
-   ;Clear result
-   ;clt
-;   ;Clear IR command
-;   ser   Temp
-;   out   ICMD,Temp
-;   cbr   Flags,(1 << CF)
+   ;Delay 100 ms until the first command has been received
+   ;  (cmd duration == 67.5 ms)
+   ldi   Value,4
+   rcall Delay25msX
+   ;Clear IR command
+   ser   Temp
+   sts   rICmd,Temp
+   sts   rInCmd,Temp
+   out   ICMD,Temp
+   cbr   Flags,(1 << CF)
    ;Indicate state
    ldi   Value,SLEDS_STATE_POWER_ON
    rcall SLEDs_SetState
    ;Delay during 1 second (20 x 50 ms SysTick)
-   ldi   Temp,20
+   ;  including 100 ms of waiting at the beginning
+   ldi   Temp,18
    sts   rITimer,Temp
    
 TCSC_PowerOnWait:
