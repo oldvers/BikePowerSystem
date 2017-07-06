@@ -37,8 +37,9 @@
 ; Description  | B  G  R  {---Time----}
 ;   Time is in 50 ms Discrete
 
-;--- Power On = 4 Green Flashes
-ROM_StatePowerOn     : .DB $42, $02, $42, $02, $42, $02, $46, $00, $00, $00
+;--- Power On = 4 Blue Flashes (about 1 second in total)
+;      after that Green LED on
+ROM_StatePowerOn     : .DB $82, $04, $82, $04, $82, $04, $82, $5F, $5F, $5F
 ;--- Battery Voltage Good = 5 Aqua Flashes
 ROM_StateVBatGood    : .DB $C1, $01, $C1, $06, $C1, $02, $C1, $02, $C1, $00
 ;--- Battery Voltage Normal = 5 Green Flashes
@@ -47,8 +48,9 @@ ROM_StateVBatNorm    : .DB $41, $01, $41, $06, $41, $02, $41, $02, $41, $00
 ROM_StateVBatLow     : .DB $61, $01, $61, $06, $61, $02, $61, $02, $61, $00
 ;--- Battery Voltage Fatal = 5 Red Flashes
 ROM_StateVBatFatal   : .DB $21, $01, $21, $06, $21, $02, $21, $02, $21, $00
-;--- Light On = 3 Long Green Flashes
-ROM_StateLedLightOn  : .DB $4A, $0A, $4A, $0A, $4A, $0D, $5F, $00, $00, $00
+;--- Light On = 4 Long Blue Flashes (more than 3 seconds in total)
+;      after that Green LED on
+ROM_StateLedLightOn  : .DB $8A, $0A, $8A, $0A, $8A, $0E, $5F, $5F, $5F, $5F
 ;--- Light On = 3 Long Blue Flashes
 ROM_StateLedLightOff : .DB $8A, $0A, $8A, $0A, $8A, $0A, $00, $00, $00, $00
 

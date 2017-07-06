@@ -60,9 +60,6 @@ MC_Start:
    
    ;Init System Tick and Gear LEDs
    rcall SysTickGears_Init
-   
-   ;Init UART
-   rcall UART_Init
 
    ;Init Led Light Button
    rcall LEDLIGHT_Init
@@ -113,8 +110,11 @@ MC_Start:
    ret
 
 MC_Start_Continue:
-;   sts   UDR0,Value
-;   rcall SLEDs_SetState
+   ;Indicate Power On
+   rcall SLEDG_On
+
+   ;Init UART
+   rcall UART_Init
 
    ;Init ADC
    rcall ADC_Init
