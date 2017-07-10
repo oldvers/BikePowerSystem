@@ -270,7 +270,7 @@ TSOP_Ovf:
 ;*****************[ TSOP Check Start Command ]**************************************
 
 TSOP_CheckStartCommand:
-   ;Delay 100 ms until the first command has been received
+   ;Delay about 100 ms until the first command has been received
    ;  (cmd duration == 67.5 ms)
    ldi   Value,4
    rcall Delay25msX
@@ -306,44 +306,22 @@ TCSC_PowerOnWait:
    ret
    
 TCSC_CheckCommand:
-   ;Delay 1 s
-   ;ldi   Value,40
-   ;rcall Delay25msX
-
-   ;--- Check if WakeUp was on IR Command ---
-   ;rcall TSOP_CheckStartCommand
-   
-   ;Prepare state for indication
-   ;ldi   Value,SLEDS_STATE_POWER_ON
-   ;brts  MC_Start_Continue
-   
-   ;   ldi   Value,SLEDS_STATE_POWER_ON
-      
-   
-
    ;Clear result
    clt
-
-   ;Check if IR command was received
-;   sbrs  Flags,CF
-;   ret
-   ;Load received command
-   ;lds   Temp,rICmd
    cbr   Flags,(1 << CF)
-   in    I_Cmd,ICMD
+
    ;Check if command == Play
+   in    I_Cmd,ICMD
    cpi   I_Cmd,IR_CMD_PLAY
    brne  TCSC_PowerOnWait
 
    ;Set T flag - means Device can Wake Up
    set
-;TCSC_End:
    ret
 
 ;*****************[ TSOP Command Processing ]***************************************
 
 TSOP_Process:
-   ;lds   I_Cmd,rICmd
    in    I_Cmd,ICMD
 TCP_Play:
    cpi   I_Cmd,IR_CMD_PLAY
@@ -388,32 +366,18 @@ TCP_0:
    cpi   I_Cmd,IR_CMD_0
    brne  TCP_1
    ldi   Temp,0
-   ;sts   rBrightness,Temp
-   ;rcall GLED1_SetBright
-   ;rcall GLED2_SetBright
    rcall LEDLIGHT_IR_Next
    rjmp  TCP_NoRepeat
 TCP_1:
    cpi   I_Cmd,IR_CMD_1
    brne  TCP_2
    rcall LEDLIGHT_IR_Min
-   ;clr   I_Cmd
-   ;sts   rICmd,I_Cmd
-   ;sts   rInCmd,I_Cmd
-   rjmp  TCP_NoRepeat ;TCP_End
+   rjmp  TCP_NoRepeat
 TCP_2:
    cpi   I_Cmd,IR_CMD_2
    brne  TCP_3
    rcall LEDLIGHT_IR_Mid
-;   rcall LEDLIGHT_Next
-;   rcall LEDLIGHT_Next
-;   rcall LEDLIGHT_Next
-   ;clr   I_Cmd
-   ;sts   rICmd,I_Cmd
-   ;sts   rInCmd,I_Cmd
-   rjmp  TCP_NoRepeat ;TCP_End
-
-
+   rjmp  TCP_NoRepeat
 TCP_3:
    cpi   I_Cmd,IR_CMD_3
    brne  TCP_5
@@ -424,8 +388,6 @@ TCP_5:
    brne  TCP_Prev
    rcall LEDLIGHT_IR_Fls
    rjmp  TCP_NoRepeat
-
-
 TCP_Prev:
    cpi   I_Cmd,IR_CMD_PREV
    brne  TCP_Next
@@ -441,17 +403,13 @@ TCP_Next:
 TCP_PickSong:
    cpi   I_Cmd,IR_CMD_PICK_SONG
    brne  TCP_ChSet
-   ;clr   I_Cmd
-   ;sts   rICmd,I_Cmd
-   ;sts   rInCmd,I_Cmd
    rcall LEDLIGHT_IR_Toggle
-   rjmp  TCP_NoRepeat ;TCP_End
+   rjmp  TCP_NoRepeat
 TCP_ChSet:
    cpi   I_Cmd,IR_CMD_CH_SET
    brne  TCP_End
    rcall SLEDs_CheckBattery
    rcall SLEDs_SetState
-;  rjmp  TCP_End
 TCP_NoRepeat:
    ser   I_Cmd
    out   ICMD,I_Cmd

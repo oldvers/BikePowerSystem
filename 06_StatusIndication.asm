@@ -12,6 +12,18 @@
 .EQU SLEDS_STATE_LEDLIGHT_ON    = 7
 .EQU SLEDS_STATE_LEDLIGHT_OFF   = 8
 
+; --- Status LEDs colors ---
+
+.EQU SLEDS_COLOR_BLACK          = 0
+.EQU SLEDS_COLOR_RED            = 1
+.EQU SLEDS_COLOR_GREEN          = 2
+.EQU SLEDS_COLOR_YELLOW         = 3
+.EQU SLEDS_COLOR_BLUE           = 4
+.EQU SLEDS_COLOR_PINK           = 5
+.EQU SLEDS_COLOR_CYAN           = 6
+.EQU SLEDS_COLOR_WHITE          = 7
+
+
 ; --- Battery voltages ---
 ; ---------------------------
 ; | Description |  VBat, V  |
@@ -51,8 +63,9 @@ ROM_StateVBatFatal   : .DB $21, $01, $21, $06, $21, $02, $21, $02, $21, $00
 ;--- Light On = 4 Long Blue Flashes (more than 3 seconds in total)
 ;      after that Green LED on
 ROM_StateLedLightOn  : .DB $8A, $0A, $8A, $0A, $8A, $0E, $5F, $5F, $5F, $5F
-;--- Light On = 3 Long Blue Flashes
-ROM_StateLedLightOff : .DB $8A, $0A, $8A, $0A, $8A, $0A, $00, $00, $00, $00
+;--- Light On = 4 Long Blue Flashes
+;      after that Red LED on
+ROM_StateLedLightOff : .DB $8A, $0A, $8A, $0A, $8A, $0E, $3F, $3F, $3F, $3F
 
 ;*****************[ Local variables ]***********************************************
 
@@ -93,7 +106,7 @@ SLED_Init:
    out   PLEDDDR,Temp
    sbi   PLEDPORT,PLED
 
-   ;Init RAm variables
+   ;Init RAM variables
    clr   Temp
    sts   rSState,Temp
    sts   rSStateTimer,Temp
@@ -209,11 +222,21 @@ SLEDs_Capture:
 ;*****************[ Status LED Set State ]******************************************
 
 SLEDs_SetState:
+   cpi   Value,SLEDS_STATE_IDLE
+   brne  STSS_Begin
+   ;Go to Idle state
+   sts   rSState,Value
+   ;Recover previous Status LEDs state
+   lds   Value,rSStateLEDs
+   rcall SLEDs_Switch
+   ret
+
+STSS_Begin:
    ;Store new state
    mov   T_State,Value
    ;Save Status LEDs state
    rcall SLEDs_Capture
-   sts   rSStateLEDs,Temp
+   sts   rSStateLEDs,Value
 
    ;Init count of phases
    ldi   Temp,10

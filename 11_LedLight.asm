@@ -14,7 +14,6 @@
 
 ;DEF Temp     = r16
 ;DEF Value    = r16
-.DEF L_ICmd   = r16
 ;DEF Flags    = r17
 ;LEDFLAGS     = GPIOR
 .EQU  LFF     = 0   ;Button Fall Flag
@@ -81,38 +80,6 @@ LLN_Begin:
 
 ;-----------------------------------------------------------------------------------
 
-LL_Show:
-   ldi   Value,0b00000000
-LL_Off:
-   cpi   L_CState,LL_STATE_OFF
-   brne  LL_Max
-   ldi   Value,0b00000000
-   rjmp  LL_End
-LL_Max:
-   cpi   L_CState,LL_STATE_MAX
-   brne  LL_Mid
-   ldi   Value,0b00000111
-   rjmp  LL_End
-LL_Mid:
-   cpi   L_CState,LL_STATE_MID
-   brne  LL_Min
-   ldi   Value,0b00000010
-   rjmp  LL_End
-LL_Min:
-   cpi   L_CState,LL_STATE_MIN
-   brne  LL_Fls
-   ldi   Value,0b00000100
-   rjmp  LL_End
-LL_Fls:
-   cpi   L_CState,LL_STATE_FLS
-   brne  LL_End
-   ldi   Value,0b00000001
-LL_End:
-   rcall SLEDs_Switch
-   ret
-
-;-----------------------------------------------------------------------------------
-
 LEDLIGHT_CheckState:
    ;Release the Led Light Button
    rcall LEDLIGHT_Release
@@ -138,11 +105,6 @@ LLCS_SwitchNext:
    ldi   L_CTimer,LL_TIME_SHORT_SWITCH
    ;Hold the Led Light Button
    rcall LEDLIGHT_Hold
-
-;   mov   L_Temp,L_CState
-;   subi  L_Temp,-$30
-;   rcall UART_Dbg
-
    ret
 
 LLCS_NoSwitch:
@@ -271,6 +233,7 @@ LEDLIGHT_Process:
    lds   L_CTimer,rLCTimer
    lds   L_CState,rLCState
    lds   L_NState,rLNState
+   ser   L_Temp
 
 LLP_CheckBtnFall:
    ;Check if falling edge of Led Light Button was detected
@@ -279,7 +242,8 @@ LLP_CheckBtnFall:
    cbi   LEDFLAGS,LFF
    ;Start counting how long Button will be held
    clr   L_BTimer
-;   rcall PLED_On
+   ;Indicate State
+   ldi   L_Temp,SLEDS_STATE_LEDLIGHT_OFF
    rjmp  LLP_CheckIrCmdTimer
 
 LLP_CheckBtnRise:
@@ -289,7 +253,8 @@ LLP_CheckBtnRise:
    cbi   LEDFLAGS,LRF
    ;Check how long the Button was held
    inc   L_BTimer
-;   rcall PLED_Off
+   ;Indicate State
+   ldi   L_Temp,SLEDS_STATE_IDLE
 
    ;If Button was held more than 3 s -> Toggle state (OFF->MAX/MAX->OFF)
    cpi   L_BTimer,(LL_TIME_LONG_SWITCH - 1)
@@ -321,8 +286,12 @@ LLP_End:
    sts   rLCState,L_CState
    sts   rLNState,L_NState
 
-;   rcall LL_Show
-
+   ;Indicate state if needed
+   tst   L_Temp
+   brmi  LLP_Return
+   mov   Value,L_Temp
+   rcall SLEDs_SetState
+LLP_Return:
    ret
 
 ;-----------------------------------------------------------------------------------

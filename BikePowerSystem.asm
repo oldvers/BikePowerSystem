@@ -39,12 +39,14 @@ MainLoop:
    rcall UART_Process
    sbrc  Flags,CF
    rcall TSOP_Process
-   sbrc  Flags,TF
-   rcall SysTick_Process
    sbrc  Flags,SF
    rcall MC_Stop
+   sbrs  Flags,TF
    rjmp  MainLoop
-
+   rcall SLEDs_Process
+   rcall LEDLIGHT_Process
+   cbr   Flags,(1 << TF)
+   rjmp  MainLoop
 
 ;***********************************************************************************
 ;***[ MicroController Start ]*******************************************************
@@ -52,7 +54,6 @@ MainLoop:
 
 MC_Start:
    cbr   Flags,(1 << RF)
-;   cli
 
    ;Init LEDs
    rcall SLED_Init
@@ -69,37 +70,12 @@ MC_Start:
 
    sei
 
-   ;Delay 25 ms
-   ;ldi   Value,1
-   ;rcall Delay25msX
-
    ;--- Check if WakeUp was on LedLight Button ---
    rcall LEDLIGHT_CheckButtonHeld
-   
-   ;Prepare state for indication
-   ;ldi   Value,SLEDS_STATE_LEDLIGHT_ON
    brts  MC_Start_Continue
-
-;   sei
-
-   ;Delay 200 ms
-;   ldi   Value,8
-;   rcall Delay25msX
-
-;   ser   Temp
-   ;sts   rICmd,Temp
-;   out   ICMD,Temp
-;   cbr   Flags,(1 << CF)
-
-   ;Delay 1 s
-;   ldi   Value,40
-;   rcall Delay25msX
 
    ;--- Check if WakeUp was on IR Command ---
    rcall TSOP_CheckStartCommand
-   
-   ;Prepare state for indication
-;   ldi   Value,SLEDS_STATE_POWER_ON
    brts  MC_Start_Continue
 
    ;--- Go Back to Sleep ---
@@ -110,8 +86,11 @@ MC_Start:
    ret
 
 MC_Start_Continue:
-   ;Indicate Power On
-   rcall SLEDG_On
+   ;Indicate Power On State
+   ldi   Value,SLEDS_STATE_IDLE
+   rcall SLEDs_SetState
+   ldi   Value,SLEDS_COLOR_GREEN
+   rcall SLEDs_Switch
 
    ;Init UART
    rcall UART_Init
@@ -119,22 +98,18 @@ MC_Start_Continue:
    ;Init ADC
    rcall ADC_Init
 
-   ;Init System Tick and Gear LEDs
-   ;clr   Timer
-   ;rcall SysTickGears_Init
-   
-   ;ldi   Temp,SLEDS_STATE_POWER_ON
-   ;rcall SLEDs_SetState
-
    ret
-
 
 ;***********************************************************************************
 ;***[ MicroController Stop ]********************************************************
 ;***********************************************************************************
 
 MC_Stop:
-   rcall SLEDR_On
+   ;Indicate Go To Sleep State
+   ldi   Value,SLEDS_STATE_IDLE
+   rcall SLEDs_SetState
+   ldi   Value,SLEDS_COLOR_RED
+   rcall SLEDs_Switch
 
    rcall UART_DeInit
 
@@ -159,10 +134,10 @@ MC_Stop:
    ldi   Temp,(1 << INT0)
    out   EIMSK,Temp
    ;Enable External Interrupt 22 (PCINT22/PD6, Led Light) for Wake Up
-;   ldi   Temp,(1 << PCIE2)
-;   sts   PCICR,Temp
-;   ldi   Temp,(1 << PCINT22)
-;   sts   PCMSK2,Temp
+   ;ldi   Temp,(1 << PCIE2)
+   ;sts   PCICR,Temp
+   ;ldi   Temp,(1 << PCINT22)
+   ;sts   PCMSK2,Temp
 
    sei
 
@@ -181,74 +156,14 @@ MC_Stop:
    ldi   Temp,(1 << INTF0)
    out   EIFR,Temp
    ;Disable External Interrupt 22 for Normal Work
-;   clr   Temp
-;   sts   PCICR,Temp
-;   sts   PCMSK2,Temp
-;   ldi   Temp,(1 << PCIF2)
-;   sts   PCIFR,Temp
+   ;clr   Temp
+   ;sts   PCICR,Temp
+   ;sts   PCMSK2,Temp
+   ;ldi   Temp,(1 << PCIF2)
+   ;sts   PCIFR,Temp
 
    cbr   Flags,(1 << SF)
    sbr   Flags,(1 << RF)
    ret
 
 ;***********************************************************************************
-;***[ System Tick Function ]********************************************************
-;***********************************************************************************
-
-SysTick_Process:
-   rcall SLEDs_Process
-   rcall LEDLIGHT_Process
-;   lds   T_State,rState
-;   cpi   T_State,STATE_IDLE
-;   breq  ST_CheckVBat
-;   lds   T_Phase,rStatePhase
-;   cpi   T_Phase,10
-;   brsh  ST_CheckVBat
-
-;   ldi   T_PhasesL,Byte1(rStatePhases)
-;   ldi   T_PhasesH,Byte2(rStatePhases)
-;   clr   Temp
-;   add   T_PhasesL,T_Phase
-;   adc   T_PhasesH,Temp
-;   ld    T_Value,Y
-
-;   mov   Temp,T_Value
-;   swap  Temp
-;   lsr   Temp
-;   rcall SLEDs_SetState
-
-;   mov   Temp,T_Value
-;   andi  Temp,$1F
-;   cpi   Temp,0
-;   breq  ST_NextPhase
-;   dec   Temp
-;   andi  T_Value,$E0
-;   or    T_Value,Temp
-;   st    Y,T_Value
-;   rjmp  ST_CheckVBat
-
-;ST_NextPhase:
-;   inc   T_Phase
-;   sts   rStatePhase,T_Phase
-;   cpi   T_Phase,10
-;   brne  ST_CheckVBat
-;   rcall LEDLIGHT_Release
-;   ldi   T_State,STATE_IDLE
-;   sts   rState,T_State
-
-;ST_CheckVBat:
-;   ;Timer Interval = 12.5 s
-;   inc   Timer
-;   cpi   Timer,250
-;   brne  ST_End
-;   clr   Timer
-;   rcall ADC_GetBatteryState
-;   cpi   Temp,STATE_VBAT_FATAL
-;   brne  ST_End
-;   rcall SysTick_SetState
-
-;ST_End:
-   cbr   Flags,(1 << TF)
-   ret
-
-
